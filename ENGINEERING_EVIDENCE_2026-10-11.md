@@ -140,3 +140,15 @@ Direct source inspection: [RoadOS db/files.js](https://github.com/blackboxprogra
 **Review candidates, not proven exploits:** predictable PID-named temporary path; no explicit O_EXCL or O_NOFOLLOW in writeAtomic; no directory fsync in that function; pathname check-then-read for private keys; and no demonstrated atomic no-replace semantics against concurrent writers. Directory permissions and attacker access are not established, so exploitability cannot be inferred.
 
 **Next verification:** focused hostile-filesystem, concurrent-writer and crash-boundary tests in the owning source repository after a scoped change review. No tests rerun or source code modified here.
+
+## Additional pinned report: Files ownership and manifest recovery
+
+Directly inspected [RoadOS PR #95 verification report](https://github.com/blackboxprogramming/road-os/blob/3d63f11bc4b5b6293347462975f9a8e3f2ec7c98/docs/verification/storage-path-ownership-20261009/report.json), Git blob \`e76f15514a9f6e2f804d944225bf1da053c14ea8\`, at commit [3d63f11b](https://github.com/blackboxprogramming/road-os/commit/3d63f11bc4b5b6293347462975f9a8e3f2ec7c98).
+
+- Final reported baseline: 2 pass, 8 fail across 10 focused ownership cases; repaired focused: 10/10; complete Host gate: 412/412; Node 26.11.1 on Linux x86_64, zero skips.
+- Report preserves initial harness mistakes (two archive fixtures missing CLI prefix), an interrupted full run (exit 130), and a separately identified intermediate eight-case revision. These are not silently relabeled as production defects or passes.
+- Existing source closure 186 files; final manifest 188; recorded before/after hashes matched.
+- Scope explicitly excludes cross-process/external-writer races, power-loss durability, authenticated browser adoption, and independently verified review. It does not claim deployment.
+- The 412-case suite is a historical snapshot, overlapping later 443-case runs; **do not add these as distinct tests**.
+
+Evidence tier: committed structured report directly inspected, not a fresh rerun or independent byte-level verification of every log.

@@ -1,0 +1,70 @@
+{
+  "commands": [
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "scripts/verify_evidence.py",
+      "evidence/2026-10-12-browser-workflow-92286f"
+    ],
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "scripts/verify_evidence.py",
+      "evidence/2026-10-12-core-followup-92286f"
+    ],
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "scripts/verify_evidence.py",
+      "evidence/2026-10-12-foundations-92286f"
+    ],
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "scripts/verify_evidence.py",
+      "evidence/2026-10-12-projects-workflow-92286f"
+    ],
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "scripts/verify_browser_evidence.py",
+      "evidence/2026-10-12-browser-workflow-92286f"
+    ],
+    [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+      "-B",
+      "scripts/verify_projects_evidence.py",
+      "evidence/2026-10-12-projects-workflow-92286f"
+    ]
+  ],
+  "environment": {
+    "os": "Linux",
+    "python": "3.12.14"
+  },
+  "exit_code": 0,
+  "exported_files": 3,
+  "logs": {
+    "bundle-revalidation-results.json": {
+      "bytes": 2908,
+      "sha256": "348e2590a50ce457b3f4f757c5a2c5279c3f643097ec371e4a27e1677f9423e0"
+    }
+  },
+  "read_only_files_checked": 184,
+  "read_only_unchanged": true,
+  "reported_counts": {
+    "commands_passed": 6,
+    "existing_bundles": 4,
+    "specialized_checkers": 2
+  },
+  "repository": "blackboxprogramming/accomplishments",
+  "repository_tree_sha": "dcdc0ae612445ac9ec4003fc65e405996a179d3e",
+  "schema": "blackroad-accomplishment-verification/1",
+  "scope": "Evidence-checker behavior and static committed-bundle consistency only; no original runtime suites rerun, Actions, deployment or signature claim.",
+  "source_commit": "e6960894fcf949d013501291b9a95e04b137ec84",
+  "source_export_manifest": "sources/accomplishments.json",
+  "source_integrity": {
+    "after": [],
+    "before": []
+  },
+  "status": "PASS"
+}

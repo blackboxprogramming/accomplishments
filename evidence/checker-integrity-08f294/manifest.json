@@ -1,0 +1,62 @@
+{
+  "failed_receipts": [
+    "baseline.json"
+  ],
+  "files": {
+    "README.md": {
+      "bytes": 5043,
+      "sha256": "c3ade98f1cfac1fb110eb7bc0e644df8721b5351370a68633424742026a12f00"
+    },
+    "baseline.json": {
+      "bytes": 831,
+      "sha256": "574d6a844f9550a3c6045cfeb9783320ee6ccf607577d3ecad0d0a20e0972187"
+    },
+    "baseline.stderr.log": {
+      "bytes": 16009,
+      "sha256": "5b92962a94277757ba09830c612ef8092bbe27cd2f8fad5db21c0e02435a4908"
+    },
+    "baseline.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "bundle-revalidation-results.json": {
+      "bytes": 2908,
+      "sha256": "348e2590a50ce457b3f4f757c5a2c5279c3f643097ec371e4a27e1677f9423e0"
+    },
+    "bundle-revalidation.json": {
+      "bytes": 2208,
+      "sha256": "57ff1dd27a7a24686ab7f90858147f76f4aa233802481e1d5903611fdbe9fc15"
+    },
+    "claims.json": {
+      "bytes": 845,
+      "sha256": "a1801f3e746dd3ad8be129c1e40155921966d3aca9672ac7b74f8229f2e4505e"
+    },
+    "regression.json": {
+      "bytes": 1239,
+      "sha256": "d17ad3e0f330dde17d785e4bab4bb0928f553c7cfb11eac866a97742febf769b"
+    },
+    "repaired.stderr.log": {
+      "bytes": 3395,
+      "sha256": "723d3e80389ed35a05e1b7caeb141ee79f4bfcf2055914ddaf0bd4f76493a2c3"
+    },
+    "repaired.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "sources/accomplishments.json": {
+      "bytes": 1005,
+      "sha256": "60843aab93564979c0a90153582efd3ab7ee2f02a59ec31cee119929b3f76604"
+    }
+  },
+  "pass_receipts": [
+    "regression.json",
+    "bundle-revalidation.json"
+  ],
+  "repository_artifacts": {
+    "evidence/2026-10-12-foundations-92286f/manifest.json": "e0df73e5642d83e8910207d816fbefbcb2c0f4ad2d09b5fe22e10104166a2475",
+    "scripts/verify_evidence.py": "ffb7320160719ef6197d84d736a9f53b3de869c680b698cc3d7d6d494cbcf19d",
+    "tests/test_verify_evidence.py": "cea6b574b9827468ef2b946e585643d0a3fd9b0e527685f06fbe5cb73fe6e736"
+  },
+  "schema": "blackroad-evidence-bundle/1",
+  "scope": "Checker-integrity repair with preserved failed control and static existing-bundle revalidation."
+}

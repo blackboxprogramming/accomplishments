@@ -1,0 +1,73 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "commands": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "scripts/verify_evidence.py",
+        "evidence/2026-10-12-browser-workflow-92286f"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"files_checked\": 50, \"passing_receipts_checked\": 2, \"claims_checked\": 4}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "scripts/verify_evidence.py",
+        "evidence/2026-10-12-core-followup-92286f"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"files_checked\": 32, \"passing_receipts_checked\": 5, \"claims_checked\": 3}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "scripts/verify_evidence.py",
+        "evidence/2026-10-12-foundations-92286f"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"files_checked\": 63, \"passing_receipts_checked\": 12, \"claims_checked\": 20}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "scripts/verify_evidence.py",
+        "evidence/2026-10-12-projects-workflow-92286f"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"files_checked\": 19, \"passing_receipts_checked\": 2, \"claims_checked\": 4}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "scripts/verify_browser_evidence.py",
+        "evidence/2026-10-12-browser-workflow-92286f"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"files_checked\": 50, \"passing_receipts_checked\": 2, \"claims_checked\": 4}\n{\"status\": \"PASS\", \"browser_reports_checked\": 4, \"screenshot_hashes_checked\": 28, \"promoted_claims\": 4, \"counts_are_not_additive\": true}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-B",
+        "scripts/verify_projects_evidence.py",
+        "evidence/2026-10-12-projects-workflow-92286f"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"status\": \"PASS\", \"files_checked\": 19, \"passing_receipts_checked\": 2, \"claims_checked\": 4}\n{\"status\": \"PASS\", \"browser_groups\": 4, \"native_domain_tests\": 14, \"screenshots_checked\": 5, \"downloaded_backups_checked\": 3, \"raw_committed_backup_equal\": true, \"counts_are_not_additive\": true}\n",
+      "stderr": ""
+    }
+  ],
+  "read_only_files_checked": 184,
+  "read_only_unchanged": true
+}

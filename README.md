@@ -60,3 +60,4 @@ Counts across rows, repeated runs, subsets and historical revisions must not be 
 
 [Exact mathematical bounds and frame-size derivation](proofs/road94-exact-bounds.md) · [Reproduce the independent audit](scripts/verify_math.py) · [Verify the committed evidence files](scripts/verify_evidence.py).
 
+[Evidence checker repair and four-bundle revalidation](evidence/checker-integrity-08f294/README.md): 26 checker regressions pass after reproducing 16 false-PASS cases. This verifies the evidence chain; it adds no RoadOS runtime test count.

@@ -1,0 +1,35 @@
+{
+  "checker_source_commit": "dc8a5373607649d7e3487bf1a9b373f984b15319",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_verify_evidence.py",
+    "-v"
+  ],
+  "exit_code": 1,
+  "logs": {
+    "baseline.stderr.log": {
+      "bytes": 16009,
+      "sha256": "5b92962a94277757ba09830c612ef8092bbe27cd2f8fad5db21c0e02435a4908"
+    },
+    "baseline.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "regression_source_commit": "e6960894fcf949d013501291b9a95e04b137ec84",
+  "reported_counts": {
+    "errors": 0,
+    "failures": 16,
+    "passes": 10,
+    "tests": 26
+  },
+  "role": "Expected red control: new regression tests against unchanged original checker.",
+  "status": "FAIL"
+}

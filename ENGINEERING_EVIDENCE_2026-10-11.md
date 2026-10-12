@@ -40,3 +40,14 @@ Inspect committed raw logs, hash manifests and actual test runner coverage; chec
 - RoadOS [manifest gate for all 428 mockup HTML files](https://github.com/blackboxprogramming/road-os/commit/2b4e161cbbdc86cd2b8713dbfbba9e399546344e). Inspect test commands and logs before independent-pass labeling.
 - RoadOS [per-file standalone mockup qualification documentation](https://github.com/blackboxprogramming/road-os/commit/aeb5f4bc17e30176b0eb4e587a4e3d1588057d50). Documentation is not itself a runtime test result.
 - System [HTTP authority and strict JSON integration](https://github.com/blackboxprogramming/system/commit/a63b9142bf091fc23de814d68302434f0c317e96): commit reports 72,719 Python tests, 10 web tests, nine gates, and validated raw-log hashes. Historical result, not rerun here.
+
+## Follow-up: receipts, recovery, and negative controls
+
+- [RoadOS Files recovery](https://github.com/blackboxprogramming/road-os/commit/aadce1ae7ed1406353984fa0d70c57f69d131380): five pre-fix failures, 21 focused and 443 backend checks reported passing; refuses contradictory RECEIPTED evidence.
+- [RoadOS storage identity reservations](https://github.com/blackboxprogramming/road-os/commit/9082fc8b075dd9e893209033c5734275e60d45fe): eleven pre-fix failures, 61 focused storage and 608 product checks reported passing; Host PID-namespace issue noted.
+- [RoadOS receipt launch uncertainty](https://github.com/blackboxprogramming/road-os/commit/08985e5e7ae4e009450d1604644dd932d59ca800): errors in launch observation are recorded as unverified outcomes, rather than silently claimed nonexecution.
+- [RoadOS partial outcomes](https://github.com/blackboxprogramming/road-os/commit/5fb879f0142b671fa21511c5ea15838f5661db6c): Chromium regression recorded missing PARTIAL receipt after an acknowledged step; fix records uncertain outcomes.
+- [System service control-file integrity](https://github.com/blackboxprogramming/system/commit/45cd3061b9742191a98f0cc107806d85ddd5aef3): 1,000 new cases; 12,707 Python and 10 web tests reported passing, with three negative controls detected.
+- [RoadOS CI cost controls](https://github.com/blackboxprogramming/road-os/commit/ec1d3bd849ae82ee368ff5eaa26b2d7dc8e1e530): 24 scoped workflows checked, including removed-test negative control; hosted Actions not asserted passing.
+
+These are commit-reported verification claims; no tests were independently rerun in this ledger update.

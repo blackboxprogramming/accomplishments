@@ -177,3 +177,12 @@ Inspected [RoadOS PR #89 qualification.json](https://github.com/blackboxprogramm
 - This does **not** close the separate identity/private-key storage question identified in identity/store.js and db/files.js. File-storage symlink protections and key-store path handling are different boundaries.
 
 This is direct inspection of a pinned structured report, not an independent test rerun. Do not conflate scoped Files qualification with whole-system filesystem security.
+
+## Source-authored threat model and explicit limitations
+
+Directly inspected RoadOS documents at commit [6c33a9c7](https://github.com/blackboxprogramming/road-os/commit/6c33a9c710c5ec3ddeccb744b275257152c938eb):
+
+- [THREAT_MODEL.md](https://github.com/blackboxprogramming/road-os/blob/6c33a9c710c5ec3ddeccb744b275257152c938eb/impl/core/docs/THREAT_MODEL.md), Git blob 4fe807cc5606af13ae3bc65e8fe3212b8b060894. It names confused agents, evidence tampering, forged bundles, path escape, and clock skew; enumerates grant, revocation, receipt, proof-bundle, filesystem and halt controls with test identifiers D02–D12. It explicitly excludes operator-account compromise, readable/stolen private keys, compromised Node/OS/hardware, and broader clock manipulation.
+- [LIMITATIONS.md](https://github.com/blackboxprogramming/road-os/blob/6c33a9c710c5ec3ddeccb744b275257152c938eb/impl/core/docs/LIMITATIONS.md), Git blob 59ad916be2225a87329540a298966fecd84cf9d1. It characterizes the core as a single-machine, local-only sovereign vertical slice with file-based Ed25519 keys, SHA-256 signed evidence, one deterministic action, SQLite as rebuildable index, and an offline proof bundle. It explicitly does not claim hardware key custody, concurrent-writer safety, production security, formal verification, provider independence, or whole-system sovereignty.
+
+**Evidence conclusion:** documented, scoped threat modeling and honest limitation reporting are themselves engineering artifacts. The separate key-store and atomic-write findings must be evaluated against these declared trust assumptions. A missing defense against an explicitly excluded threat is a limitation, not automatically a violation of the stated v0.1 security contract. No independent execution or adversarial audit performed here.

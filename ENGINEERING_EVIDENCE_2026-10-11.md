@@ -51,3 +51,14 @@ Inspect committed raw logs, hash manifests and actual test runner coverage; chec
 - [RoadOS CI cost controls](https://github.com/blackboxprogramming/road-os/commit/ec1d3bd849ae82ee368ff5eaa26b2d7dc8e1e530): 24 scoped workflows checked, including removed-test negative control; hosted Actions not asserted passing.
 
 These are commit-reported verification claims; no tests were independently rerun in this ledger update.
+
+## Further findings: privacy, offline operation, and security
+
+- [RoadCode inspector avoids persisting raw questions and possible secrets](https://github.com/blackboxprogramming/road-os/commit/86afb2b122faf5353dd24a65332f0ab9ded9919a). Source change found; runtime outcome not independently rerun.
+- [Signed RoadTrip collaboration](https://github.com/blackboxprogramming/road-os/commit/5f7fb8dfc710f2e749067f258e24f77163d0af1a): participant-scoped reads, signed posting and uncertainty-safe retries; inspect detailed test evidence before promotion.
+- [Versioned offline Notes CRUD storage](https://github.com/blackboxprogramming/road-os/commit/9796042e91d185ac38c6136698b017a057633160). Implementation record, not live-device qualification.
+- [PitStop standalone offline browser QA](https://github.com/blackboxprogramming/road-os/commit/b2fa2e1807b7d9592da3490a4435e13a878d21a9). Browser-workflow evidence record.
+- [RoadC offline QFT](https://github.com/blackboxprogramming/roadc/commit/5685da2ca6c7444354f89477960fee2df7e78336): tests against all basis inputs for 1–4 qubits and inverse round trips recorded; this is simulation, not quantum hardware.
+- [System object-read security verification](https://github.com/blackboxprogramming/system/commit/352c2ec11adc3ea775ed01ba28c2ad17e6662c5a): final 92,763 Python and 10 JS results reported with failing reproductions and logs; no deployment claimed.
+
+Do not sum overlapping test suites. These are GitHub commit-derived statements, not independently executed tests.

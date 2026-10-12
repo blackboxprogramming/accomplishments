@@ -33,3 +33,10 @@ As of 2026-10-11. Evidence is GitHub commit metadata and reported local test out
 ## Next verification
 
 Inspect committed raw logs, hash manifests and actual test runner coverage; check whether tests are independent, generated, skipped or duplicated; rerun exact pinned revisions before labeling independently reproduced. Keep original evidence in its source repositories; this index only links to it.
+
+## Follow-up discovery: mockup and system coverage
+
+- RoadOS [428-file mockup coverage binding and 101-app consolidation](https://github.com/blackboxprogramming/road-os/commit/1dc87112e5cf47e7716639c6d5a16f2355ad900b). Inventory/coverage work, **not** proof that 428 apps are functional.
+- RoadOS [manifest gate for all 428 mockup HTML files](https://github.com/blackboxprogramming/road-os/commit/2b4e161cbbdc86cd2b8713dbfbba9e399546344e). Inspect test commands and logs before independent-pass labeling.
+- RoadOS [per-file standalone mockup qualification documentation](https://github.com/blackboxprogramming/road-os/commit/aeb5f4bc17e30176b0eb4e587a4e3d1588057d50). Documentation is not itself a runtime test result.
+- System [HTTP authority and strict JSON integration](https://github.com/blackboxprogramming/system/commit/a63b9142bf091fc23de814d68302434f0c317e96): commit reports 72,719 Python tests, 10 web tests, nine gates, and validated raw-log hashes. Historical result, not rerun here.

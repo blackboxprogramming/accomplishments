@@ -165,3 +165,15 @@ Directly inspected [mockups/standalone/notes-store.test.cjs](https://github.com/
 - HTML/script-looking strings are retained as inert storage data; this does **not** independently prove safe browser rendering.
 
 **Evidence grade:** test assertions directly inspected, but the corresponding test run and implementation have not been independently rerun or fully traced in this pass. Storage atomicity here refers to the mocked storage API behavior, not filesystem durability or power-loss safety. Source repository remains unchanged.
+
+## Scoped Files symlink qualification, distinct from key-store review
+
+Inspected [RoadOS PR #89 qualification.json](https://github.com/blackboxprogramming/road-os/blob/4d269942827662acd60890554801b22fbb6ea581/docs/verification/storage-node26-20261009/qualification.json) (Git blob 356b082a0c23f2f041276b7edae06ea166c2cf5e), for tested head 9971e3c8c83178cc3db722388f543b052c863211.
+
+- Node v26.11.1, Linux x86_64, 389/389 backend tests reported passing, zero skipped/cancelled; 184 source-file hashes recorded.
+- Path-recovery baseline: 13 pass, 9 fail; corrected intermediate: 22 pass, 0 fail.
+- Symlink regression baseline: 4 pass, 11 fail. The reviewed scope covers Files path preflight, rollback and recovery, including dangling links.
+- The report explicitly rates backend requirements PASS while production and browser qualification remain PARTIAL. Reviewer was a separate Codex source-inspection session, not a human approval.
+- This does **not** close the separate identity/private-key storage question identified in identity/store.js and db/files.js. File-storage symlink protections and key-store path handling are different boundaries.
+
+This is direct inspection of a pinned structured report, not an independent test rerun. Do not conflate scoped Files qualification with whole-system filesystem security.

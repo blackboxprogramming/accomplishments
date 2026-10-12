@@ -152,3 +152,16 @@ Directly inspected [RoadOS PR #95 verification report](https://github.com/blackb
 - The 412-case suite is a historical snapshot, overlapping later 443-case runs; **do not add these as distinct tests**.
 
 Evidence tier: committed structured report directly inspected, not a fresh rerun or independent byte-level verification of every log.
+
+## Notes storage failure-safety source audit (2026-10-11)
+
+Directly inspected [mockups/standalone/notes-store.test.cjs](https://github.com/blackboxprogramming/road-os/blob/175d1471303210cfd56cae7b19c14ab00158f893/mockups/standalone/notes-store.test.cjs), Git blob c15ac65015e57fe76da5d35680dba95cd86d5142. The file defines eight node:test scenarios using a memory-backed storage fixture:
+
+- Empty/versioned records; create/edit/reload/delete persistence.
+- Malformed/future-version records and unsafe identifiers fail without overwriting stored bytes.
+- Missing titles and over-limit bodies are rejected.
+- Simulated quota failure does not claim success or change previously stored data.
+- Versioned JSON export/import rejects duplicate IDs, invalid JSON and unsupported versions without corrupting existing notes.
+- HTML/script-looking strings are retained as inert storage data; this does **not** independently prove safe browser rendering.
+
+**Evidence grade:** test assertions directly inspected, but the corresponding test run and implementation have not been independently rerun or fully traced in this pass. Storage atomicity here refers to the mocked storage API behavior, not filesystem durability or power-loss safety. Source repository remains unchanged.

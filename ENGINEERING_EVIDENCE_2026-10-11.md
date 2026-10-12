@@ -220,3 +220,23 @@ A later, separate verification batch in this repository supersedes the earlier b
 - The D09 proof-bundle test appears in the explicit commands and in the full-suite raw output. This strengthens its execution provenance beyond the older 443-case historical TAP record.
 
 **Boundaries:** source exports contain the declared core dependency closure, not the full RoadOS repository. The test sets overlap and must not be summed. No full browser/fleet/production deployment, adversarial filesystem review, or third-party certification is implied. The separate foundational batch's old timeout record is retained as a failed attempt, not a contradiction of the subsequent successful complete-source qualification.
+
+## Road94 / BR37: independently recomputed finite-domain bounds (2026-10-12 UTC)
+
+Source and evidence directly inspected: [exact-bounds derivation](proofs/road94-exact-bounds.md), [enumeration verifier](scripts/verify_math.py), [execution receipt](evidence/2026-10-12-foundations-92286f/road94-independent-final.json), [raw result](evidence/2026-10-12-foundations-92286f/road94-independent-final.stdout.log), and RoadMath source pinned at [a78cc1d7](https://github.com/blackboxprogramming/roadmath/commit/a78cc1d75abd3fda144fdaed8fe3e83a4e120e7d).
+
+An additional independent **arithmetic-only** recomputation using exact arbitrary-precision integers (not the RoadMath pack/unpack implementation) confirmed:
+
+| Quantity | Independently recomputed |
+| --- | ---: |
+| Typed triple cardinality, 94 × 32 × 94 | 282,752 |
+| Unused 19-bit codewords, 2^19 − 282,752 | 241,536 |
+| 100 arbitrary triples: ceil(log2(282752^100)) | 1,811 bits |
+| 100 connected triples: ceil(log2(94 × (32 × 94)^100)) | 1,163 bits |
+| 72-byte overhead + byte-aligned arbitrary payload | 299 bytes |
+| 72-byte overhead + byte-aligned connected payload | 218 bytes |
+| Difference | 81 bytes, 81/299 ≈ 27.090301% |
+
+The existing pinned execution receipt records 282,752 rank and coordinate roundtrips, all 241,536 unused ranks rejected, and 32 invertible relation matrices checked. The actual [RoadMath typed relation source](https://github.com/blackboxprogramming/roadmath/blob/a78cc1d75abd3fda144fdaed8fe3e83a4e120e7d/scripts/road94_br37_relation.py) explicitly implements the rank/unrank map; [frame source](https://github.com/blackboxprogramming/roadmath/blob/a78cc1d75abd3fda144fdaed8fe3e83a4e120e7d/scripts/road94_relation_frames.py) uses a 40-byte header and a 32-byte unkeyed SHA-256 trailer; [automatic selection](https://github.com/blackboxprogramming/roadmath/blob/a78cc1d75abd3fda144fdaed8fe3e83a4e120e7d/scripts/road94_auto_frame.py) selects chain mode only for connected input when its byte width is smaller.
+
+**Scope:** The new arithmetic recomputation independently establishes the capacity and byte-size math under the stated fixed-width framing assumptions. The 282,752 roundtrip executions are from a separately preserved assistant-run receipt and were not rerun here. The 81-byte saving applies to the selected connected 100-edge workload relative to general block framing, not arbitrary data. Registry bytes in the audit are a fixture, not a certified semantic registry. Unkeyed SHA-256 is corruption detection, not authentication, encryption, novelty, or universal compression.

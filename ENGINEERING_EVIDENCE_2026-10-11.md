@@ -82,3 +82,17 @@ The following plaintext logs were directly fetched at pinned commits and their e
 - RoadOS [baseline.log](https://github.com/blackboxprogramming/road-os/blob/6c33a9c710c5ec3ddeccb744b275257152c938eb/docs/verification/storage-receipted-boundary-20261009/baseline.log): TAP 1..10, pass 5, fail 5, skipped 0; includes concrete AssertionError with expected 1 and actual 0; Git blob `ebb3564eaca46c5edd9ff216cc556d169e4decc3`.
 
 **Next audit:** byte-compare SHA-256 checksums to manifest, inspect the actual test assertions, and rerun pinned source in an isolated environment. The logged 160,639 cases include generated parameterizations; they are not 160,639 hand-authored independent behaviors.
+
+## Test-source inspection: assertions and test design
+
+This pass inspected actual source files at the same pinned revisions as the preserved logs, beyond commit messages and summary JSON.
+
+### RoadC real-file newline suite
+
+[tests/test_source_files_10000.py](https://github.com/blackboxprogramming/roadc/blob/8b76655212a1ace88c428a22a5b681222db727ec/tests/test_source_files_10000.py) (Git blob `4192c0a8ad3d4d7480328396a2ea475b9ca0a906`) defines **four parameterized test functions with 2,500 cases each**, rather than 10,000 separate test functions. It writes real UTF-8 bytes to temporary files, exercises `run_file`, `parse_file`, `check_file`, and the lexer/interpreter directly. Assertions check preserved CR/CRLF/LF inside strings, diagnostic location and nonexecution on malformed input, and equivalence of mixed-line-ending block tokenization/execution. Values vary with `i`; structural patterns repeat. This is substantial generated regression coverage but not 10,000 independent semantic specifications.
+
+### RoadOS signed receipt recovery
+
+[impl/core/tests/storage-receipted-boundary.test.js](https://github.com/blackboxprogramming/road-os/blob/6c33a9c710c5ec3ddeccb744b275257152c938eb/impl/core/tests/storage-receipted-boundary.test.js) (Git blob `aed73913b5bcbde78a6526d83ca3a0b642749916`) defines **ten focused test cases**: five successful restart paths (enroll/update/move/duplicate/archive) and five faults (missing receipt, unsigned alteration, signed disagreement, wrong ID, duplicate receipt). Tests invoke real CLI subprocesses through fixtures, deliberately interrupt at RECEIPTED, compare authoritative file snapshots, require refusal without mutations, restore original evidence, retry, and run storage verification. The signed-disagreement/duplicate fixtures can re-sign altered records using a local device key; they test consistency and recovery, not adversarial key compromise. SQLite index bytes are intentionally excluded from snapshot comparison.
+
+**Evidence tier:** source assertions inspected and linked to preserved logs. Neither suite was freshly executed during this inspection; no claim of deployment or universal correctness.

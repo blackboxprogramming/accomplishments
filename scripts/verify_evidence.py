@@ -37,14 +37,41 @@ def contained_path(root, relative, label):
     return resolved
 
 
-def verify(bundle):
+class VerifiedBundle:
+    """Expose only bytes checked against this bundle's supplied manifests."""
+
+    def __init__(self, root, repository, contents, artifacts):
+        self.root = root
+        self.repository = repository
+        self._contents = contents
+        self._artifacts = artifacts
+        self.summary = None
+
+    def read_bytes(self, relative):
+        contained_path(self.root, relative, 'evidence')
+        require(relative in self._contents, 'unhashed evidence reference: ' + relative)
+        return self._contents[relative]
+
+    def read_json(self, relative):
+        return read_json(self.read_bytes(relative))
+
+    def artifact_bytes(self, relative):
+        contained_path(self.repository, relative, 'repository artifact')
+        require(relative in self._artifacts, 'unhashed repository artifact reference: ' + relative)
+        return self._artifacts[relative]
+
+
+def verify_bundle(bundle):
     bundle = bundle.resolve()
     manifest = read_json(contained_path(bundle, 'manifest.json', 'evidence').read_bytes())
     repository = bundle.parents[1]
+    artifacts = {}
     for relative, digest in manifest.get('repository_artifacts', {}).items():
         path = contained_path(repository, relative, 'repository artifact')
-        require(hashlib.sha256(path.read_bytes()).hexdigest() == digest,
+        data = path.read_bytes()
+        require(hashlib.sha256(data).hexdigest() == digest,
                 'repository artifact mismatch: ' + relative)
+        artifacts[relative] = data
     files = manifest['files']
     require(isinstance(files, dict) and bool(files), 'missing evidence files')
     contents = {}
@@ -56,22 +83,18 @@ def verify(bundle):
         require(hashlib.sha256(data).hexdigest() == record['sha256'], 'hash mismatch: ' + relative)
         contents[relative] = data
 
-    def verified_bytes(relative):
-        contained_path(bundle, relative, 'evidence')
-        require(relative in contents, 'unhashed evidence reference: ' + relative)
-        return contents[relative]
-
+    verified = VerifiedBundle(bundle, repository, contents, artifacts)
     passing = manifest['pass_receipts']
     require(isinstance(passing, list) and bool(passing), 'missing passing receipts')
     receipts = {}
     for relative in passing:
-        receipt = read_json(verified_bytes(relative))
+        receipt = verified.read_json(relative)
         require(relative not in receipts, 'duplicate passing receipt: ' + relative)
         require(receipt['status'] == 'PASS' and type(receipt['exit_code']) is int
                 and receipt['exit_code'] == 0, 'nonpassing receipt: ' + relative)
         require(receipt['source_integrity'] == {'before': [], 'after': []},
                 'altered source: ' + relative)
-        source = read_json(verified_bytes(receipt['source_export_manifest']))
+        source = verified.read_json(receipt['source_export_manifest'])
         require(source['source_commit'] == receipt['source_commit'], 'revision mismatch: ' + relative)
         require(source['repository'] == receipt['repository'], 'source repository mismatch: ' + relative)
         require(isinstance(source['files'], dict) and bool(source['files'])
@@ -81,13 +104,13 @@ def verify(bundle):
         logs = receipt['logs']
         require(isinstance(logs, dict) and bool(logs), 'missing receipt logs: ' + relative)
         for name, record in logs.items():
-            data = verified_bytes(name)
+            data = verified.read_bytes(name)
             require(type(record['bytes']) is int and len(data) == record['bytes'],
                     'receipt log size mismatch: ' + name)
             require(hashlib.sha256(data).hexdigest() == record['sha256'],
                     'receipt log mismatch: ' + name)
         receipts[relative] = receipt
-    claims = read_json(verified_bytes('claims.json'))['claims']
+    claims = verified.read_json('claims.json')['claims']
     require(isinstance(claims, list) and bool(claims), 'missing claims')
     require(len({c['id'] for c in claims}) == len(claims), 'duplicate claim ID')
     for claim in claims:
@@ -102,8 +125,13 @@ def verify(bundle):
             if 'repository' in claim:
                 require(claim['repository'] == receipt['repository'],
                         'claim repository mismatch: ' + claim['id'])
-    return {'status': 'PASS', 'files_checked': len(files),
-            'passing_receipts_checked': len(receipts), 'claims_checked': len(claims)}
+    verified.summary = {'status': 'PASS', 'files_checked': len(files),
+                        'passing_receipts_checked': len(receipts), 'claims_checked': len(claims)}
+    return verified
+
+
+def verify(bundle):
+    return verify_bundle(bundle).summary
 
 
 def main():

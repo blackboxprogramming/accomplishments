@@ -53,8 +53,8 @@
     "bundle-revalidation.json"
   ],
   "repository_artifacts": {
-    "evidence/2026-10-12-foundations-92286f/manifest.json": "e0df73e5642d83e8910207d816fbefbcb2c0f4ad2d09b5fe22e10104166a2475",
-    "scripts/verify_evidence.py": "ffb7320160719ef6197d84d736a9f53b3de869c680b698cc3d7d6d494cbcf19d",
+    "evidence/2026-10-12-foundations-92286f/manifest.json": "df462814d17fecf75b9a42e57556a8411e38ea50dc2c3b40700f6d0de0f5c2e0",
+    "scripts/verify_evidence.py": "f3828fb0bfb002cd60e38174aa79ae4a85da39a9e9b3669241b97a12a3f10d54",
     "tests/test_verify_evidence.py": "cea6b574b9827468ef2b946e585643d0a3fd9b0e527685f06fbe5cb73fe6e736"
   },
   "schema": "blackroad-evidence-bundle/1",

@@ -1,0 +1,92 @@
+{
+  "failed_receipts": [],
+  "files": {
+    "README.md": {
+      "bytes": 1774,
+      "sha256": "febc3e635a3fa89f417e01071946730e936af6a86136af5e4442c1675aca2cbe"
+    },
+    "captures/browser-report.json": {
+      "bytes": 73109,
+      "sha256": "ab5eedf18bc75fcd7843b7ad30ca591605ec0b64fa6e7b4161a246f5f91eb2eb"
+    },
+    "captures/committed-backup-preview.jpg": {
+      "bytes": 218598,
+      "sha256": "b21768c114aa3bd0cd09cc0ed47e986ae90a4ca2c45d59127fe8f5bff4e0750f"
+    },
+    "captures/downloads/001-workspace.json": {
+      "bytes": 3228,
+      "sha256": "ad1262155fe3ccd66b3df70d80e006bf5045371374c2150e255574a829b5e645"
+    },
+    "captures/downloads/002-workspace.json": {
+      "bytes": 3228,
+      "sha256": "ad1262155fe3ccd66b3df70d80e006bf5045371374c2150e255574a829b5e645"
+    },
+    "captures/downloads/003-workspace.json": {
+      "bytes": 3989,
+      "sha256": "32f9fc694527bf48560acc4f06611ba0e9cedfe6fa9942310fcbd6a272aae6c9"
+    },
+    "captures/nested-project-preview.jpg": {
+      "bytes": 215655,
+      "sha256": "0b5d8c8e04f7e9224acab2976126908779d7d54ab687f524eb84f5ba1bbca0b7"
+    },
+    "captures/raw-committed-workspace.json": {
+      "bytes": 3990,
+      "sha256": "7ca4c67449b6daf48eb62a44c64a1ddf68b5d015b3437bd7f3145520673c2ea8"
+    },
+    "captures/roadwork-continuity-preview.jpg": {
+      "bytes": 220401,
+      "sha256": "2224836dd1373bd978b7dba440e68dacbcc1aa1229c78affdf7bd2e208e2ccb1"
+    },
+    "captures/roadwork-native-preview.jpg": {
+      "bytes": 198351,
+      "sha256": "598894eb5ceba6a4273d7517b57c16e37dbe9e6e07ce2a4fecb717e4ae1b7dec"
+    },
+    "captures/roadwork-unavailable-preview.jpg": {
+      "bytes": 221736,
+      "sha256": "35b238218c1960a5a67d01291613f91b7186470936b5e4441a05658e5452f19e"
+    },
+    "claims.json": {
+      "bytes": 3045,
+      "sha256": "88799be43502effd14b743a07fc7c18d4a47363286105edb59e8ca4d33750bda"
+    },
+    "projects-browser.json": {
+      "bytes": 1827,
+      "sha256": "bfd0d067106aa17bd4b1de45ae61bc609d7766c5d7866179e51e06720a6c5096"
+    },
+    "projects-browser.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "projects-browser.stdout.log": {
+      "bytes": 347,
+      "sha256": "489f6b644bd60c76566c2ef299e7596fd55e7cac6e076c927ef69ab1e687c0e9"
+    },
+    "projects-domain.json": {
+      "bytes": 1778,
+      "sha256": "3119094b8edb6ee12d92736779c3ed827b73c8048945c2d3ba42ce4b6c70e5bc"
+    },
+    "projects-domain.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "projects-domain.stdout.log": {
+      "bytes": 1346,
+      "sha256": "f7f0d4d2ab65432a4b29d5f26a9e15a11bccb0fe9aed6a0881c1cce017332488"
+    },
+    "sources/road-os.json": {
+      "bytes": 22590,
+      "sha256": "980d3a5617ce01f1cd4bc05946864229a02485540d068f72c6c4b8d4d9d91647"
+    }
+  },
+  "pass_receipts": [
+    "projects-domain.json",
+    "projects-browser.json"
+  ],
+  "repository_artifacts": {
+    "PROJECTS_WORKFLOW_2026-10-12.md": "f65644990bf2a153f6b414392038b4263c04b291b7ffcc85f1dede7234dd309c",
+    "scripts/projects_workflow_runner.cjs": "5b0193da2e2d0f5c6d782530a19a6c5eda2dd91938a5b3c5d019e44b4fc015e9",
+    "scripts/verify_projects_evidence.py": "3c0bf32dbac816376baaa0de37a48997544d64447cac3c80ff2615a6a1dd9d01"
+  },
+  "schema": "blackroad-evidence-bundle/1",
+  "scope": "Native Projects/Pipeline domain checks and Chromium workflows on real same-origin IndexedDB; injected refusal/rollback cases and committed backup observations, not system authority."
+}

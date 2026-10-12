@@ -1,0 +1,56 @@
+{
+  "command": [
+    "/workspace/scratch/92286f010d1b/toolchains/node26/node-v26.11.1-linux-x64/bin/node",
+    "--test",
+    "desktop/apps/tests/roadwork-core.test.cjs",
+    "desktop/apps/tests/roadwork-home.test.cjs"
+  ],
+  "elapsed_seconds": 0.229191,
+  "environment": {
+    "node": "v26.11.1",
+    "node_binary": "/workspace/scratch/92286f010d1b/toolchains/node26/node-v26.11.1-linux-x64/bin/node",
+    "os": "Linux",
+    "packages_installed_by_this_run": false,
+    "python": "3.12.14"
+  },
+  "error": null,
+  "exit_code": 0,
+  "exported_files": 92,
+  "finished_at_utc": "2026-10-12T05:18:24.354597+00:00",
+  "logs": {
+    "projects-domain.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "projects-domain.stdout.log": {
+      "bytes": 1346,
+      "sha256": "f7f0d4d2ab65432a4b29d5f26a9e15a11bccb0fe9aed6a0881c1cce017332488"
+    }
+  },
+  "name": "projects-domain",
+  "reported_counts": {
+    "node": {
+      "cancelled": 0,
+      "fail": 0,
+      "pass": 14,
+      "skipped": 0,
+      "tests": 14,
+      "todo": 0
+    },
+    "pytest": {},
+    "unittest_per_stage": []
+  },
+  "repository": "blackboxprogramming/road-os",
+  "repository_tree_sha": "ad792f26d43d926e4bd3111fba468b01fbed3bd3",
+  "schema": "blackroad-accomplishment-verification/1",
+  "scope": "Only the recorded command at the pinned source; no hosted CI, deployment or comparative claim.",
+  "source_commit": "8995eb202837e8cb876210b7e418fd537a937740",
+  "source_export_manifest": "sources/road-os.json",
+  "source_integrity": {
+    "after": [],
+    "before": []
+  },
+  "started_at_utc": "2026-10-12T05:18:24.125412+00:00",
+  "status": "PASS",
+  "working_directory": "/workspace/scratch/92286f010d1b/verification-projects/road-os"
+}

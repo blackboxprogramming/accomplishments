@@ -6,11 +6,19 @@ BlackRoad has working, tested foundations for a local-first computing system: a 
 
 **Why at all?** This repository lets Alexa and anyone evaluating BlackRoad trace a claim to its source and observed result. It makes scattered logs and changing revisions inspectable before someone relies on a capability.
 
-**Why now?** Recent merges and fresh execution changed what can be demonstrated. Core qualification resolves a recorded timeout; the browser follow-up adds real Chromium interaction and layout evidence that the backend checks did not establish.
+**Why now?** Recent merges and fresh execution changed what can be demonstrated. Source-pinned runs now cover complete core qualification, real Chromium continuity, and native Projects/Pipeline storage and backup behavior that backend checks alone did not establish.
 
 **Why this?** A GitHub evidence index keeps source ownership and history in their existing repositories while linking claims to pinned revisions, raw logs and reproducible checks. Each result retains its tested scope and trade-offs.
 
 **What next?** Read a result below, inspect its receipt, and rerun its stated checks in a trusted checkout. The evidence checker reads the committed bundle without changing runtime state.
+
+## Native Projects and Pipeline — October 12, 2026
+
+**14 native domain/home tests and 4 Chromium check groups passed.** Real Projects, linked tasks, decisions and Pipeline follow-up history survive reload. Two-window stale edits are refused; an injected failed write rolls back without partial state. Backups read committed IndexedDB, preserve unsaved drafts and reject malformed or missing saved data.
+
+An independent nested-project check read the raw browser database and verified five linked tasks, one completion, saved notes, pin/context continuity, and exact equality with its actual downloaded backup. [Report and screenshots](PROJECTS_WORKFLOW_2026-10-12.md) · [Four new records](evidence/2026-10-12-projects-workflow-92286f/claims.json) · [Receipts and three JSON downloads](evidence/2026-10-12-projects-workflow-92286f/README.md).
+
+Local browser work only: no live Roadie, Salesforce sync, signed system authority or backup-import qualification follows. No hosted Actions were started; source and upstream assertions stayed unchanged.
 
 ## Real browser workflow — October 12, 2026 UTC
 

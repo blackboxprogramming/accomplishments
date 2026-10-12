@@ -1,0 +1,12 @@
+✔ roadwork-browser.cjs (2892.458325ms)
+✔ roadwork-storage-browser.cjs (1115.483558ms)
+✔ nested Projects: raw IndexedDB, reload and committed backup (1837.560534ms)
+✔ resource, download and network observations (0.572756ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5893.613692

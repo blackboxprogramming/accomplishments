@@ -1,0 +1,137 @@
+{
+  "format": "roados-workspace",
+  "version": 1,
+  "revision": 4,
+  "files": [
+    {
+      "id": "root-folder-0",
+      "path": "/",
+      "kind": "folder",
+      "content": "",
+      "mime": "",
+      "encoding": "text",
+      "updatedAt": "2026-10-12T05:20:23.400Z",
+      "trashedAt": null
+    },
+    {
+      "id": "root-folder-1",
+      "path": "/Documents",
+      "kind": "folder",
+      "content": "",
+      "mime": "",
+      "encoding": "text",
+      "updatedAt": "2026-10-12T05:20:23.400Z",
+      "trashedAt": null
+    },
+    {
+      "id": "root-folder-2",
+      "path": "/Notes",
+      "kind": "folder",
+      "content": "",
+      "mime": "",
+      "encoding": "text",
+      "updatedAt": "2026-10-12T05:20:23.400Z",
+      "trashedAt": null
+    },
+    {
+      "id": "root-folder-3",
+      "path": "/Projects",
+      "kind": "folder",
+      "content": "",
+      "mime": "",
+      "encoding": "text",
+      "updatedAt": "2026-10-12T05:20:23.400Z",
+      "trashedAt": null
+    },
+    {
+      "id": "root-folder-4",
+      "path": "/Downloads",
+      "kind": "folder",
+      "content": "",
+      "mime": "",
+      "encoding": "text",
+      "updatedAt": "2026-10-12T05:20:23.400Z",
+      "trashedAt": null
+    },
+    {
+      "id": "846b30a8-10fb-4778-ad45-1da888760dc5",
+      "path": "/Documents/Project-846b30a8-10fb-4778-ad45-1da888760dc5.json",
+      "kind": "file",
+      "content": "{\"format\":\"blackroad-project\",\"version\":1,\"title\":\"Verified native Project\",\"brief\":\"Keep actual tasks and committed notes inside the right Computer.\",\"template\":\"build\",\"context\":\"Retained project decision 💚\\n<script>neverExecute()</script>\",\"operator\":\"human\",\"createdAt\":\"2026-10-12T05:20:23.634Z\",\"taskIds\":[\"2acb64de-be74-4970-b775-a47477a10676\",\"ebfc69c9-0010-4850-bf82-32619bdd85f7\",\"a08c65f1-8067-4ca0-914b-ff47ac89cf9f\",\"fba27833-5a03-4329-a8f9-08b6f30460d2\",\"2f0a2dad-50ee-42ea-bbc3-b305efdcf2e3\"]}",
+      "mime": "application/vnd.blackroad.project+json",
+      "encoding": "text",
+      "updatedAt": "2026-10-12T05:20:23.970Z",
+      "trashedAt": null,
+      "revision": 3
+    }
+  ],
+  "tasks": [
+    {
+      "id": "2acb64de-be74-4970-b775-a47477a10676",
+      "title": "Define the smallest useful result",
+      "done": true,
+      "due": ""
+    },
+    {
+      "id": "ebfc69c9-0010-4850-bf82-32619bdd85f7",
+      "title": "Make a first version",
+      "done": false,
+      "due": ""
+    },
+    {
+      "id": "a08c65f1-8067-4ca0-914b-ff47ac89cf9f",
+      "title": "Check it against the brief",
+      "done": false,
+      "due": ""
+    },
+    {
+      "id": "fba27833-5a03-4329-a8f9-08b6f30460d2",
+      "title": "Share it and record feedback",
+      "done": false,
+      "due": ""
+    },
+    {
+      "id": "2f0a2dad-50ee-42ea-bbc3-b305efdcf2e3",
+      "title": "Inspect the committed backup",
+      "done": false,
+      "due": ""
+    }
+  ],
+  "events": [],
+  "receipts": [
+    {
+      "id": "local-1-846b30a8-10fb-4778-ad45-1da888760dc5",
+      "at": "2026-10-12T05:20:23.651Z",
+      "actor": "human:roadwork-local",
+      "operation": "project-create",
+      "detail": "Verified native Project"
+    },
+    {
+      "id": "local-2-846b30a8-10fb-4778-ad45-1da888760dc5",
+      "at": "2026-10-12T05:20:23.773Z",
+      "actor": "human:roadwork-local",
+      "operation": "project-task-toggle",
+      "detail": "Define the smallest useful result"
+    },
+    {
+      "id": "local-3-846b30a8-10fb-4778-ad45-1da888760dc5",
+      "at": "2026-10-12T05:20:23.890Z",
+      "actor": "human:roadwork-local",
+      "operation": "project-context",
+      "detail": "Verified native Project"
+    },
+    {
+      "id": "local-4-846b30a8-10fb-4778-ad45-1da888760dc5",
+      "at": "2026-10-12T05:20:23.970Z",
+      "actor": "human:roadwork-local",
+      "operation": "project-task-add",
+      "detail": "Inspect the committed backup"
+    }
+  ],
+  "messages": [],
+  "settings": {
+    "name": "BlackRoad",
+    "wallpaper": "white",
+    "cloudEnabled": false
+  }
+}

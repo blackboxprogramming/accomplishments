@@ -1,0 +1,52 @@
+{
+  "schema": "blackroad-accomplishments/1",
+  "counts_are_not_additive": true,
+  "claims": [
+    {
+      "id": "BR-A028",
+      "title": "Native Projects and linked task continuity",
+      "claim": "A native project, linked tasks and decisions persist across reload and are available in the desktop and approved nested Computer. An independent raw IndexedDB read verifies five linked tasks, one completion, exact notes, revisions and pin/context continuity.",
+      "status": "PASS",
+      "receipts": [
+        "projects-browser.json",
+        "projects-domain.json"
+      ],
+      "source_commit": "8995eb202837e8cb876210b7e418fd537a937740",
+      "limits": "Same-origin browser-local records. Earlier title lists stay separate; no live task execution, migration, cross-device sync or authenticated authority is established."
+    },
+    {
+      "id": "BR-A029",
+      "title": "Native local Pipeline follow-up continuity",
+      "claim": "The real browser creates a synthetic opportunity, records dated follow-up history, preserves another unsaved comment, saves it and recovers the data after reload and nested-Computer navigation. Selected domain input and stale-edit checks pass.",
+      "status": "PASS",
+      "receipts": [
+        "projects-browser.json",
+        "projects-domain.json"
+      ],
+      "source_commit": "8995eb202837e8cb876210b7e418fd537a937740",
+      "limits": "Synthetic local CRM records only; no actual customer contact, Salesforce integration, regulated decision or forecasting assurance."
+    },
+    {
+      "id": "BR-A030",
+      "title": "IndexedDB stale-write refusal and transactional rollback",
+      "claim": "Two dirty windows preserve newer committed project work when stale task/notes saves are refused. Two competing transactions produce one success and one stale rejection. An injected put failure leaves saved state/activity unchanged; six present malformed values are rejected and retained.",
+      "status": "PASS",
+      "receipts": [
+        "projects-browser.json"
+      ],
+      "source_commit": "8995eb202837e8cb876210b7e418fd537a937740",
+      "limits": "Native IndexedDB at one origin; the quota-like failure is injected at the write API. No actual disk exhaustion, crash durability, network or multi-device concurrency result."
+    },
+    {
+      "id": "BR-A031",
+      "title": "Committed workspace backup with retained unsaved drafts",
+      "claim": "Actual downloaded backups read committed state, include another window's saved edit, retain stale/unsaved drafts, coalesce competing export clicks, and refuse malformed/missing stored data. Independent nested backup JSON exactly equals raw committed IndexedDB and leaves it unchanged.",
+      "status": "PASS",
+      "receipts": [
+        "projects-browser.json"
+      ],
+      "source_commit": "8995eb202837e8cb876210b7e418fd537a937740",
+      "limits": "Backup export/readback only. Three synthetic downloads retained; no verified import/restore feature, signed receipt authority or plaintext-data security certification."
+    }
+  ]
+}

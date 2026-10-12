@@ -1,0 +1,22 @@
+✔ earlier project titles retain exact text, order and duplicates without migration (1.888985ms)
+✔ earlier project titles reject malformed, future and mixed records (0.416139ms)
+✔ ports project/task records from the earlier RoadOS computer (2.550695ms)
+✔ context revisions reject stale writes and do not overwrite originals (1.584505ms)
+✔ shared project tasks are bounded and completion is an actual state change (1.965971ms)
+✔ CRM opportunities share the same state and strip unsupported authority (1.497023ms)
+✔ CRM follow-up creates durable history, preserves it on save and rejects stale edits (1.430031ms)
+✔ invalid and denied effects are never committed (1.403041ms)
+✔ unreadable business records remain untouched and visible as unavailable (0.783924ms)
+✔ task completion advances project revision and rejects stale task and notes saves (1.456761ms)
+✔ task completion requires the observed project revision (0.872769ms)
+✔ dashboard reports saved tasks and active files, with no invented presence or empty progress (2.971661ms)
+✔ unreadable state is unavailable instead of a healthy zero dashboard (0.405193ms)
+✔ unreadable project contents are surfaced without modifying saved bytes (0.453265ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 109.110542

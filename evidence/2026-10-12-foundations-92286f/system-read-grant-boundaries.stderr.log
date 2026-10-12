@@ -1,0 +1,26 @@
+test_changed_object_does_not_invalidate_or_rewrite_historical_read_evidence (test_object_read.ObjectReadTests.test_changed_object_does_not_invalidate_or_rewrite_historical_read_evidence) ... ok
+test_corrupt_grant_store_fails_closed_even_with_a_matching_grant (test_object_read.ObjectReadTests.test_corrupt_grant_store_fails_closed_even_with_a_matching_grant) ... ok
+test_corrupt_or_symlinked_identity_cannot_authorize_a_read (test_object_read.ObjectReadTests.test_corrupt_or_symlinked_identity_cannot_authorize_a_read) ... ok
+test_denied_read_hides_contents_and_does_not_open_the_target (test_object_read.ObjectReadTests.test_denied_read_hides_contents_and_does_not_open_the_target) ... ok
+test_each_read_rechecks_the_live_grant (test_object_read.ObjectReadTests.test_each_read_rechecks_the_live_grant) ... ok
+test_evidence_is_not_written_through_a_symlinked_runtime (test_object_read.ObjectReadTests.test_evidence_is_not_written_through_a_symlinked_runtime) ... ok
+test_grant_must_match_identity_capability_and_object (test_object_read.ObjectReadTests.test_grant_must_match_identity_capability_and_object) ... ok
+test_granted_read_returns_the_object_and_matching_content_evidence (test_object_read.ObjectReadTests.test_granted_read_returns_the_object_and_matching_content_evidence) ... ok
+test_history_orders_actual_instants_with_stable_ties (test_object_read.ObjectReadTests.test_history_orders_actual_instants_with_stable_ties) ... ok
+test_history_preserves_recorded_action_and_source_bytes (test_object_read.ObjectReadTests.test_history_preserves_recorded_action_and_source_bytes) ... ok
+test_history_rejects_invalid_instants_and_recovers (test_object_read.ObjectReadTests.test_history_rejects_invalid_instants_and_recovers) ... ok
+test_history_rejects_linked_and_corrupt_records (test_object_read.ObjectReadTests.test_history_rejects_linked_and_corrupt_records) ... ok
+test_history_rejects_missing_store_and_recovers (test_object_read.ObjectReadTests.test_history_rejects_missing_store_and_recovers) ... ok
+test_missing_or_linked_permission_directories_fail_closed (test_object_read.ObjectReadTests.test_missing_or_linked_permission_directories_fail_closed) ... ok
+test_path_ids_are_rejected_before_reading_or_writing (test_object_read.ObjectReadTests.test_path_ids_are_rejected_before_reading_or_writing) ... ok
+test_read_cannot_be_authorized_by_a_remapped_registry_capability (test_object_read.ObjectReadTests.test_read_cannot_be_authorized_by_a_remapped_registry_capability) ... ok
+test_receipt_write_failure_returns_no_contents_or_success (test_object_read.ObjectReadTests.test_receipt_write_failure_returns_no_contents_or_success) ... ok
+test_symlink_and_special_file_targets_are_not_read (test_object_read.ObjectReadTests.test_symlink_and_special_file_targets_are_not_read) ... ok
+test_symlinked_object_directory_is_not_followed (test_object_read.ObjectReadTests.test_symlinked_object_directory_is_not_followed) ... ok
+test_unavailable_evidence_stores_leave_no_partial_records (test_object_read.ObjectReadTests.test_unavailable_evidence_stores_leave_no_partial_records) ... ok
+test_unavailable_or_invalid_object_records_a_failed_read (test_object_read.ObjectReadTests.test_unavailable_or_invalid_object_records_a_failed_read) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 6.273s
+
+OK

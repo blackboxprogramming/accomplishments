@@ -1,0 +1,131 @@
+Running vectors
+PASS: 14 positive and 11 negative vectors reproduce exactly
+Running test_road94_br37_relation.py
+test_all_typed_triples (__main__.RelationCodecTests.test_all_typed_triples) ... ok
+test_all_unused_nineteen_bit_ranks_rejected (__main__.RelationCodecTests.test_all_unused_nineteen_bit_ranks_rejected) ... ok
+test_cli_encode_decode_and_pack (__main__.RelationCodecTests.test_cli_encode_decode_and_pack) ... ok
+test_cli_rejects_invalid_relation_and_rank_under_optimization (__main__.RelationCodecTests.test_cli_rejects_invalid_relation_and_rank_under_optimization) ... ok
+test_entire_fixed_width_wire_domain (__main__.RelationCodecTests.test_entire_fixed_width_wire_domain) ... ok
+test_global_rank_is_contiguous (__main__.RelationCodecTests.test_global_rank_is_contiguous) ... ok
+test_invalid_types_and_boundaries (__main__.RelationCodecTests.test_invalid_types_and_boundaries) ... ok
+test_modulo94_sum_difference_is_not_invertible (__main__.RelationCodecTests.test_modulo94_sum_difference_is_not_invertible) ... ok
+test_relation_cannot_be_inferred_from_residue_pair (__main__.RelationCodecTests.test_relation_cannot_be_inferred_from_residue_pair) ... ok
+test_residue_pair_does_not_preserve_sheets (__main__.RelationCodecTests.test_residue_pair_does_not_preserve_sheets) ... ok
+test_source_boundary_example (__main__.RelationCodecTests.test_source_boundary_example) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 4.542s
+
+OK
+Running test_road94_relation_blocks.py
+test_cli (__main__.RelationBlockTests.test_cli) ... ok
+test_deterministic_mixed_blocks (__main__.RelationBlockTests.test_deterministic_mixed_blocks) ... ok
+test_every_possible_triple_in_second_position (__main__.RelationBlockTests.test_every_possible_triple_in_second_position) ... ok
+test_every_single_triple_byte_encoding (__main__.RelationBlockTests.test_every_single_triple_byte_encoding) ... ok
+test_every_supported_length_and_bit_bound (__main__.RelationBlockTests.test_every_supported_length_and_bit_bound) ... ok
+test_exact_hundred_relation_size (__main__.RelationBlockTests.test_exact_hundred_relation_size) ... ok
+test_input_is_not_mutated (__main__.RelationBlockTests.test_input_is_not_mutated) ... ok
+test_literal_vectors (__main__.RelationBlockTests.test_literal_vectors) ... ok
+test_rejects_malformed_input (__main__.RelationBlockTests.test_rejects_malformed_input) ... ok
+test_rejects_noncanonical_lengths_padding_and_unused_rank (__main__.RelationBlockTests.test_rejects_noncanonical_lengths_padding_and_unused_rank) ... ok
+test_valid_alteration_is_not_authenticated (__main__.RelationBlockTests.test_valid_alteration_is_not_authenticated) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 3.657s
+
+OK
+Running test_road94_relation_chains.py
+test_actual_hundred_edge_payload_comparison (__main__.RelationChainTests.test_actual_hundred_edge_payload_comparison) ... ok
+test_all_adjacent_endpoint_combinations (__main__.RelationChainTests.test_all_adjacent_endpoint_combinations) ... ok
+test_cli (__main__.RelationChainTests.test_cli) ... ok
+test_disconnected_blocks_remain_valid_in_general_codec (__main__.RelationChainTests.test_disconnected_blocks_remain_valid_in_general_codec) ... ok
+test_empty_and_literal_chain (__main__.RelationChainTests.test_empty_and_literal_chain) ... ok
+test_every_second_edge_after_three_anchors (__main__.RelationChainTests.test_every_second_edge_after_three_anchors) ... ok
+test_every_single_edge_matches_existing_codec (__main__.RelationChainTests.test_every_single_edge_matches_existing_codec) ... ok
+test_every_supported_length_and_capacity_boundary (__main__.RelationChainTests.test_every_supported_length_and_capacity_boundary) ... ok
+test_independent_polynomial_oracle_for_mixed_chains (__main__.RelationChainTests.test_independent_polynomial_oracle_for_mixed_chains) ... ok
+test_no_mutation_and_no_authentication (__main__.RelationChainTests.test_no_mutation_and_no_authentication) ... ok
+test_rejects_malformed_inputs (__main__.RelationChainTests.test_rejects_malformed_inputs) ... ok
+test_rejects_wrong_lengths_and_padding (__main__.RelationChainTests.test_rejects_wrong_lengths_and_padding) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 3.152s
+
+OK
+Running test_road94_relation_frames.py
+test_all_single_bit_corruptions_in_two_frames (__main__.RelationFrameTests.test_all_single_bit_corruptions_in_two_frames) ... ok
+test_all_truncation_boundaries_and_trailing_bytes (__main__.RelationFrameTests.test_all_truncation_boundaries_and_trailing_bytes) ... ok
+test_bad_types_and_resource_limits (__main__.RelationFrameTests.test_bad_types_and_resource_limits) ... ok
+test_cli_and_optimized_error_paths (__main__.RelationFrameTests.test_cli_and_optimized_error_paths) ... ok
+test_empty_modes_are_distinct (__main__.RelationFrameTests.test_empty_modes_are_distinct) ... ok
+test_every_supported_count_and_both_modes (__main__.RelationFrameTests.test_every_supported_count_and_both_modes) ... ok
+test_hundred_relation_total_sizes (__main__.RelationFrameTests.test_hundred_relation_total_sizes) ... ok
+test_literal_header_layout_and_independent_checksum (__main__.RelationFrameTests.test_literal_header_layout_and_independent_checksum) ... ok
+test_recomputed_checksum_is_not_authentication (__main__.RelationFrameTests.test_recomputed_checksum_is_not_authentication) ... ok
+test_registry_expectation_cannot_be_taken_from_frame (__main__.RelationFrameTests.test_registry_expectation_cannot_be_taken_from_frame) ... ok
+test_resealed_invalid_headers_and_payloads_are_rejected (__main__.RelationFrameTests.test_resealed_invalid_headers_and_payloads_are_rejected) ... ok
+test_standard_sha256_anchor (__main__.RelationFrameTests.test_standard_sha256_anchor) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 3.773s
+
+OK
+Running test_road94_frame_vectors.py
+test_cli_vectors (__main__.FrameVectors.test_cli_vectors) ... ok
+test_independent_construction (__main__.FrameVectors.test_independent_construction) ... ok
+test_negative_vectors (__main__.FrameVectors.test_negative_vectors) ... ok
+test_positive_vectors (__main__.FrameVectors.test_positive_vectors) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 2.630s
+
+OK
+Running test_road94_auto_frame.py
+test_all_supported_connected_counts_choose_minimum (__main__.AutomaticFrames.test_all_supported_connected_counts_choose_minimum) ... ok
+test_every_two_edge_adjacency_pair_and_no_repair (__main__.AutomaticFrames.test_every_two_edge_adjacency_pair_and_no_repair) ... ok
+test_invalid_inputs_never_fall_back_silently (__main__.AutomaticFrames.test_invalid_inputs_never_fall_back_silently) ... ok
+test_only_selected_frame_is_encoded (__main__.AutomaticFrames.test_only_selected_frame_is_encoded) ... ok
+test_optimized_cli_reports_chosen_mode_and_invalid_input (__main__.AutomaticFrames.test_optimized_cli_reports_chosen_mode_and_invalid_input) ... ok
+test_portable_inputs_and_hundred_relation_saving (__main__.AutomaticFrames.test_portable_inputs_and_hundred_relation_saving) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 2.503s
+
+OK
+Running test_road94_frame_io.py
+test_binary_roundtrips_and_exact_existing_frames (__main__.FrameIO.test_binary_roundtrips_and_exact_existing_frames) ... ok
+test_corrupt_truncated_trailing_wrong_registry_frames_have_no_stdout (__main__.FrameIO.test_corrupt_truncated_trailing_wrong_registry_frames_have_no_stdout) ... ok
+test_exact_input_limits_and_bounded_read (__main__.FrameIO.test_exact_input_limits_and_bounded_read) ... ok
+test_forced_modes_and_disconnected_chain_rejection (__main__.FrameIO.test_forced_modes_and_disconnected_chain_rejection) ... ok
+test_invalid_json_encoding_domain_and_registry_have_no_stdout (__main__.FrameIO.test_invalid_json_encoding_domain_and_registry_have_no_stdout) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 4.748s
+
+OK
+Running test_verify_road94.py
+test_failed_child_stops_before_later_suites (__main__.VerificationFailures.test_failed_child_stops_before_later_suites) ... ok
+test_missing_node_never_reports_success (__main__.VerificationFailures.test_missing_node_never_reports_success) ... ok
+test_missing_source_never_reports_success (__main__.VerificationFailures.test_missing_source_never_reports_success) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.114s
+
+OK
+Running node_interoperability
+✔ all 14 positive portable vectors encode and decode byte-for-byte (18.435989ms)
+✔ all 11 malformed portable frames reject (0.525153ms)
+✔ reject coercion, sparse arrays, disconnected chains and oversized input (0.461077ms)
+✔ API leaves input triples, registry and frame unchanged (0.239812ms)
+✔ 200 deterministic mixed cases exchange bytes in both directions with Python (117.928646ms)
+✔ automatic selection is minimal for all supported counts and validates before fallback (1646.242248ms)
+✔ automatic Python and Node mode selection agree on 202 inputs (138.175173ms)
+✔ selector rejects late malformed triples after early disconnection or connected prefix (1.723874ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2028.771641

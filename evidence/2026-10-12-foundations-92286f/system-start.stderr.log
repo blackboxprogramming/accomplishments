@@ -1,0 +1,11 @@
+test_api_only_command_preserves_its_root_contract (test_start.StartTests.test_api_only_command_preserves_its_root_contract) ... ok
+test_invalid_and_busy_ports_fail_clearly (test_start.StartTests.test_invalid_and_busy_ports_fail_clearly) ... ok
+test_missing_linked_and_special_assets_fail_without_content_and_recover (test_start.StartTests.test_missing_linked_and_special_assets_fail_without_content_and_recover) ... ok
+test_real_creation_grant_read_search_receipts_and_restart (test_start.StartTests.test_real_creation_grant_read_search_receipts_and_restart) ... ok
+test_start_serves_shell_assets_and_api_on_one_port (test_start.StartTests.test_start_serves_shell_assets_and_api_on_one_port) ... ok
+test_static_paths_obey_host_origin_and_file_boundaries (test_start.StartTests.test_static_paths_obey_host_origin_and_file_boundaries) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 2.031s
+
+OK

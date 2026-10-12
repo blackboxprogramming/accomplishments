@@ -1,0 +1,21 @@
+test_abrupt_exit_stale_state_recovery_and_no_pid_file_trust (test_service.ServiceTests.test_abrupt_exit_stale_state_recovery_and_no_pid_file_trust) ... ok
+test_ambiguous_and_nonfinite_stop_requests_are_never_executed (test_service.ServiceTests.test_ambiguous_and_nonfinite_stop_requests_are_never_executed) ... ok
+test_busy_port_fails_and_does_not_stop_unrelated_server (test_service.ServiceTests.test_busy_port_fails_and_does_not_stop_unrelated_server) ... ok
+test_concurrent_start_creates_one_process (test_service.ServiceTests.test_concurrent_start_creates_one_process) ... ok
+test_control_metadata_rejects_ambiguous_nonfinite_and_oversized_json (test_service.ServiceTests.test_control_metadata_rejects_ambiguous_nonfinite_and_oversized_json) ... ok
+test_detached_lifecycle_health_and_persistent_data (test_service.ServiceTests.test_detached_lifecycle_health_and_persistent_data) ... ok
+test_invalid_live_metadata_fails_closed_and_recovers_when_restored (test_service.ServiceTests.test_invalid_live_metadata_fails_closed_and_recovers_when_restored) ... ok
+test_invalid_ports_and_commands_have_no_service_side_effects (test_service.ServiceTests.test_invalid_ports_and_commands_have_no_service_side_effects) ... ok
+test_invalid_readiness_does_not_leave_a_live_child (test_service.ServiceTests.test_invalid_readiness_does_not_leave_a_live_child) ... ok
+test_readiness_receiver_bounds_eof_stall_trickle_and_oversize (test_service.ServiceTests.test_readiness_receiver_bounds_eof_stall_trickle_and_oversize) ... ok
+test_ready_writer_handles_short_pipe_writes (test_service.ServiceTests.test_ready_writer_handles_short_pipe_writes) ... ok
+test_rejects_unsafe_runtime_and_service_files_without_touching_targets (test_service.ServiceTests.test_rejects_unsafe_runtime_and_service_files_without_touching_targets) ... ok
+test_stale_and_malformed_stop_commands_do_not_stop_new_instance (test_service.ServiceTests.test_stale_and_malformed_stop_commands_do_not_stop_new_instance) ... ok
+test_start_accepts_short_readiness_reads (test_service.ServiceTests.test_start_accepts_short_readiness_reads) ... ok
+test_status_rejects_an_unrelated_healthy_http_server (test_service.ServiceTests.test_status_rejects_an_unrelated_healthy_http_server) ... ok
+test_status_reports_corruption_and_live_recovery (test_service.ServiceTests.test_status_reports_corruption_and_live_recovery) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 26.447s
+
+OK

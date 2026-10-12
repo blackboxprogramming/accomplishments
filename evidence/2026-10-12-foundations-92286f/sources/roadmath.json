@@ -1,0 +1,127 @@
+{
+  "files": {
+    "scripts/road94_auto_frame.py": {
+      "git_blob_sha": "ae32a9078f8d234d32c65f7d603d4d1e4be230dd",
+      "mode": "100644",
+      "sha256": "469763e7e3f156f56b2cf94ae7154fd49a1f044dde6cf168cd1b6e999178ea0d",
+      "size": 1994
+    },
+    "scripts/road94_br37_receipt.py": {
+      "git_blob_sha": "3668662797d886dede1df44656716893bde5e0fb",
+      "mode": "100644",
+      "sha256": "14cdfc427899e441ab4cd701378b083b1bff84fb9101714be3f3f7d821bdc35a",
+      "size": 10185
+    },
+    "scripts/road94_br37_relation.py": {
+      "git_blob_sha": "36a06f8719e6356672c39eeb25994dbf8bdb0aab",
+      "mode": "100644",
+      "sha256": "107ef71305f4dece75311bd5f9329e27acbf3f184ee5ab9246d2670af5d22da2",
+      "size": 3891
+    },
+    "scripts/road94_frame_io.py": {
+      "git_blob_sha": "0315bdb9eef994f8d574f918282f27f98766447c",
+      "mode": "100644",
+      "sha256": "a6f35768e7546a76e28e9f6f81570d20c85e2002457535272a05cc34461ceda2",
+      "size": 2011
+    },
+    "scripts/road94_frame_vectors.py": {
+      "git_blob_sha": "039a3488305a9d257f6673282524aae3c30a4de7",
+      "mode": "100644",
+      "sha256": "e29f0641c367400eafed37a6f609367810e8533eb5a0f162bf26e37787cfe3fc",
+      "size": 3507
+    },
+    "scripts/road94_relation_blocks.py": {
+      "git_blob_sha": "b44fafc7afcb9cdf9efb24ed8331a3e745bbd7be",
+      "mode": "100644",
+      "sha256": "d28bf57fd42d79d888fe29af8fa6211a9a204e76765a1d2fd7114c4977ebe562",
+      "size": 3922
+    },
+    "scripts/road94_relation_chains.py": {
+      "git_blob_sha": "ef613468bb41479ea22609e83e1bee52a4d3ca5f",
+      "mode": "100644",
+      "sha256": "f27d3728130bb1f96dba13a81dc92fdaa6dec6afab4fad5d2918826a93837a95",
+      "size": 4285
+    },
+    "scripts/road94_relation_frames.mjs": {
+      "git_blob_sha": "4f9d88d1b4b168fe7e155215e11e9c391e731372",
+      "mode": "100644",
+      "sha256": "bf4612464bae84e71d98922438e950770f487418aef3dff739546d36a3554ee3",
+      "size": 4884
+    },
+    "scripts/road94_relation_frames.py": {
+      "git_blob_sha": "9935aba79482a0be816fa39eda70ab2fb493df30",
+      "mode": "100644",
+      "sha256": "27e452e10b11d2a889b8017125a86597600b93632a99c73c11f24cd46569d489",
+      "size": 4932
+    },
+    "scripts/verify_road94.py": {
+      "git_blob_sha": "97be6d3a1b2e39c67c358037dccd3c6ad1146363",
+      "mode": "100644",
+      "sha256": "21128e5baf0af1f6d1c1ff9a18caa620f928e2280e6f9e2eb88fcbecb05b8ef8",
+      "size": 3399
+    },
+    "tests/test_road94_auto_frame.py": {
+      "git_blob_sha": "2ee7bb5fc6e160befe9a8fcb7bc4c41739f724f4",
+      "mode": "100644",
+      "sha256": "3cf85eb97baf01d40e8522d6fef159b17dcae45ea672e01c93fd9fad85ad85f9",
+      "size": 4284
+    },
+    "tests/test_road94_br37_relation.py": {
+      "git_blob_sha": "c6b26caaaa18c2f2b10f10d1d96b7e7f230d4041",
+      "mode": "100644",
+      "sha256": "41b166d65d89be9053c38ce771f53c6f80b3d4c12e3b73ee8c0b2267cba2fa48",
+      "size": 5460
+    },
+    "tests/test_road94_frame_io.py": {
+      "git_blob_sha": "67d2ddf8a079c37a4166b6d97da3c20fe7203b97",
+      "mode": "100644",
+      "sha256": "0b2ef6a80bbeae038e46dcbca4e5f6091fee5f2279de400cd0546c5454e82812",
+      "size": 3563
+    },
+    "tests/test_road94_frame_vectors.py": {
+      "git_blob_sha": "4b3d7673d7ef9d2f22aa298ecb123700cbe786ef",
+      "mode": "100644",
+      "sha256": "074d0423147ee42e9ebcace23ce8399eab5c8ddb8f4be7a4429a13675f0834fd",
+      "size": 2867
+    },
+    "tests/test_road94_frames_node.mjs": {
+      "git_blob_sha": "07bdfddc232fc1ee05253414aee27b5838b0ff63",
+      "mode": "100644",
+      "sha256": "4c6f332eb3fce8f273febd80442166faf0305dcf4f2a562171652ded6c33cdf9",
+      "size": 7102
+    },
+    "tests/test_road94_relation_blocks.py": {
+      "git_blob_sha": "96066f688a109102bba74182e8eeff9756ccafd5",
+      "mode": "100644",
+      "sha256": "b33ad8c1e10346f0beba346ed728539e21d1f971f443aea0b6248bcf8d05b6be",
+      "size": 6910
+    },
+    "tests/test_road94_relation_chains.py": {
+      "git_blob_sha": "a59366257978aa744671449426f3e5e6610b3a04",
+      "mode": "100644",
+      "sha256": "75516417a73d57d82c458e0d16f1914fbe7940186ab7ed640e34837f3de4842c",
+      "size": 6970
+    },
+    "tests/test_road94_relation_frames.py": {
+      "git_blob_sha": "7231fedf8d4d3f945d1be5bd610e8acb5a6044ba",
+      "mode": "100644",
+      "sha256": "9f5b3fe04bb38c4eeeb3805d94d3d2e063086ad56f9ac43f3188443917a6b2fa",
+      "size": 6945
+    },
+    "tests/test_verify_road94.py": {
+      "git_blob_sha": "848d5f16c6fc0773f4830e1fded502b82b8c5dd3",
+      "mode": "100644",
+      "sha256": "d1881b1b13489f2a40a4dfae613bb5cba872b24d5bd58565eb6da5b4ed84adf9",
+      "size": 2208
+    },
+    "tests/vectors/road94_frames_v1.json": {
+      "git_blob_sha": "d95b73dd9ad8e58f6945a515f0be53facf11c4e8",
+      "mode": "100644",
+      "sha256": "4d6dc89f5d7836ff429d589d05b6cd61b4ad2ff283047aa28c5add1525990857",
+      "size": 174395
+    }
+  },
+  "repository": "blackboxprogramming/roadmath",
+  "repository_tree_sha": "ad492ce162ab9c09d2015ebf34654527223b49c4",
+  "source_commit": "a78cc1d75abd3fda144fdaed8fe3e83a4e120e7d"
+}

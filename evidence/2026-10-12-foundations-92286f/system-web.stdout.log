@@ -1,0 +1,18 @@
+✔ boot and search use the integrated server origin on its actual port (27.493161ms)
+✔ separate web shell preserves its default API address (10.23963ms)
+✔ canonical app declarations render without optional legacy metadata (1.79317ms)
+✔ responses from earlier input cannot replace a newer result (4.683208ms)
+✔ input invalidates pending responses before the debounce runs (2.05121ms)
+✔ clearing input immediately hides results and invalidates requests (1.821664ms)
+✔ HTTP and network failures are visible and the next query can recover (2.670917ms)
+✔ late failures cannot overwrite newer successful results (1.491775ms)
+✔ titles render as escaped text (1.290089ms)
+✔ app or activity failures do not overwrite independent health status (3.06658ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 142.909943

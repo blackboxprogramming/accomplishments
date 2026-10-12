@@ -1,0 +1,60 @@
+{
+  "command": [
+    "node",
+    "--test",
+    "--test-concurrency=2",
+    "workspace/tests/collaboration-host.test.mjs",
+    "workspace/tests/collaboration.test.mjs",
+    "workspace/tests/computer-navigation.test.mjs",
+    "workspace/tests/context-follow.test.mjs",
+    "workspace/tests/local-computers.test.mjs",
+    "workspace/tests/session-gates.test.mjs"
+  ],
+  "elapsed_seconds": 1.483379,
+  "environment": {
+    "node": "v24.19.0",
+    "os": "Linux",
+    "packages_installed_by_this_run": false,
+    "python": "3.12.14"
+  },
+  "error": null,
+  "exit_code": 1,
+  "exported_files": 205,
+  "finished_at_utc": "2026-10-12T03:11:48.499938+00:00",
+  "logs": {
+    "roados-workspace-complete-export.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "roados-workspace-complete-export.stdout.log": {
+      "bytes": 9987,
+      "sha256": "33089eb9c1a0965bec8e2f68362a9ba6c992647da83073f6f67f5978f5079f35"
+    }
+  },
+  "name": "roados-workspace-complete-export",
+  "reported_counts": {
+    "node": {
+      "cancelled": 0,
+      "fail": 2,
+      "pass": 75,
+      "skipped": 0,
+      "tests": 77,
+      "todo": 0
+    },
+    "pytest": {},
+    "unittest_per_stage": []
+  },
+  "repository": "blackboxprogramming/road-os",
+  "repository_tree_sha": "64c4d60af0dfb1b69bc03aa72ccf0a3a4645bbaf",
+  "schema": "blackroad-accomplishment-verification/1",
+  "scope": "Only the recorded command at the pinned source; no hosted CI, deployment or comparative claim.",
+  "source_commit": "c8c436c914314af1a3d4e5fdfd2177a371542749",
+  "source_export_manifest": "sources/road-os-initial205.json",
+  "source_integrity": {
+    "after": [],
+    "before": []
+  },
+  "started_at_utc": "2026-10-12T03:11:47.016538+00:00",
+  "status": "FAIL",
+  "working_directory": "/workspace/scratch/92286f010d1b/verification-source/road-os"
+}

@@ -1,0 +1,69 @@
+{
+  "command": [
+    "python",
+    "scripts/verify_road94.py"
+  ],
+  "elapsed_seconds": 27.767839,
+  "environment": {
+    "node": "v24.19.0",
+    "os": "Linux",
+    "packages_installed_by_this_run": false,
+    "python": "3.12.14"
+  },
+  "error": null,
+  "exit_code": 0,
+  "exported_files": 20,
+  "finished_at_utc": "2026-10-12T03:09:08.655749+00:00",
+  "logs": {
+    "road94-codecs.stderr.log": {
+      "bytes": 9399,
+      "sha256": "3d91b1a8d66b1c38563dc54727dfdcb47ae8b49d3d255bf945bddaa44b62eb3b"
+    },
+    "road94-codecs.stdout.log": {
+      "bytes": 14724,
+      "sha256": "b6180f1e4d93c5cbb76401d54d54897248fb5f5b749ae33a25bde6176aa2a32d"
+    }
+  },
+  "metadata_corrections": [
+    {
+      "field": "reported_counts.pytest",
+      "original_receipt": "attempts/road94-codecs-original-wrapper.json",
+      "reason": "Escaped Unicode markers in the JSON stage output were misparsed as pytest counts. This command does not run pytest; the raw stage report establishes 64 unittest methods and 8 Node tests."
+    }
+  ],
+  "name": "road94-codecs",
+  "reported_counts": {
+    "node": {
+      "cancelled": 0,
+      "fail": 0,
+      "pass": 8,
+      "skipped": 0,
+      "tests": 8,
+      "todo": 0
+    },
+    "pytest": {},
+    "unittest_per_stage": [
+      11,
+      11,
+      12,
+      12,
+      4,
+      6,
+      5,
+      3
+    ]
+  },
+  "repository": "blackboxprogramming/roadmath",
+  "repository_tree_sha": "ad492ce162ab9c09d2015ebf34654527223b49c4",
+  "schema": "blackroad-accomplishment-verification/1",
+  "scope": "Only the recorded command at the pinned source; no hosted CI, deployment or comparative claim.",
+  "source_commit": "a78cc1d75abd3fda144fdaed8fe3e83a4e120e7d",
+  "source_export_manifest": "sources/roadmath.json",
+  "source_integrity": {
+    "after": [],
+    "before": []
+  },
+  "started_at_utc": "2026-10-12T03:08:40.887913+00:00",
+  "status": "PASS",
+  "working_directory": "/workspace/scratch/92286f010d1b/verification-source/roadmath"
+}

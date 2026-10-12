@@ -1,0 +1,13 @@
+test_collection_replaced_before_open_keeps_original_directory (test_api_object_security.ObjectReadSecurityTests.test_collection_replaced_before_open_keeps_original_directory) ... ok
+test_fifo_is_rejected_without_waiting_for_a_writer (test_api_object_security.ObjectReadSecurityTests.test_fifo_is_rejected_without_waiting_for_a_writer) ... ok
+test_internal_object_alias_is_not_returned (test_api_object_security.ObjectReadSecurityTests.test_internal_object_alias_is_not_returned) ... ok
+test_missing_record_remains_404 (test_api_object_security.ObjectReadSecurityTests.test_missing_record_remains_404) ... ok
+test_project_object_replacement_is_not_followed (test_api_object_security.ObjectReadSecurityTests.test_project_object_replacement_is_not_followed) ... ok
+test_record_replaced_before_open_is_not_followed (test_api_object_security.ObjectReadSecurityTests.test_record_replaced_before_open_is_not_followed) ... ok
+test_runtime_replaced_before_open_keeps_original_directory (test_api_object_security.ObjectReadSecurityTests.test_runtime_replaced_before_open_keeps_original_directory) ... ok
+test_valid_record_and_project_context_are_unchanged (test_api_object_security.ObjectReadSecurityTests.test_valid_record_and_project_context_are_unchanged) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.152s
+
+OK

@@ -1,0 +1,10 @@
+test_fifo_after_matching_grant_cannot_be_hidden_or_block (test_auth_grants.GrantStoreTests.test_fifo_after_matching_grant_cannot_be_hidden_or_block) ... ok
+test_linked_grant_store_and_record_are_unavailable (test_auth_grants.GrantStoreTests.test_linked_grant_store_and_record_are_unavailable) ... ok
+test_matching_grant_does_not_hide_corrupt_later_records (test_auth_grants.GrantStoreTests.test_matching_grant_does_not_hide_corrupt_later_records) ... ok
+test_missing_store_is_unavailable_not_empty_or_denied (test_auth_grants.GrantStoreTests.test_missing_store_is_unavailable_not_empty_or_denied) ... ok
+test_valid_duplicate_listing_allow_and_deny_preserve_contracts (test_auth_grants.GrantStoreTests.test_valid_duplicate_listing_allow_and_deny_preserve_contracts) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 3.079s
+
+OK

@@ -1,0 +1,20 @@
+{
+  "schema": "road94-independent-enumeration/1",
+  "status": "PASS",
+  "typed_triples_checked": 282752,
+  "rank_roundtrips_checked": 282752,
+  "coordinate_roundtrips_checked": 282752,
+  "unused_nineteen_bit_ranks_rejected": 241536,
+  "minimum_uniform_fixed_width_bits": 19,
+  "invertible_relation_matrices_checked": 32,
+  "hundred_connected_relations": {
+    "selected_frame_bytes": 218,
+    "forced_block_bytes": 299,
+    "bytes_saved": 81,
+    "saving_fraction": "81/299",
+    "saving_percent": 27.090301003344482,
+    "general_minimum_fixed_width_payload_bits": 1811,
+    "connected_minimum_fixed_width_payload_bits": 1163
+  },
+  "limits": "Standard finite-set and modular results for this domain; no novelty, encryption, AI capability or universal-compression claim."
+}

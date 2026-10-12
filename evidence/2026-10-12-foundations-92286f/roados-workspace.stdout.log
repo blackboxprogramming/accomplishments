@@ -1,0 +1,119 @@
+node:internal/modules/esm/resolve:271
+    throw new ERR_MODULE_NOT_FOUND(
+          ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/workspace/scratch/92286f010d1b/verification-source/road-os/impl/dist/hostclient.js' imported from /workspace/scratch/92286f010d1b/verification-source/road-os/workspace/collaboration.js
+    at finalizeResolution (node:internal/modules/esm/resolve:271:11)
+    at moduleResolve (node:internal/modules/esm/resolve:865:10)
+    at defaultResolve (node:internal/modules/esm/resolve:992:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:701:20)
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:721:38)
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:56)
+    at #resolve (node:internal/modules/esm/loader:683:17)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:603:35)
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:163:33)
+    at ModuleJob.link (node:internal/modules/esm/module_job:253:17) {
+  code: 'ERR_MODULE_NOT_FOUND',
+  url: 'file:///workspace/scratch/92286f010d1b/verification-source/road-os/impl/dist/hostclient.js'
+}
+
+Node.js v24.19.0
+✖ workspace/tests/collaboration-host.test.mjs (56.436697ms)
+node:internal/modules/esm/resolve:271
+    throw new ERR_MODULE_NOT_FOUND(
+          ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/workspace/scratch/92286f010d1b/verification-source/road-os/impl/dist/hostclient.js' imported from /workspace/scratch/92286f010d1b/verification-source/road-os/workspace/collaboration.js
+    at finalizeResolution (node:internal/modules/esm/resolve:271:11)
+    at moduleResolve (node:internal/modules/esm/resolve:865:10)
+    at defaultResolve (node:internal/modules/esm/resolve:992:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:701:20)
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:721:38)
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:56)
+    at #resolve (node:internal/modules/esm/loader:683:17)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:603:35)
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:163:33)
+    at ModuleJob.link (node:internal/modules/esm/module_job:253:17) {
+  code: 'ERR_MODULE_NOT_FOUND',
+  url: 'file:///workspace/scratch/92286f010d1b/verification-source/road-os/impl/dist/hostclient.js'
+}
+
+Node.js v24.19.0
+✖ workspace/tests/collaboration.test.mjs (59.087983ms)
+✔ Computer dock, close and keyboard navigation report the rendered product (19.851322ms)
+✔ menu and grid navigation report local state; parent commands only acknowledge (2.25089ms)
+✔ standalone desktop never sends navigation outside its own window (3.271633ms)
+✔ Computer navigation echoes the accepted parent generation and rejects replayed commands (2.45549ms)
+✔ a previous document command cannot consume a newer generation or replace a draft (2.03871ms)
+✔ Code preserves exact text through navigation and a fresh Computer page (4.852206ms)
+✔ blocked Code storage retains edits through navigation with an honest warning (6.000331ms)
+✔ malformed or future Code records are preserved without executing or overwriting them (8.320411ms)
+✔ an observed competing save preserves both the saved draft and local edits (4.564366ms)
+✔ a failed write can recover after space becomes available without losing the previous saved text (3.019312ms)
+✔ Projects opens native RoadWork without replacing earlier title records (1.769313ms)
+✔ Chat preserves exact draft text through navigation, close, reload and intentional clearing (4.727131ms)
+✔ Chat storage denial retains draft and warning when the product reopens (3.229148ms)
+✔ a failed Chat read cannot overwrite an inaccessible draft after storage access returns (2.188676ms)
+✔ an observed competing Chat save preserves saved text and this Computer draft (4.628544ms)
+✔ Chat keeps the legacy plain-text record and retries a failed write without losing local edits (3.645587ms)
+✔ early human navigation waits for a valid generation and keeps the rendered draft (2.019771ms)
+✔ the latest early close, keyboard and grid selection is replayed only once (6.516505ms)
+✔ a newer explicit parent choice supersedes queued early navigation (1.757515ms)
+✔ a reloaded Computer can replay early navigation at a higher initial generation (1.600989ms)
+✔ an early Chat draft and menu choice survive the initial parent restore (4.36806ms)
+✔ duplicate child readiness cannot remount an active product (19.39554ms)
+✔ retired document traffic cannot rebind the Computer or save stale navigation (3.939031ms)
+✔ missing and malformed document identities cannot consume readiness (2.294126ms)
+✔ unpin immediately follows the current left context without another click (3.916752ms)
+✔ unpin asks shared collaboration to resume verified follow instead of guessing a product (1.781852ms)
+✔ product navigation while pinned leaves the left context independent (1.778708ms)
+✔ reload restores the conversation, its draft and the pinned Computer independently (6.962109ms)
+✔ manual product selection survives reload without changing the conversation (7.317601ms)
+✔ nested Computer navigation is saved only from the known same-origin frame (7.343615ms)
+✔ invalid or future navigation records fall back to the initial workspace (20.665041ms)
+✔ blocked storage preserves session navigation and pin/follow (2.912706ms)
+✔ late command acknowledgments cannot replace the current saved selection (3.439006ms)
+✔ queued child navigation cannot replace a newer parent context choice (9.474174ms)
+✔ child navigation requires the current command generation as well as its session (19.0754ms)
+✔ startup and repeated child boots preserve rejected navigation until an explicit choice (7.488815ms)
+✔ a fresh child boot reopens the current selection without clearing the pin or executing anything (1.427767ms)
+✔ legacy RoadTrip content restores exact text and saves through the actual composer (5.603075ms)
+✔ invalid RoadTrip messages cannot crash startup or erase valid drafts and saved records (19.217745ms)
+✔ invalid RoadTrip drafts preserve original records without hiding valid messages (18.298766ms)
+✔ a blocked RoadTrip record is independent of the other readable record (8.811252ms)
+✔ an observed competing RoadTrip draft save preserves saved and local drafts (5.061728ms)
+✔ an observed competing RoadTrip message save preserves saved and local conversations (4.203861ms)
+✔ RoadTrip writes only changed records and recovers retained content after a quota failure (5.699161ms)
+✔ attachments add only filenames, persist as text and allow repeated file selection (2.96495ms)
+✔ attachment filename notices cannot hide storage-denial warnings or discard local text (2.872971ms)
+✔ attachment filename notices preserve conflict and invalid-record warnings (3.914154ms)
+✔ unchanged unavailable messages keep their warning when only a filename draft saves (4.356772ms)
+✔ unchanged protected conversation records report every blocked warning (1.399144ms)
+✔ four local identities retain separate selected products and survive restart (2.50851ms)
+✔ invalid identities, products and backgrounds cannot alter persisted state (0.406144ms)
+✔ malformed, future, duplicate and extra authority records stay protected (0.968723ms)
+✔ read denial blocks later overwriting; write failure can retry retained selection (0.364201ms)
+✔ an observed competing selection preserves saved state and local selection (0.322347ms)
+✔ session-gated context selection uses the imported protocol (16.836687ms)
+✔ pin retains Computer; unpin follows current context without a second click (2.464754ms)
+✔ manual product selection while pinned does not rewrite left context (3.572117ms)
+✔ untrusted or old readiness never opens the session (1.385293ms)
+✔ Computer rejects forged, legacy and unknown navigation; accepts a scoped product (2.930808ms)
+ℹ tests 61
+ℹ suites 0
+ℹ pass 59
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 465.137217
+
+✖ failing tests:
+
+test at workspace/tests/collaboration-host.test.mjs:1:1
+✖ workspace/tests/collaboration-host.test.mjs (56.436697ms)
+  'test failed'
+
+test at workspace/tests/collaboration.test.mjs:1:1
+✖ workspace/tests/collaboration.test.mjs (59.087983ms)
+  'test failed'

@@ -1,0 +1,35 @@
+{
+  "schema": "blackroad-verification-attempts/1",
+  "attempts": [
+    {
+      "receipt": "roados-core.json",
+      "classification": "TEST_INVOCATION_ERROR",
+      "reason": "Directory test argument was not accepted; explicit test files were used later.",
+      "promotes_claim": false
+    },
+    {
+      "receipt": "roados-workspace.json",
+      "classification": "INCOMPLETE_SOURCE_EXPORT",
+      "reason": "Committed impl/dist/hostclient.js was omitted from the initial export.",
+      "promotes_claim": false
+    },
+    {
+      "receipt": "roados-workspace-complete-export.json",
+      "classification": "INCOMPLETE_SOURCE_EXPORT",
+      "reason": "Committed impl/core/VERSION was omitted; the completed export allowed all 77 tests to pass.",
+      "promotes_claim": false
+    },
+    {
+      "receipt": "roados-core-files.json",
+      "classification": "INCOMPLETE_SOURCE_EXPORT_AND_TIMEOUT",
+      "reason": "Initial broad run lacked VERSION during early tests and timed out after 600 seconds.",
+      "promotes_claim": false
+    },
+    {
+      "receipt": "roados-core-final.json",
+      "classification": "UNRESOLVED_SUITE_COMPLETION",
+      "reason": "Completed-export broad run timed out after 600 seconds on Node 24. Core declares Node >=26; no complete-suite PASS is inferred.",
+      "promotes_claim": false
+    }
+  ]
+}

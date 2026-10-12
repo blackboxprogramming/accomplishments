@@ -1,0 +1,150 @@
+{
+  "schema": "road94-local-verification/1",
+  "status": "PASS",
+  "scope": "Road94 codec conformance; not the full repository suite",
+  "python": "3.12.14",
+  "steps": [
+    {
+      "name": "vectors",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/road94_frame_vectors.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.071247,
+      "stdout": "PASS: 14 positive and 11 negative vectors reproduce exactly\n",
+      "stderr": ""
+    },
+    {
+      "name": "test_road94_br37_relation.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "tests/test_road94_br37_relation.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 4.589707,
+      "stdout": "",
+      "stderr": "test_all_typed_triples (__main__.RelationCodecTests.test_all_typed_triples) ... ok\ntest_all_unused_nineteen_bit_ranks_rejected (__main__.RelationCodecTests.test_all_unused_nineteen_bit_ranks_rejected) ... ok\ntest_cli_encode_decode_and_pack (__main__.RelationCodecTests.test_cli_encode_decode_and_pack) ... ok\ntest_cli_rejects_invalid_relation_and_rank_under_optimization (__main__.RelationCodecTests.test_cli_rejects_invalid_relation_and_rank_under_optimization) ... ok\ntest_entire_fixed_width_wire_domain (__main__.RelationCodecTests.test_entire_fixed_width_wire_domain) ... ok\ntest_global_rank_is_contiguous (__main__.RelationCodecTests.test_global_rank_is_contiguous) ... ok\ntest_invalid_types_and_boundaries (__main__.RelationCodecTests.test_invalid_types_and_boundaries) ... ok\ntest_modulo94_sum_difference_is_not_invertible (__main__.RelationCodecTests.test_modulo94_sum_difference_is_not_invertible) ... ok\ntest_relation_cannot_be_inferred_from_residue_pair (__main__.RelationCodecTests.test_relation_cannot_be_inferred_from_residue_pair) ... ok\ntest_residue_pair_does_not_preserve_sheets (__main__.RelationCodecTests.test_residue_pair_does_not_preserve_sheets) ... ok\ntest_source_boundary_example (__main__.RelationCodecTests.test_source_boundary_example) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 4.542s\n\nOK\n"
+    },
+    {
+      "name": "test_road94_relation_blocks.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "tests/test_road94_relation_blocks.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 3.704763,
+      "stdout": "",
+      "stderr": "test_cli (__main__.RelationBlockTests.test_cli) ... ok\ntest_deterministic_mixed_blocks (__main__.RelationBlockTests.test_deterministic_mixed_blocks) ... ok\ntest_every_possible_triple_in_second_position (__main__.RelationBlockTests.test_every_possible_triple_in_second_position) ... ok\ntest_every_single_triple_byte_encoding (__main__.RelationBlockTests.test_every_single_triple_byte_encoding) ... ok\ntest_every_supported_length_and_bit_bound (__main__.RelationBlockTests.test_every_supported_length_and_bit_bound) ... ok\ntest_exact_hundred_relation_size (__main__.RelationBlockTests.test_exact_hundred_relation_size) ... ok\ntest_input_is_not_mutated (__main__.RelationBlockTests.test_input_is_not_mutated) ... ok\ntest_literal_vectors (__main__.RelationBlockTests.test_literal_vectors) ... ok\ntest_rejects_malformed_input (__main__.RelationBlockTests.test_rejects_malformed_input) ... ok\ntest_rejects_noncanonical_lengths_padding_and_unused_rank (__main__.RelationBlockTests.test_rejects_noncanonical_lengths_padding_and_unused_rank) ... ok\ntest_valid_alteration_is_not_authenticated (__main__.RelationBlockTests.test_valid_alteration_is_not_authenticated) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 3.657s\n\nOK\n"
+    },
+    {
+      "name": "test_road94_relation_chains.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "tests/test_road94_relation_chains.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 3.212366,
+      "stdout": "",
+      "stderr": "test_actual_hundred_edge_payload_comparison (__main__.RelationChainTests.test_actual_hundred_edge_payload_comparison) ... ok\ntest_all_adjacent_endpoint_combinations (__main__.RelationChainTests.test_all_adjacent_endpoint_combinations) ... ok\ntest_cli (__main__.RelationChainTests.test_cli) ... ok\ntest_disconnected_blocks_remain_valid_in_general_codec (__main__.RelationChainTests.test_disconnected_blocks_remain_valid_in_general_codec) ... ok\ntest_empty_and_literal_chain (__main__.RelationChainTests.test_empty_and_literal_chain) ... ok\ntest_every_second_edge_after_three_anchors (__main__.RelationChainTests.test_every_second_edge_after_three_anchors) ... ok\ntest_every_single_edge_matches_existing_codec (__main__.RelationChainTests.test_every_single_edge_matches_existing_codec) ... ok\ntest_every_supported_length_and_capacity_boundary (__main__.RelationChainTests.test_every_supported_length_and_capacity_boundary) ... ok\ntest_independent_polynomial_oracle_for_mixed_chains (__main__.RelationChainTests.test_independent_polynomial_oracle_for_mixed_chains) ... ok\ntest_no_mutation_and_no_authentication (__main__.RelationChainTests.test_no_mutation_and_no_authentication) ... ok\ntest_rejects_malformed_inputs (__main__.RelationChainTests.test_rejects_malformed_inputs) ... ok\ntest_rejects_wrong_lengths_and_padding (__main__.RelationChainTests.test_rejects_wrong_lengths_and_padding) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 3.152s\n\nOK\n"
+    },
+    {
+      "name": "test_road94_relation_frames.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "tests/test_road94_relation_frames.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 3.824641,
+      "stdout": "",
+      "stderr": "test_all_single_bit_corruptions_in_two_frames (__main__.RelationFrameTests.test_all_single_bit_corruptions_in_two_frames) ... ok\ntest_all_truncation_boundaries_and_trailing_bytes (__main__.RelationFrameTests.test_all_truncation_boundaries_and_trailing_bytes) ... ok\ntest_bad_types_and_resource_limits (__main__.RelationFrameTests.test_bad_types_and_resource_limits) ... ok\ntest_cli_and_optimized_error_paths (__main__.RelationFrameTests.test_cli_and_optimized_error_paths) ... ok\ntest_empty_modes_are_distinct (__main__.RelationFrameTests.test_empty_modes_are_distinct) ... ok\ntest_every_supported_count_and_both_modes (__main__.RelationFrameTests.test_every_supported_count_and_both_modes) ... ok\ntest_hundred_relation_total_sizes (__main__.RelationFrameTests.test_hundred_relation_total_sizes) ... ok\ntest_literal_header_layout_and_independent_checksum (__main__.RelationFrameTests.test_literal_header_layout_and_independent_checksum) ... ok\ntest_recomputed_checksum_is_not_authentication (__main__.RelationFrameTests.test_recomputed_checksum_is_not_authentication) ... ok\ntest_registry_expectation_cannot_be_taken_from_frame (__main__.RelationFrameTests.test_registry_expectation_cannot_be_taken_from_frame) ... ok\ntest_resealed_invalid_headers_and_payloads_are_rejected (__main__.RelationFrameTests.test_resealed_invalid_headers_and_payloads_are_rejected) ... ok\ntest_standard_sha256_anchor (__main__.RelationFrameTests.test_standard_sha256_anchor) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 3.773s\n\nOK\n"
+    },
+    {
+      "name": "test_road94_frame_vectors.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "tests/test_road94_frame_vectors.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 2.69357,
+      "stdout": "",
+      "stderr": "test_cli_vectors (__main__.FrameVectors.test_cli_vectors) ... ok\ntest_independent_construction (__main__.FrameVectors.test_independent_construction) ... ok\ntest_negative_vectors (__main__.FrameVectors.test_negative_vectors) ... ok\ntest_positive_vectors (__main__.FrameVectors.test_positive_vectors) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 2.630s\n\nOK\n"
+    },
+    {
+      "name": "test_road94_auto_frame.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "tests/test_road94_auto_frame.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 2.572805,
+      "stdout": "",
+      "stderr": "test_all_supported_connected_counts_choose_minimum (__main__.AutomaticFrames.test_all_supported_connected_counts_choose_minimum) ... ok\ntest_every_two_edge_adjacency_pair_and_no_repair (__main__.AutomaticFrames.test_every_two_edge_adjacency_pair_and_no_repair) ... ok\ntest_invalid_inputs_never_fall_back_silently (__main__.AutomaticFrames.test_invalid_inputs_never_fall_back_silently) ... ok\ntest_only_selected_frame_is_encoded (__main__.AutomaticFrames.test_only_selected_frame_is_encoded) ... ok\ntest_optimized_cli_reports_chosen_mode_and_invalid_input (__main__.AutomaticFrames.test_optimized_cli_reports_chosen_mode_and_invalid_input) ... ok\ntest_portable_inputs_and_hundred_relation_saving (__main__.AutomaticFrames.test_portable_inputs_and_hundred_relation_saving) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 2.503s\n\nOK\n"
+    },
+    {
+      "name": "test_road94_frame_io.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "tests/test_road94_frame_io.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 4.802621,
+      "stdout": "",
+      "stderr": "test_binary_roundtrips_and_exact_existing_frames (__main__.FrameIO.test_binary_roundtrips_and_exact_existing_frames) ... ok\ntest_corrupt_truncated_trailing_wrong_registry_frames_have_no_stdout (__main__.FrameIO.test_corrupt_truncated_trailing_wrong_registry_frames_have_no_stdout) ... ok\ntest_exact_input_limits_and_bounded_read (__main__.FrameIO.test_exact_input_limits_and_bounded_read) ... ok\ntest_forced_modes_and_disconnected_chain_rejection (__main__.FrameIO.test_forced_modes_and_disconnected_chain_rejection) ... ok\ntest_invalid_json_encoding_domain_and_registry_have_no_stdout (__main__.FrameIO.test_invalid_json_encoding_domain_and_registry_have_no_stdout) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 4.748s\n\nOK\n"
+    },
+    {
+      "name": "test_verify_road94.py",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "tests/test_verify_road94.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 0.161387,
+      "stdout": "",
+      "stderr": "test_failed_child_stops_before_later_suites (__main__.VerificationFailures.test_failed_child_stops_before_later_suites) ... ok\ntest_missing_node_never_reports_success (__main__.VerificationFailures.test_missing_node_never_reports_success) ... ok\ntest_missing_source_never_reports_success (__main__.VerificationFailures.test_missing_source_never_reports_success) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.114s\n\nOK\n"
+    },
+    {
+      "name": "node_interoperability",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+        "--test",
+        "tests/test_road94_frames_node.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 2.089078,
+      "stdout": "\u2714 all 14 positive portable vectors encode and decode byte-for-byte (18.435989ms)\n\u2714 all 11 malformed portable frames reject (0.525153ms)\n\u2714 reject coercion, sparse arrays, disconnected chains and oversized input (0.461077ms)\n\u2714 API leaves input triples, registry and frame unchanged (0.239812ms)\n\u2714 200 deterministic mixed cases exchange bytes in both directions with Python (117.928646ms)\n\u2714 automatic selection is minimal for all supported counts and validates before fallback (1646.242248ms)\n\u2714 automatic Python and Node mode selection agree on 202 inputs (138.175173ms)\n\u2714 selector rejects late malformed triples after early disconnection or connected prefix (1.723874ms)\n\u2139 tests 8\n\u2139 suites 0\n\u2139 pass 8\n\u2139 fail 0\n\u2139 cancelled 0\n\u2139 skipped 0\n\u2139 todo 0\n\u2139 duration_ms 2028.771641\n",
+      "stderr": ""
+    }
+  ],
+  "source_sha256": {
+    "scripts/verify_road94.py": "21128e5baf0af1f6d1c1ff9a18caa620f928e2280e6f9e2eb88fcbecb05b8ef8",
+    "scripts/road94_br37_receipt.py": "14cdfc427899e441ab4cd701378b083b1bff84fb9101714be3f3f7d821bdc35a",
+    "scripts/road94_auto_frame.py": "469763e7e3f156f56b2cf94ae7154fd49a1f044dde6cf168cd1b6e999178ea0d",
+    "scripts/road94_frame_io.py": "a6f35768e7546a76e28e9f6f81570d20c85e2002457535272a05cc34461ceda2",
+    "scripts/road94_br37_relation.py": "107ef71305f4dece75311bd5f9329e27acbf3f184ee5ab9246d2670af5d22da2",
+    "scripts/road94_relation_blocks.py": "d28bf57fd42d79d888fe29af8fa6211a9a204e76765a1d2fd7114c4977ebe562",
+    "scripts/road94_relation_chains.py": "f27d3728130bb1f96dba13a81dc92fdaa6dec6afab4fad5d2918826a93837a95",
+    "scripts/road94_relation_frames.py": "27e452e10b11d2a889b8017125a86597600b93632a99c73c11f24cd46569d489",
+    "scripts/road94_relation_frames.mjs": "bf4612464bae84e71d98922438e950770f487418aef3dff739546d36a3554ee3",
+    "scripts/road94_frame_vectors.py": "e29f0641c367400eafed37a6f609367810e8533eb5a0f162bf26e37787cfe3fc",
+    "tests/test_road94_frames_node.mjs": "4c6f332eb3fce8f273febd80442166faf0305dcf4f2a562171652ded6c33cdf9",
+    "tests/vectors/road94_frames_v1.json": "4d6dc89f5d7836ff429d589d05b6cd61b4ad2ff283047aa28c5add1525990857",
+    "tests/test_road94_br37_relation.py": "41b166d65d89be9053c38ce771f53c6f80b3d4c12e3b73ee8c0b2267cba2fa48",
+    "tests/test_road94_relation_blocks.py": "b33ad8c1e10346f0beba346ed728539e21d1f971f443aea0b6248bcf8d05b6be",
+    "tests/test_road94_relation_chains.py": "75516417a73d57d82c458e0d16f1914fbe7940186ab7ed640e34837f3de4842c",
+    "tests/test_road94_relation_frames.py": "9f5b3fe04bb38c4eeeb3805d94d3d2e063086ad56f9ac43f3188443917a6b2fa",
+    "tests/test_road94_frame_vectors.py": "074d0423147ee42e9ebcace23ce8399eab5c8ddb8f4be7a4429a13675f0834fd",
+    "tests/test_road94_auto_frame.py": "3cf85eb97baf01d40e8522d6fef159b17dcae45ea672e01c93fd9fad85ad85f9",
+    "tests/test_road94_frame_io.py": "0b2ef6a80bbeae038e46dcbca4e5f6091fee5f2279de400cd0546c5454e82812",
+    "tests/test_verify_road94.py": "d1881b1b13489f2a40a4dfae613bb5cba872b24d5bd58565eb6da5b4ed84adf9"
+  }
+}

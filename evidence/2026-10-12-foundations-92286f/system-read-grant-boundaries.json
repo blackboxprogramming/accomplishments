@@ -1,0 +1,56 @@
+{
+  "command": [
+    "python",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_object_read.py",
+    "-v"
+  ],
+  "elapsed_seconds": 6.412039,
+  "environment": {
+    "node": "v24.19.0",
+    "os": "Linux",
+    "packages_installed_by_this_run": false,
+    "python": "3.12.14"
+  },
+  "error": null,
+  "exit_code": 0,
+  "exported_files": 381,
+  "finished_at_utc": "2026-10-12T03:12:34.223611+00:00",
+  "logs": {
+    "system-read-grant-boundaries.stderr.log": {
+      "bytes": 3343,
+      "sha256": "740eb096164d4ad313626a54e9702973b8a5f2bcd5bd97a49a8d05b049d18d1b"
+    },
+    "system-read-grant-boundaries.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "name": "system-read-grant-boundaries",
+  "reported_counts": {
+    "node": {},
+    "pytest": {},
+    "unittest_per_stage": [
+      21
+    ]
+  },
+  "repository": "blackboxprogramming/system",
+  "repository_tree_sha": "65f994d93b2b397970989419ecc7ea03fd89ceea",
+  "schema": "blackroad-accomplishment-verification/1",
+  "scope": "Only the recorded command at the pinned source; no hosted CI, deployment or comparative claim.",
+  "source_commit": "16dc03ec0a92e66ac97c23e6001f927853686835",
+  "source_export_manifest": "sources/system.json",
+  "source_integrity": {
+    "after": [],
+    "before": []
+  },
+  "started_at_utc": "2026-10-12T03:12:27.811569+00:00",
+  "status": "PASS",
+  "working_directory": "/workspace/scratch/92286f010d1b/verification-source/system"
+}

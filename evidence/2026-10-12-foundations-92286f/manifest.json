@@ -1,0 +1,286 @@
+{
+  "failed_receipts": [
+    "roados-core.json",
+    "roados-workspace.json",
+    "roados-workspace-complete-export.json",
+    "roados-core-files.json",
+    "roados-core-final.json"
+  ],
+  "files": {
+    "README.md": {
+      "bytes": 1008,
+      "sha256": "b29629f5141263b79be18bdd36cdf0cbe616888d22928cc70a0158e5160b6546"
+    },
+    "attempts.json": {
+      "bytes": 1332,
+      "sha256": "2af0ac1a6c914242341e38fa265bfd0d4eb184082fb94e6477f0fca2884d5ad7"
+    },
+    "attempts/road94-codecs-original-wrapper.json": {
+      "bytes": 1622,
+      "sha256": "444eb7743436873d04b6817019b194116b04f170af0d3b9485046545445d5f8a"
+    },
+    "claims.json": {
+      "bytes": 10479,
+      "sha256": "bf0c62ec48d2c84db74d8300d08730f7f2fd37f979626aa107917940630ce21b"
+    },
+    "road94-codecs.json": {
+      "bytes": 1960,
+      "sha256": "c22baf92059aad9a1f71d82ca0074f6040dca4d615c8e061945f7c490d2f9bda"
+    },
+    "road94-codecs.stderr.log": {
+      "bytes": 9399,
+      "sha256": "3d91b1a8d66b1c38563dc54727dfdcb47ae8b49d3d255bf945bddaa44b62eb3b"
+    },
+    "road94-codecs.stdout.log": {
+      "bytes": 14724,
+      "sha256": "b6180f1e4d93c5cbb76401d54d54897248fb5f5b749ae33a25bde6176aa2a32d"
+    },
+    "road94-independent-final.json": {
+      "bytes": 1541,
+      "sha256": "d9e27b748e2975411111441f07557843f8dec0f11176c70e473991028f425994"
+    },
+    "road94-independent-final.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "road94-independent-final.stdout.log": {
+      "bytes": 775,
+      "sha256": "d85700ca19e5251fe51d5fc8f9c12d1a0d7282ca388af11616e3bbb72b9a1c2e"
+    },
+    "roadc-core.json": {
+      "bytes": 1521,
+      "sha256": "7b1b90bd2a5dc4b59cf66aa42d4b377a03ed9ba75147184969600257d69984c6"
+    },
+    "roadc-core.junit.xml": {
+      "bytes": 97044,
+      "sha256": "7f089735930f0935284e0dea57602aecad134ffca2c5ed951f558a662374bd48"
+    },
+    "roadc-core.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "roadc-core.stdout.log": {
+      "bytes": 929,
+      "sha256": "d6c499361e7bffa1b7cd29d7a9678f00d59b6a94eba5297abf754a40feca5e5c"
+    },
+    "roados-core-authority.json": {
+      "bytes": 2234,
+      "sha256": "e998bb8fdb9582d32793e39b15b53ade7b1371cab14c00396e795f4b68bb0932"
+    },
+    "roados-core-authority.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "roados-core-authority.stdout.log": {
+      "bytes": 4220,
+      "sha256": "3a9edd787a8b0d54c22ba26d45f6fff100024caa3df6b42f962359d122e8766a"
+    },
+    "roados-core-files.json": {
+      "bytes": 4088,
+      "sha256": "e01b713e3ed47e261d602f4374e8b69cc872a064c1a2da3e85ef286da3fb9ed5"
+    },
+    "roados-core-files.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "roados-core-files.stdout.log": {
+      "bytes": 21740,
+      "sha256": "0ddb9de89b3590064b1afbf30f236575f1f38bb58b7a0367e7d44d68b6586ebd"
+    },
+    "roados-core-final.json": {
+      "bytes": 4076,
+      "sha256": "ec4da4ae434ef4057dd6e034439c260ddde476e6dff1684b5e84f842eb74a7ce"
+    },
+    "roados-core-final.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "roados-core-final.stdout.log": {
+      "bytes": 29454,
+      "sha256": "23b9a5b24776923f1fbb05bd73f4fc34723d39f78db3db6ba2739c0e7be1806a"
+    },
+    "roados-core.json": {
+      "bytes": 1545,
+      "sha256": "6f711aa022170e310c9ec8fc25001109ebb624406a19e7ecabeeb5da8dac015f"
+    },
+    "roados-core.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "roados-core.stdout.log": {
+      "bytes": 1034,
+      "sha256": "19386063130700188cdec879caa2fde94d0f3adbb209c637e497455acc7d7d2c"
+    },
+    "roados-queued-effect-mutations.json": {
+      "bytes": 1480,
+      "sha256": "234394ce8c9f78eed40f7eca79115d10082e9a95a88b66326c9686141232efdd"
+    },
+    "roados-queued-effect-mutations.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "roados-queued-effect-mutations.stdout.log": {
+      "bytes": 1001,
+      "sha256": "314b4c46321a7b231a1d54d0189d1ab65a1045a88d778ae1b84b5401525f0f95"
+    },
+    "roados-workspace-complete-export.json": {
+      "bytes": 1876,
+      "sha256": "27237d97be03963d23d053cfcb841c8935c7ef6e939794fad955f54f60ef0543"
+    },
+    "roados-workspace-complete-export.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "roados-workspace-complete-export.stdout.log": {
+      "bytes": 9987,
+      "sha256": "33089eb9c1a0965bec8e2f68362a9ba6c992647da83073f6f67f5978f5079f35"
+    },
+    "roados-workspace-final.json": {
+      "bytes": 1835,
+      "sha256": "28f0c4bc3f874a3f37365dab38d5c394a31c00c53282e61862b6ff4887982096"
+    },
+    "roados-workspace-final.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "roados-workspace-final.stdout.log": {
+      "bytes": 7313,
+      "sha256": "7a6473c2110698c8cd04a6f8b3a47741fd6b96fbb3449dd47a2ad81b9978d3e3"
+    },
+    "roados-workspace.json": {
+      "bytes": 1572,
+      "sha256": "448d046ac1053c95b18aa3554cd10d0278c4ba4dc060211cf73f4bc1022ce433"
+    },
+    "roados-workspace.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "roados-workspace.stdout.log": {
+      "bytes": 8411,
+      "sha256": "910704be6408c5291d72812a3a15ccebb69f51640f3ab80d746f37f0756162b3"
+    },
+    "sources/road-os-initial204.json": {
+      "bytes": 50316,
+      "sha256": "f377d3dd31c2833d9e05ecd59baed00d169a721f999c0f35a68534e34323f9a4"
+    },
+    "sources/road-os-initial205.json": {
+      "bytes": 50549,
+      "sha256": "64683c34b99b2cea4a796087f89cb618895c267cb572a9502e7b631dd27ef0c7"
+    },
+    "sources/road-os-mutation.json": {
+      "bytes": 58537,
+      "sha256": "dc121d92c328d9e0f895fff304d9fe046aa1249e8496ed073d88a3d56b67622e"
+    },
+    "sources/road-os.json": {
+      "bytes": 58537,
+      "sha256": "dc121d92c328d9e0f895fff304d9fe046aa1249e8496ed073d88a3d56b67622e"
+    },
+    "sources/roadc.json": {
+      "bytes": 22158,
+      "sha256": "029c3e5edeb520fc37c6f8d667ce129e61cbe47acc8258fa269d3d2bd07757f8"
+    },
+    "sources/roadmath.json": {
+      "bytes": 5037,
+      "sha256": "79619381a8407edd9646769cabb0a9f5b084b6c0ec7248432ba2520086056616"
+    },
+    "sources/system.json": {
+      "bytes": 92155,
+      "sha256": "6873ffff182378638e8b0338614a09ad3ce1d158b6854344f42e235f22bcd306"
+    },
+    "system-api-boundaries.json": {
+      "bytes": 1525,
+      "sha256": "1db3776661d2c9e880e6cb485db13dfe8f78b8570810e489b638d24cc4ea8a47"
+    },
+    "system-api-boundaries.stderr.log": {
+      "bytes": 1354,
+      "sha256": "bb9c1eb59fe839316c8dab25eb8f7b791563299faf68147f6790615c4152f029"
+    },
+    "system-api-boundaries.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "system-auth-grants.json": {
+      "bytes": 1507,
+      "sha256": "404db2bcbdbe2e617f02047a54d75ebe71824ef80af505d57630b863934acac0"
+    },
+    "system-auth-grants.stderr.log": {
+      "bytes": 870,
+      "sha256": "6953961de3047ea92561f5bd87f1e34ddc09a15825f2f58f17ed5aedcf7aa2ca"
+    },
+    "system-auth-grants.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "system-read-grant-boundaries.json": {
+      "bytes": 1539,
+      "sha256": "d16aeeb6ee3e1b08ff29acc8ab7835ada30819b66bcf1367710c33382dd02aa8"
+    },
+    "system-read-grant-boundaries.stderr.log": {
+      "bytes": 3343,
+      "sha256": "740eb096164d4ad313626a54e9702973b8a5f2bcd5bd97a49a8d05b049d18d1b"
+    },
+    "system-read-grant-boundaries.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "system-service.json": {
+      "bytes": 1494,
+      "sha256": "15d212826e2d74695d827db561cdb64daec3272e2da787500135345afcbd3892"
+    },
+    "system-service.stderr.log": {
+      "bytes": 2466,
+      "sha256": "b9a1b5840cd1f67b0903dcbfcc788d73b99716a5907d71f3c398536ac31274d3"
+    },
+    "system-service.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "system-start.json": {
+      "bytes": 1483,
+      "sha256": "5c9360e2e0db0aeb6e156fbc2b42378f54cf3c5520d5a38afa0f7881f8a61997"
+    },
+    "system-start.stderr.log": {
+      "bytes": 938,
+      "sha256": "a9d530f27b6d61d06d78e5f9999a8444539f4cf200dcd319c430c09d3cc0c4d2"
+    },
+    "system-start.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "system-web.json": {
+      "bytes": 1502,
+      "sha256": "c20e6dc6183fa5317c922f5b7409d13fd836ffb866b57171c2b4fc9837b6da04"
+    },
+    "system-web.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "system-web.stdout.log": {
+      "bytes": 882,
+      "sha256": "7f65874d85b2f4a8e71b542d7452e4e10588e1e584c4cfe3ff464dd0407ed262"
+    }
+  },
+  "pass_receipts": [
+    "road94-codecs.json",
+    "road94-independent-final.json",
+    "roadc-core.json",
+    "roados-core-authority.json",
+    "roados-queued-effect-mutations.json",
+    "roados-workspace-final.json",
+    "system-api-boundaries.json",
+    "system-auth-grants.json",
+    "system-read-grant-boundaries.json",
+    "system-service.json",
+    "system-start.json",
+    "system-web.json"
+  ],
+  "recorded_at_utc": "2026-10-12T03:31:58.383214+00:00",
+  "repository_artifacts": {
+    "FRESH_VERIFICATION_2026-10-11.md": "2ca209380140082189cd01004dc6d47c046d7906d11f22bf552c4c20053df437",
+    "proofs/road94-exact-bounds.md": "0e934d9416caa60641a8cf9609e9215115a8be01ea61f1fbf1947e5504556ca9",
+    "scripts/verify_evidence.py": "8990f28f35a203120ae8f5faf05496501c18ad98db13ae4cc9840abe29f57d4a",
+    "scripts/verify_math.py": "5ab1bbe0472e9a8ceb40c17f8dbd852aa26985db2906579f5c31dde8a7f57dcf"
+  },
+  "schema": "blackroad-evidence-bundle/1",
+  "scope": "Pinned source exports and local bounded verification; no hosted CI or platform-wide qualification"
+}

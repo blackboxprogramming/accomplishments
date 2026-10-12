@@ -1,0 +1,69 @@
+{
+  "command": [
+    "node",
+    "--test",
+    "--test-concurrency=2",
+    "impl/core/tests/d01-identity.test.js",
+    "impl/core/tests/d02-grant.test.js",
+    "impl/core/tests/d03-denial.test.js",
+    "impl/core/tests/d04-execution.test.js",
+    "impl/core/tests/d05-verification.test.js",
+    "impl/core/tests/d06-tamper.test.js",
+    "impl/core/tests/d07-restart.test.js",
+    "impl/core/tests/d08-revocation.test.js",
+    "impl/core/tests/d09-export.test.js",
+    "impl/core/tests/d10-continuity.test.js",
+    "impl/core/tests/d11-limitations.test.js",
+    "impl/core/tests/d12-owner-control.test.js",
+    "impl/core/tests/queued-effects.test.js",
+    "impl/core/tests/unit/canonical-and-fixtures.test.js",
+    "impl/core/tests/unit/road-canonical.test.js"
+  ],
+  "elapsed_seconds": 24.898939,
+  "environment": {
+    "node": "v24.19.0",
+    "os": "Linux",
+    "packages_installed_by_this_run": false,
+    "python": "3.12.14"
+  },
+  "error": null,
+  "exit_code": 0,
+  "exported_files": 237,
+  "finished_at_utc": "2026-10-12T03:19:32.943615+00:00",
+  "logs": {
+    "roados-core-authority.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "roados-core-authority.stdout.log": {
+      "bytes": 4220,
+      "sha256": "3a9edd787a8b0d54c22ba26d45f6fff100024caa3df6b42f962359d122e8766a"
+    }
+  },
+  "name": "roados-core-authority",
+  "reported_counts": {
+    "node": {
+      "cancelled": 0,
+      "fail": 0,
+      "pass": 44,
+      "skipped": 0,
+      "tests": 44,
+      "todo": 0
+    },
+    "pytest": {},
+    "unittest_per_stage": []
+  },
+  "repository": "blackboxprogramming/road-os",
+  "repository_tree_sha": "64c4d60af0dfb1b69bc03aa72ccf0a3a4645bbaf",
+  "schema": "blackroad-accomplishment-verification/1",
+  "scope": "Only the recorded command at the pinned source; no hosted CI, deployment or comparative claim.",
+  "source_commit": "c8c436c914314af1a3d4e5fdfd2177a371542749",
+  "source_export_manifest": "sources/road-os.json",
+  "source_integrity": {
+    "after": [],
+    "before": []
+  },
+  "started_at_utc": "2026-10-12T03:19:08.044676+00:00",
+  "status": "PASS",
+  "working_directory": "/workspace/scratch/92286f010d1b/verification-source/road-os"
+}

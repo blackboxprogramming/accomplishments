@@ -1,0 +1,246 @@
+{
+  "schema": "blackroad-accomplishments/1",
+  "counts_are_not_additive": true,
+  "claims": [
+    {
+      "id": "BR-A001",
+      "title": "RoadC interpreter",
+      "claim": "Executable language behavior, including functions, closures, control flow, collections, records and CLI failures.",
+      "status": "PASS",
+      "receipts": [
+        "roadc-core.json"
+      ],
+      "repository": "blackboxprogramming/roadc",
+      "source_commit": "26db80f55c631fcb70c91c34a1c7bb603a7a4b82",
+      "limits": "Core profile: 49 modules, 765 tests; generated and cross-repository integration profiles excluded."
+    },
+    {
+      "id": "BR-A002",
+      "title": "RoadC native compilation",
+      "claim": "Six native-compiler tests passed within the core profile.",
+      "status": "PASS",
+      "receipts": [
+        "roadc-core.json"
+      ],
+      "repository": "blackboxprogramming/roadc",
+      "source_commit": "26db80f55c631fcb70c91c34a1c7bb603a7a4b82",
+      "limits": "Subset of the 765 core tests; not six additional tests."
+    },
+    {
+      "id": "BR-A003",
+      "title": "Offline quantum simulation",
+      "claim": "120 quantum-related tests passed across seven modules, including the CLI, statevector simulation, observables, measurements, energy, gradients and optimization.",
+      "status": "PASS",
+      "receipts": [
+        "roadc-core.json"
+      ],
+      "repository": "blackboxprogramming/roadc",
+      "source_commit": "26db80f55c631fcb70c91c34a1c7bb603a7a4b82",
+      "limits": "Subset of the 765 core tests; simulation on classical hardware."
+    },
+    {
+      "id": "BR-A004",
+      "title": "Scoped local system workflow",
+      "claim": "Create records, connect a project and task, deny an unauthorized read, grant access, execute a read, verify content/receipt hashes and recover records after restart.",
+      "status": "PASS",
+      "receipts": [
+        "system-start.json"
+      ],
+      "repository": "blackboxprogramming/system",
+      "source_commit": "16dc03ec0a92e66ac97c23e6001f927853686835",
+      "limits": "Six startup tests using real CLI and loopback HTTP processes."
+    },
+    {
+      "id": "BR-A005",
+      "title": "Local service lifecycle",
+      "claim": "Local start/status/restart/stop, concurrent lifecycle behavior, control-file boundaries and health reporting passed 16 tests.",
+      "status": "PASS",
+      "receipts": [
+        "system-service.json"
+      ],
+      "repository": "blackboxprogramming/system",
+      "source_commit": "16dc03ec0a92e66ac97c23e6001f927853686835",
+      "limits": "Assistant Linux runner; no macOS login or reboot qualification."
+    },
+    {
+      "id": "BR-A006",
+      "title": "Permission-gated object reads",
+      "claim": "21 object-read checks passed, including denied reads, invalid references, unavailable objects and evidence-write failures.",
+      "status": "PASS",
+      "receipts": [
+        "system-read-grant-boundaries.json"
+      ],
+      "repository": "blackboxprogramming/system",
+      "source_commit": "16dc03ec0a92e66ac97c23e6001f927853686835",
+      "limits": "Local operator CLI; identity selection alone is not user authentication."
+    },
+    {
+      "id": "BR-A007",
+      "title": "Grant-store boundaries",
+      "claim": "Five grant-store tests passed at the pinned system revision.",
+      "status": "PASS",
+      "receipts": [
+        "system-auth-grants.json"
+      ],
+      "repository": "blackboxprogramming/system",
+      "source_commit": "16dc03ec0a92e66ac97c23e6001f927853686835",
+      "limits": "No general authorization or adversarial process-isolation certification."
+    },
+    {
+      "id": "BR-A008",
+      "title": "Local API file boundaries",
+      "claim": "Eight API object-security tests passed for malformed, linked and special-file records.",
+      "status": "PASS",
+      "receipts": [
+        "system-api-boundaries.json"
+      ],
+      "repository": "blackboxprogramming/system",
+      "source_commit": "16dc03ec0a92e66ac97c23e6001f927853686835",
+      "limits": "Loopback API scope; not production authentication."
+    },
+    {
+      "id": "BR-A009",
+      "title": "Web request ordering",
+      "claim": "Ten system web tests passed, including stale-result and unavailable-state behavior.",
+      "status": "PASS",
+      "receipts": [
+        "system-web.json"
+      ],
+      "repository": "blackboxprogramming/system",
+      "source_commit": "16dc03ec0a92e66ac97c23e6001f927853686835",
+      "limits": "Node tests; not a real-browser visual qualification."
+    },
+    {
+      "id": "BR-A010",
+      "title": "RoadOS workspace continuity",
+      "claim": "77 workspace tests passed for context following, pinning, drafts, document/session gates, four local Computer identities and collaboration.",
+      "status": "PASS",
+      "receipts": [
+        "roados-workspace-final.json"
+      ],
+      "repository": "blackboxprogramming/road-os",
+      "source_commit": "c8c436c914314af1a3d4e5fdfd2177a371542749",
+      "limits": "Includes DOM/VM doubles and two real local HTTP Host tests; no Chromium or fleet qualification."
+    },
+    {
+      "id": "BR-A011",
+      "title": "Signed core authority and evidence",
+      "claim": "44 selected identity, grant, denial, execution, verification, tamper, restart, revocation, export, continuity, owner-control and canonical/fixture tests passed.",
+      "status": "PASS",
+      "receipts": [
+        "roados-core-authority.json"
+      ],
+      "repository": "blackboxprogramming/road-os",
+      "source_commit": "c8c436c914314af1a3d4e5fdfd2177a371542749",
+      "limits": "Node 24.19.0 observation; the core declares Node >=26. Broad suite is unqualified."
+    },
+    {
+      "id": "BR-A012",
+      "title": "Queued-effect authorization",
+      "claim": "The queued-effect suite passed inside the selected authority run: current grants/revocations, preview behavior, single release, request scope and signing-key custody are exercised.",
+      "status": "PASS",
+      "receipts": [
+        "roados-core-authority.json"
+      ],
+      "repository": "blackboxprogramming/road-os",
+      "source_commit": "c8c436c914314af1a3d4e5fdfd2177a371542749",
+      "limits": "Nine tests are included in the 44; standalone queue, not a complete integrated product."
+    },
+    {
+      "id": "BR-A013",
+      "title": "Queued-effect defect sensitivity",
+      "claim": "All 15 specified mutation injections were applied and caught, with zero survivors or unappliable anchors; source hashes matched after restoration.",
+      "status": "PASS",
+      "receipts": [
+        "roados-queued-effect-mutations.json"
+      ],
+      "repository": "blackboxprogramming/road-os",
+      "source_commit": "c8c436c914314af1a3d4e5fdfd2177a371542749",
+      "limits": "Bounded mutation set in an isolated source export; not exhaustive defect coverage."
+    },
+    {
+      "id": "BR-A014",
+      "title": "Road94 codec conformance",
+      "claim": "All ten conformance stages passed: 64 Python test methods and eight Node tests, including frame vectors and failure paths.",
+      "status": "PASS",
+      "receipts": [
+        "road94-codecs.json"
+      ],
+      "repository": "blackboxprogramming/roadmath",
+      "source_commit": "a78cc1d75abd3fda144fdaed8fe3e83a4e120e7d",
+      "limits": "Bounded codec suite; not all RoadMath tests."
+    },
+    {
+      "id": "BR-A015",
+      "title": "Complete typed-triple recovery",
+      "claim": "An independent enumeration checked rank and coordinate recovery for every one of the 282,752 defined triples.",
+      "status": "PASS",
+      "receipts": [
+        "road94-independent-final.json"
+      ],
+      "repository": "blackboxprogramming/roadmath",
+      "source_commit": "a78cc1d75abd3fda144fdaed8fe3e83a4e120e7d",
+      "limits": "Finite domain: endpoints 0..93 and retained relation codes 1..32."
+    },
+    {
+      "id": "BR-A016",
+      "title": "Exact fixed-width bound",
+      "claim": "19 bits are necessary and sufficient for a uniform injective fixed-width encoding of the complete typed-triple domain.",
+      "status": "PASS",
+      "receipts": [
+        "road94-independent-final.json"
+      ],
+      "repository": "blackboxprogramming/roadmath",
+      "source_commit": "a78cc1d75abd3fda144fdaed8fe3e83a4e120e7d",
+      "limits": "Standard cardinality proof; not a 19-bit transport size or security strength."
+    },
+    {
+      "id": "BR-A017",
+      "title": "Unused-rank rejection",
+      "claim": "Every one of the 241,536 unused 19-bit ranks was independently checked and rejected.",
+      "status": "PASS",
+      "receipts": [
+        "road94-independent-final.json"
+      ],
+      "repository": "blackboxprogramming/roadmath",
+      "source_commit": "a78cc1d75abd3fda144fdaed8fe3e83a4e120e7d",
+      "limits": "These are enumerated inputs, not independently authored test methods."
+    },
+    {
+      "id": "BR-A018",
+      "title": "Smaller connected-chain frames",
+      "claim": "For the selected 100-edge chain, automatic mode produced 218 bytes versus 299 for forced block mode, saving exactly 81 bytes (81/299, approximately 27.09%).",
+      "status": "PASS",
+      "receipts": [
+        "road94-independent-final.json"
+      ],
+      "repository": "blackboxprogramming/roadmath",
+      "source_commit": "a78cc1d75abd3fda144fdaed8fe3e83a4e120e7d",
+      "limits": "Same losslessly recovered chain; comparison of two existing modes, with shared 72-byte overhead. No time, cost or energy result."
+    },
+    {
+      "id": "BR-A019",
+      "title": "Python/JavaScript interoperability",
+      "claim": "The codec suite passed 200 bidirectional mixed cases and a separate 202-input selector-byte comparison.",
+      "status": "PASS",
+      "receipts": [
+        "road94-codecs.json"
+      ],
+      "repository": "blackboxprogramming/roadmath",
+      "source_commit": "a78cc1d75abd3fda144fdaed8fe3e83a4e120e7d",
+      "limits": "These overlap the eight Node tests; they are not additional test-method counts."
+    },
+    {
+      "id": "BR-A020",
+      "title": "Information-loss boundaries",
+      "claim": "The independent audit exercised residue-only sheet collisions and the modulo-94 sum/difference collision, while full encodings retained recovery.",
+      "status": "PASS",
+      "receipts": [
+        "road94-independent-final.json"
+      ],
+      "repository": "blackboxprogramming/roadmath",
+      "source_commit": "a78cc1d75abd3fda144fdaed8fe3e83a4e120e7d",
+      "limits": "Standard modular arithmetic; no mathematical novelty asserted."
+    }
+  ]
+}

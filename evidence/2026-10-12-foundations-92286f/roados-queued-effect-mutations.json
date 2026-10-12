@@ -1,0 +1,46 @@
+{
+  "command": [
+    "node",
+    "impl/core/tests/queued-effects-mutants.mjs"
+  ],
+  "elapsed_seconds": 179.381008,
+  "environment": {
+    "node": "v24.19.0",
+    "os": "Linux",
+    "packages_installed_by_this_run": false,
+    "python": "3.12.14"
+  },
+  "error": null,
+  "exit_code": 0,
+  "exported_files": 237,
+  "finished_at_utc": "2026-10-12T03:20:24.683853+00:00",
+  "logs": {
+    "roados-queued-effect-mutations.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "roados-queued-effect-mutations.stdout.log": {
+      "bytes": 1001,
+      "sha256": "314b4c46321a7b231a1d54d0189d1ab65a1045a88d778ae1b84b5401525f0f95"
+    }
+  },
+  "name": "roados-queued-effect-mutations",
+  "reported_counts": {
+    "node": {},
+    "pytest": {},
+    "unittest_per_stage": []
+  },
+  "repository": "blackboxprogramming/road-os",
+  "repository_tree_sha": "64c4d60af0dfb1b69bc03aa72ccf0a3a4645bbaf",
+  "schema": "blackroad-accomplishment-verification/1",
+  "scope": "Only the recorded command at the pinned source; no hosted CI, deployment or comparative claim.",
+  "source_commit": "c8c436c914314af1a3d4e5fdfd2177a371542749",
+  "source_export_manifest": "sources/road-os-mutation.json",
+  "source_integrity": {
+    "after": [],
+    "before": []
+  },
+  "started_at_utc": "2026-10-12T03:17:25.302847+00:00",
+  "status": "PASS",
+  "working_directory": "/workspace/scratch/92286f010d1b/verification-source/road-os-mutation"
+}

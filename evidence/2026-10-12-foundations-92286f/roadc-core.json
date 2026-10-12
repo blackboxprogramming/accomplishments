@@ -1,0 +1,51 @@
+{
+  "command": [
+    "python",
+    "scripts/verify.py",
+    "core",
+    "--junitxml",
+    "/workspace/scratch/92286f010d1b/accomplishments/evidence/2026-10-12/roadc-core.junit.xml"
+  ],
+  "elapsed_seconds": 13.612362,
+  "environment": {
+    "node": "v24.19.0",
+    "os": "Linux",
+    "packages_installed_by_this_run": false,
+    "python": "3.12.14"
+  },
+  "error": null,
+  "exit_code": 0,
+  "exported_files": 93,
+  "finished_at_utc": "2026-10-12T03:08:54.498203+00:00",
+  "logs": {
+    "roadc-core.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "roadc-core.stdout.log": {
+      "bytes": 929,
+      "sha256": "d6c499361e7bffa1b7cd29d7a9678f00d59b6a94eba5297abf754a40feca5e5c"
+    }
+  },
+  "name": "roadc-core",
+  "reported_counts": {
+    "node": {},
+    "pytest": {
+      "passed": 765
+    },
+    "unittest_per_stage": []
+  },
+  "repository": "blackboxprogramming/roadc",
+  "repository_tree_sha": "5f8aadf62d02b3fec350db261abb067208fe73f4",
+  "schema": "blackroad-accomplishment-verification/1",
+  "scope": "Only the recorded command at the pinned source; no hosted CI, deployment or comparative claim.",
+  "source_commit": "26db80f55c631fcb70c91c34a1c7bb603a7a4b82",
+  "source_export_manifest": "sources/roadc.json",
+  "source_integrity": {
+    "after": [],
+    "before": []
+  },
+  "started_at_utc": "2026-10-12T03:08:40.885843+00:00",
+  "status": "PASS",
+  "working_directory": "/workspace/scratch/92286f010d1b/verification-source/roadc"
+}

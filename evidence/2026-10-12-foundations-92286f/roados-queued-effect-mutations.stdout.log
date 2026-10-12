@@ -1,0 +1,17 @@
+CAUGHT       the effect is decided against the clock it was queued at, not now
+CAUGHT       a revocation is ignored at release
+CAUGHT       a release is no longer single-use
+CAUGHT       the effect signature is not checked, so a rewritten request is honoured
+CAUGHT       the Road the effect names is dropped from the request
+CAUGHT       the size the effect would write is never evaluated
+CAUGHT       the root the effect would write under is never evaluated
+CAUGHT       preview and release build the request separately again, and can drift
+CAUGHT       anything that is not an outright DENY is released
+CAUGHT       an effect naming a grant that does not exist is queued anyway
+CAUGHT       a refused decision is reported as a release
+CAUGHT       previewing spends the single use
+CAUGHT       every decision is written under the same id
+CAUGHT       the actor need not hold the key they sign their intent with
+CAUGHT       an effect id can be queued twice
+
+15/15 caught, 0 survived, 0 unappliable

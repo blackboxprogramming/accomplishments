@@ -121,3 +121,12 @@ Pinned revision: [RoadOS 6c33a9c7](https://github.com/blackboxprogramming/road-o
 - [canonical/hash.js](https://github.com/blackboxprogramming/road-os/blob/6c33a9c710c5ec3ddeccb744b275257152c938eb/impl/core/src/canonical/hash.js), Git blob `cee3bb8ae45875ed35c1e776a0d93bf99106c260`: SHA-256 hashes of canonical unsigned object bytes, formatted `sha256:<hex>`.
 
 **Supported claim:** a real Ed25519-based identity/signature and SHA-256 canonical hash mechanism is implemented and called by the inspected transition-recovery path. **Not established:** key-store security, trusted-root integrity, full-chain audit under adversarial state mutation, formal cryptographic proof, or live deployment. Source inspected; no new execution.
+
+## Key custody and schema boundary review (2026-10-11)
+
+At pinned RoadOS commit [6c33a9c7](https://github.com/blackboxprogramming/road-os/commit/6c33a9c710c5ec3ddeccb744b275257152c938eb):
+
+- [identity/store.js](https://github.com/blackboxprogramming/road-os/blob/6c33a9c710c5ec3ddeccb744b275257152c938eb/impl/core/src/identity/store.js), blob `2614765be00dca346f11e690e5fcd2adc2b708ec`: private keys stored locally as PKCS#8 PEM under state/keys, with mode 0600 requested on atomic write; refuses silent overwrite and refuses loading when group/other permission bits are present. This is filesystem custody, **not** hardware-backed key protection. The read path uses `existsSync`/`statSync`/`readFileSync` and does not visibly use no-follow or descriptor-pinned reads; symlink/TOCTOU safety has **not** been established and requires targeted review.
+- [canonical/schema.js](https://github.com/blackboxprogramming/road-os/blob/6c33a9c710c5ec3ddeccb744b275257152c938eb/impl/core/src/canonical/schema.js), blob `0f19d3fb3bd71a0e6284ed125b6c94049d129e16`: implements an explicit JSON Schema keyword subset, rejects unsupported keywords, validates required/properties/additionalProperties, formats, types and selected constraints. This is **not** a complete JSON Schema implementation; security relies on its supported subset and schema definitions.
+
+**Audit status:** direct production-source inspection only. The key-file read boundary is a review candidate, not a proven exploit. No changes to source or execution performed.

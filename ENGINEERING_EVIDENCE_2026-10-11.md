@@ -130,3 +130,13 @@ At pinned RoadOS commit [6c33a9c7](https://github.com/blackboxprogramming/road-o
 - [canonical/schema.js](https://github.com/blackboxprogramming/road-os/blob/6c33a9c710c5ec3ddeccb744b275257152c938eb/impl/core/src/canonical/schema.js), blob `0f19d3fb3bd71a0e6284ed125b6c94049d129e16`: implements an explicit JSON Schema keyword subset, rejects unsupported keywords, validates required/properties/additionalProperties, formats, types and selected constraints. This is **not** a complete JSON Schema implementation; security relies on its supported subset and schema definitions.
 
 **Audit status:** direct production-source inspection only. The key-file read boundary is a review candidate, not a proven exploit. No changes to source or execution performed.
+
+## Atomic-write and key-file boundary follow-up (2026-10-11)
+
+Direct source inspection: [RoadOS db/files.js](https://github.com/blackboxprogramming/road-os/blob/6c33a9c710c5ec3ddeccb744b275257152c938eb/impl/core/src/db/files.js), Git blob \`7ea4406bb197fc6ec772c4a031d3444454d0a205\`, and [identity/store.js](https://github.com/blackboxprogramming/road-os/blob/6c33a9c710c5ec3ddeccb744b275257152c938eb/impl/core/src/identity/store.js).
+
+**Implemented:** writeAtomic writes a PID-named temporary file, fsyncs its descriptor, then renames it. saveKey requests mode 0600 and refuses silent key replacement. loadPrivateKey refuses group/other readable key files. put rejects different content at an existing evidence-object path.
+
+**Review candidates, not proven exploits:** predictable PID-named temporary path; no explicit O_EXCL or O_NOFOLLOW in writeAtomic; no directory fsync in that function; pathname check-then-read for private keys; and no demonstrated atomic no-replace semantics against concurrent writers. Directory permissions and attacker access are not established, so exploitability cannot be inferred.
+
+**Next verification:** focused hostile-filesystem, concurrent-writer and crash-boundary tests in the owning source repository after a scoped change review. No tests rerun or source code modified here.

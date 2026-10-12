@@ -1,0 +1,32 @@
+[
+  {
+    "manifest": "evidence/2026-10-12-foundations-92286f/manifest.json",
+    "artifact": "scripts/verify_evidence.py",
+    "old_sha256": "ffb7320160719ef6197d84d736a9f53b3de869c680b698cc3d7d6d494cbcf19d",
+    "new_sha256": "f3828fb0bfb002cd60e38174aa79ae4a85da39a9e9b3669241b97a12a3f10d54"
+  },
+  {
+    "manifest": "evidence/2026-10-12-browser-workflow-92286f/manifest.json",
+    "artifact": "scripts/verify_browser_evidence.py",
+    "old_sha256": "b0d13a8eb6935aeb4c7f2137fcdddb5e01790557b9f948d383ad9cda5909bc5b",
+    "new_sha256": "cb53b1132045d2f2a597aa06cc29102413519236ea08615a1e167d133bcf9812"
+  },
+  {
+    "manifest": "evidence/2026-10-12-projects-workflow-92286f/manifest.json",
+    "artifact": "scripts/verify_projects_evidence.py",
+    "old_sha256": "3c0bf32dbac816376baaa0de37a48997544d64447cac3c80ff2615a6a1dd9d01",
+    "new_sha256": "cafa91ec13403dc85ddff1f2298a3c9c3c36f3953dca6bb55c0982a3f758975d"
+  },
+  {
+    "manifest": "evidence/checker-integrity-08f294/manifest.json",
+    "artifact": "scripts/verify_evidence.py",
+    "old_sha256": "ffb7320160719ef6197d84d736a9f53b3de869c680b698cc3d7d6d494cbcf19d",
+    "new_sha256": "f3828fb0bfb002cd60e38174aa79ae4a85da39a9e9b3669241b97a12a3f10d54"
+  },
+  {
+    "manifest": "evidence/checker-integrity-08f294/manifest.json",
+    "artifact": "evidence/2026-10-12-foundations-92286f/manifest.json",
+    "old_sha256": "e0df73e5642d83e8910207d816fbefbcb2c0f4ad2d09b5fe22e10104166a2475",
+    "new_sha256": "df462814d17fecf75b9a42e57556a8411e38ea50dc2c3b40700f6d0de0f5c2e0"
+  }
+]

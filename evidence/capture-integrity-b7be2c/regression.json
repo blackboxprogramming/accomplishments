@@ -1,0 +1,50 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-v"
+  ],
+  "elapsed_seconds": 2.093352,
+  "environment": {
+    "machine": "x86_64",
+    "python": "3.12.14",
+    "system": "Linux"
+  },
+  "exit_code": 0,
+  "exported_files": 9,
+  "logs": {
+    "verification-regression.stderr.log": {
+      "bytes": 6628,
+      "sha256": "5c5a41e7be3c508077d5fdfb568afe546c5384bf4dcb1b11bc2dc3f940e4004d"
+    },
+    "verification-regression.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "name": "capture-integrity-regression",
+  "reported_counts": {
+    "unittest": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 48
+    }
+  },
+  "repository": "blackboxprogramming/accomplishments",
+  "schema": "blackroad.accomplishment-receipt.v1",
+  "scope": "checker integrity and internal artifact consistency only",
+  "source_commit": "e2b8ec311ed644036f0ada9758061bd500deff10",
+  "source_export_manifest": "sources/accomplishments.json",
+  "source_integrity": {
+    "after": [],
+    "before": []
+  },
+  "started_at_utc": "2026-10-12T14:12:13.761189+00:00",
+  "status": "PASS"
+}

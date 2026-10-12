@@ -1,0 +1,128 @@
+test_duplicate_failed_receipt_key_is_rejected (test_verify_capture_evidence.BrowserCaptureTests.test_duplicate_failed_receipt_key_is_rejected) ... ok
+test_duplicate_report_key_is_rejected (test_verify_capture_evidence.BrowserCaptureTests.test_duplicate_report_key_is_rejected) ... FAIL
+test_duplicate_upstream_module_is_rejected (test_verify_capture_evidence.BrowserCaptureTests.test_duplicate_upstream_module_is_rejected) ... FAIL
+test_failed_observer_receipt_must_be_hashed (test_verify_capture_evidence.BrowserCaptureTests.test_failed_observer_receipt_must_be_hashed) ... ok
+test_historical_runner_snapshot_must_be_hashed (test_verify_capture_evidence.BrowserCaptureTests.test_historical_runner_snapshot_must_be_hashed) ... ok
+test_historical_runner_snapshot_must_match_report (test_verify_capture_evidence.BrowserCaptureTests.test_historical_runner_snapshot_must_match_report) ... ok
+test_report_must_belong_to_hash_manifest (test_verify_capture_evidence.BrowserCaptureTests.test_report_must_belong_to_hash_manifest) ... FAIL
+test_runner_must_belong_to_artifact_manifest (test_verify_capture_evidence.BrowserCaptureTests.test_runner_must_belong_to_artifact_manifest) ... FAIL
+test_screenshot_must_belong_to_hash_manifest (test_verify_capture_evidence.BrowserCaptureTests.test_screenshot_must_belong_to_hash_manifest) ... FAIL
+test_unhashed_external_screenshot_symlink_is_rejected (test_verify_capture_evidence.BrowserCaptureTests.test_unhashed_external_screenshot_symlink_is_rejected) ... FAIL
+test_valid_bundle_remains_read_only (test_verify_capture_evidence.BrowserCaptureTests.test_valid_bundle_remains_read_only) ... FAIL
+test_download_must_belong_to_hash_manifest (test_verify_capture_evidence.ProjectsCaptureTests.test_download_must_belong_to_hash_manifest) ... ok
+test_duplicate_backup_key_is_rejected (test_verify_capture_evidence.ProjectsCaptureTests.test_duplicate_backup_key_is_rejected) ... ok
+test_duplicate_report_key_is_rejected (test_verify_capture_evidence.ProjectsCaptureTests.test_duplicate_report_key_is_rejected) ... ok
+test_duplicate_upstream_module_is_rejected (test_verify_capture_evidence.ProjectsCaptureTests.test_duplicate_upstream_module_is_rejected) ... ok
+test_raw_database_observation_must_be_hashed (test_verify_capture_evidence.ProjectsCaptureTests.test_raw_database_observation_must_be_hashed) ... ok
+test_report_must_belong_to_hash_manifest (test_verify_capture_evidence.ProjectsCaptureTests.test_report_must_belong_to_hash_manifest) ... ok
+test_runner_must_belong_to_artifact_manifest (test_verify_capture_evidence.ProjectsCaptureTests.test_runner_must_belong_to_artifact_manifest) ... ok
+test_screenshot_must_belong_to_hash_manifest (test_verify_capture_evidence.ProjectsCaptureTests.test_screenshot_must_belong_to_hash_manifest) ... ok
+test_unhashed_external_download_symlink_is_rejected (test_verify_capture_evidence.ProjectsCaptureTests.test_unhashed_external_download_symlink_is_rejected) ... ok
+test_unhashed_external_screenshot_symlink_is_rejected (test_verify_capture_evidence.ProjectsCaptureTests.test_unhashed_external_screenshot_symlink_is_rejected) ... ok
+test_valid_bundle_remains_read_only (test_verify_capture_evidence.ProjectsCaptureTests.test_valid_bundle_remains_read_only) ... ok
+test_absolute_receipt_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_absolute_receipt_is_rejected) ... ok
+test_changed_source_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_changed_source_is_rejected) ... ok
+test_claim_repository_must_match_receipt (test_verify_evidence.EvidenceCheckerTests.test_claim_repository_must_match_receipt) ... ok
+test_claim_revision_must_match_receipt (test_verify_evidence.EvidenceCheckerTests.test_claim_revision_must_match_receipt) ... ok
+test_claims_must_be_hashed (test_verify_evidence.EvidenceCheckerTests.test_claims_must_be_hashed) ... ok
+test_duplicate_claim_ids_are_rejected (test_verify_evidence.EvidenceCheckerTests.test_duplicate_claim_ids_are_rejected) ... ok
+test_duplicate_json_keys_are_rejected (test_verify_evidence.EvidenceCheckerTests.test_duplicate_json_keys_are_rejected) ... ok
+test_duplicate_passing_receipts_are_rejected (test_verify_evidence.EvidenceCheckerTests.test_duplicate_passing_receipts_are_rejected) ... ok
+test_empty_receipt_logs_are_rejected (test_verify_evidence.EvidenceCheckerTests.test_empty_receipt_logs_are_rejected) ... ok
+test_failed_receipt_cannot_support_claim (test_verify_evidence.EvidenceCheckerTests.test_failed_receipt_cannot_support_claim) ... ok
+test_log_size_metadata_must_match (test_verify_evidence.EvidenceCheckerTests.test_log_size_metadata_must_match) ... ok
+test_nested_log_traversal_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_nested_log_traversal_is_rejected) ... ok
+test_nested_source_traversal_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_nested_source_traversal_is_rejected) ... ok
+test_passing_receipt_must_be_hashed (test_verify_evidence.EvidenceCheckerTests.test_passing_receipt_must_be_hashed) ... ok
+test_receipt_log_must_be_hashed (test_verify_evidence.EvidenceCheckerTests.test_receipt_log_must_be_hashed) ... ok
+test_receipt_source_repository_must_match (test_verify_evidence.EvidenceCheckerTests.test_receipt_source_repository_must_match) ... ok
+test_source_count_mismatch_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_source_count_mismatch_is_rejected) ... ok
+test_source_export_must_be_hashed (test_verify_evidence.EvidenceCheckerTests.test_source_export_must_be_hashed) ... ok
+test_source_revision_mismatch_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_source_revision_mismatch_is_rejected) ... ok
+test_symlink_cannot_escape_bundle (test_verify_evidence.EvidenceCheckerTests.test_symlink_cannot_escape_bundle) ... ok
+test_symlink_cannot_escape_repository_artifact_root (test_verify_evidence.EvidenceCheckerTests.test_symlink_cannot_escape_repository_artifact_root) ... ok
+test_tampered_hashed_file_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_tampered_hashed_file_is_rejected) ... ok
+test_unverified_claim_receipt_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_unverified_claim_receipt_is_rejected) ... ok
+test_valid_bundle_is_read_only (test_verify_evidence.EvidenceCheckerTests.test_valid_bundle_is_read_only) ... ok
+test_valid_empty_log_is_supported (test_verify_evidence.EvidenceCheckerTests.test_valid_empty_log_is_supported) ... ok
+test_valid_repository_artifact_is_supported (test_verify_evidence.EvidenceCheckerTests.test_valid_repository_artifact_is_supported) ... ok
+
+======================================================================
+FAIL: test_duplicate_report_key_is_rejected (test_verify_capture_evidence.BrowserCaptureTests.test_duplicate_report_key_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 90, in test_duplicate_report_key_is_rejected
+    self.assert_rejected('duplicate JSON key: source_commit')
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 64, in assert_rejected
+    self.assertIn(message, result.stderr)
+AssertionError: 'duplicate JSON key: source_commit' not found in 'Traceback (most recent call last):\n  File "/tmp/tmp618e9veu/scripts/verify_browser_evidence.py", line 74, in <module>\n    main()\n  File "/tmp/tmp618e9veu/scripts/verify_browser_evidence.py", line 69, in main\n    require(report[\'runner_sha256\'] == digest, \'executed runner differs from snapshot: \' + runner)\n            ~~~~~~^^^^^^^^^^^^^^^^^\nKeyError: \'runner_sha256\'\n'
+
+======================================================================
+FAIL: test_duplicate_upstream_module_is_rejected (test_verify_capture_evidence.BrowserCaptureTests.test_duplicate_upstream_module_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 95, in test_duplicate_upstream_module_is_rejected
+    self.assert_rejected('module set')
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 64, in assert_rejected
+    self.assertIn(message, result.stderr)
+AssertionError: 'module set' not found in 'Traceback (most recent call last):\n  File "/tmp/tmp5vna_3av/scripts/verify_browser_evidence.py", line 74, in <module>\n    main()\n  File "/tmp/tmp5vna_3av/scripts/verify_browser_evidence.py", line 69, in main\n    require(report[\'runner_sha256\'] == digest, \'executed runner differs from snapshot: \' + runner)\n            ~~~~~~^^^^^^^^^^^^^^^^^\nKeyError: \'runner_sha256\'\n'
+
+======================================================================
+FAIL: test_report_must_belong_to_hash_manifest (test_verify_capture_evidence.BrowserCaptureTests.test_report_must_belong_to_hash_manifest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 76, in test_report_must_belong_to_hash_manifest
+    self.assert_rejected('unhashed evidence reference: ' + self.report_name)
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 64, in assert_rejected
+    self.assertIn(message, result.stderr)
+AssertionError: 'unhashed evidence reference: final-captures/browser-report.json' not found in 'Traceback (most recent call last):\n  File "/tmp/tmpwhtgvccm/scripts/verify_browser_evidence.py", line 74, in <module>\n    main()\n  File "/tmp/tmpwhtgvccm/scripts/verify_browser_evidence.py", line 69, in main\n    require(report[\'runner_sha256\'] == digest, \'executed runner differs from snapshot: \' + runner)\n            ~~~~~~^^^^^^^^^^^^^^^^^\nKeyError: \'runner_sha256\'\n'
+
+======================================================================
+FAIL: test_runner_must_belong_to_artifact_manifest (test_verify_capture_evidence.BrowserCaptureTests.test_runner_must_belong_to_artifact_manifest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 85, in test_runner_must_belong_to_artifact_manifest
+    self.assert_rejected('unhashed repository artifact reference: ' + self.runner_name)
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 64, in assert_rejected
+    self.assertIn(message, result.stderr)
+AssertionError: 'unhashed repository artifact reference: scripts/browser_workflow_runner.cjs' not found in 'Traceback (most recent call last):\n  File "/tmp/tmp9leefxb2/scripts/verify_browser_evidence.py", line 74, in <module>\n    main()\n  File "/tmp/tmp9leefxb2/scripts/verify_browser_evidence.py", line 69, in main\n    require(report[\'runner_sha256\'] == digest, \'executed runner differs from snapshot: \' + runner)\n            ~~~~~~^^^^^^^^^^^^^^^^^\nKeyError: \'runner_sha256\'\n'
+
+======================================================================
+FAIL: test_screenshot_must_belong_to_hash_manifest (test_verify_capture_evidence.BrowserCaptureTests.test_screenshot_must_belong_to_hash_manifest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 81, in test_screenshot_must_belong_to_hash_manifest
+    self.assert_rejected('unhashed evidence reference: ' + name)
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 64, in assert_rejected
+    self.assertIn(message, result.stderr)
+AssertionError: 'unhashed evidence reference: final-captures/document-lifecycle-preview.jpg' not found in 'Traceback (most recent call last):\n  File "/tmp/tmptmhixmlu/scripts/verify_browser_evidence.py", line 74, in <module>\n    main()\n  File "/tmp/tmptmhixmlu/scripts/verify_browser_evidence.py", line 69, in main\n    require(report[\'runner_sha256\'] == digest, \'executed runner differs from snapshot: \' + runner)\n            ~~~~~~^^^^^^^^^^^^^^^^^\nKeyError: \'runner_sha256\'\n'
+
+======================================================================
+FAIL: test_unhashed_external_screenshot_symlink_is_rejected (test_verify_capture_evidence.BrowserCaptureTests.test_unhashed_external_screenshot_symlink_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 105, in test_unhashed_external_screenshot_symlink_is_rejected
+    self.assert_rejected('evidence path escapes root')
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 64, in assert_rejected
+    self.assertIn(message, result.stderr)
+AssertionError: 'evidence path escapes root' not found in 'Traceback (most recent call last):\n  File "/tmp/tmpjlr5d1r2/scripts/verify_browser_evidence.py", line 74, in <module>\n    main()\n  File "/tmp/tmpjlr5d1r2/scripts/verify_browser_evidence.py", line 69, in main\n    require(report[\'runner_sha256\'] == digest, \'executed runner differs from snapshot: \' + runner)\n            ~~~~~~^^^^^^^^^^^^^^^^^\nKeyError: \'runner_sha256\'\n'
+
+======================================================================
+FAIL: test_valid_bundle_remains_read_only (test_verify_capture_evidence.BrowserCaptureTests.test_valid_bundle_remains_read_only)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 69, in test_valid_bundle_remains_read_only
+    self.assertEqual(result.returncode, 0, result.stderr)
+AssertionError: 1 != 0 : Traceback (most recent call last):
+  File "/tmp/tmpv2g00p3c/scripts/verify_browser_evidence.py", line 74, in <module>
+    main()
+  File "/tmp/tmpv2g00p3c/scripts/verify_browser_evidence.py", line 69, in main
+    require(report['runner_sha256'] == digest, 'executed runner differs from snapshot: ' + runner)
+            ~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'runner_sha256'
+
+
+----------------------------------------------------------------------
+Ran 48 tests in 1.923s
+
+FAILED (failures=7)

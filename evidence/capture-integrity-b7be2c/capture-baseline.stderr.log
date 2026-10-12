@@ -1,0 +1,267 @@
+test_duplicate_failed_receipt_key_is_rejected (test_verify_capture_evidence.BrowserCaptureTests.test_duplicate_failed_receipt_key_is_rejected) ... FAIL
+test_duplicate_report_key_is_rejected (test_verify_capture_evidence.BrowserCaptureTests.test_duplicate_report_key_is_rejected) ... FAIL
+test_duplicate_upstream_module_is_rejected (test_verify_capture_evidence.BrowserCaptureTests.test_duplicate_upstream_module_is_rejected) ... FAIL
+test_failed_observer_receipt_must_be_hashed (test_verify_capture_evidence.BrowserCaptureTests.test_failed_observer_receipt_must_be_hashed) ... FAIL
+test_historical_runner_digest_is_checked_when_present (test_verify_capture_evidence.BrowserCaptureTests.test_historical_runner_digest_is_checked_when_present) ... FAIL
+test_historical_runner_snapshot_must_be_hashed (test_verify_capture_evidence.BrowserCaptureTests.test_historical_runner_snapshot_must_be_hashed) ... FAIL
+test_report_must_belong_to_hash_manifest (test_verify_capture_evidence.BrowserCaptureTests.test_report_must_belong_to_hash_manifest) ... FAIL
+test_runner_must_belong_to_artifact_manifest (test_verify_capture_evidence.BrowserCaptureTests.test_runner_must_belong_to_artifact_manifest) ... FAIL
+test_screenshot_must_belong_to_hash_manifest (test_verify_capture_evidence.BrowserCaptureTests.test_screenshot_must_belong_to_hash_manifest) ... FAIL
+test_unhashed_external_screenshot_symlink_is_rejected (test_verify_capture_evidence.BrowserCaptureTests.test_unhashed_external_screenshot_symlink_is_rejected) ... FAIL
+test_valid_bundle_remains_read_only (test_verify_capture_evidence.BrowserCaptureTests.test_valid_bundle_remains_read_only) ... ok
+test_download_must_belong_to_hash_manifest (test_verify_capture_evidence.ProjectsCaptureTests.test_download_must_belong_to_hash_manifest) ... FAIL
+test_duplicate_backup_key_is_rejected (test_verify_capture_evidence.ProjectsCaptureTests.test_duplicate_backup_key_is_rejected) ... FAIL
+test_duplicate_report_key_is_rejected (test_verify_capture_evidence.ProjectsCaptureTests.test_duplicate_report_key_is_rejected) ... FAIL
+test_duplicate_upstream_module_is_rejected (test_verify_capture_evidence.ProjectsCaptureTests.test_duplicate_upstream_module_is_rejected) ... FAIL
+test_raw_database_observation_must_be_hashed (test_verify_capture_evidence.ProjectsCaptureTests.test_raw_database_observation_must_be_hashed) ... FAIL
+test_report_must_belong_to_hash_manifest (test_verify_capture_evidence.ProjectsCaptureTests.test_report_must_belong_to_hash_manifest) ... FAIL
+test_runner_must_belong_to_artifact_manifest (test_verify_capture_evidence.ProjectsCaptureTests.test_runner_must_belong_to_artifact_manifest) ... FAIL
+test_screenshot_must_belong_to_hash_manifest (test_verify_capture_evidence.ProjectsCaptureTests.test_screenshot_must_belong_to_hash_manifest) ... FAIL
+test_unhashed_external_download_symlink_is_rejected (test_verify_capture_evidence.ProjectsCaptureTests.test_unhashed_external_download_symlink_is_rejected) ... FAIL
+test_unhashed_external_screenshot_symlink_is_rejected (test_verify_capture_evidence.ProjectsCaptureTests.test_unhashed_external_screenshot_symlink_is_rejected) ... FAIL
+test_valid_bundle_remains_read_only (test_verify_capture_evidence.ProjectsCaptureTests.test_valid_bundle_remains_read_only) ... ok
+
+======================================================================
+FAIL: test_duplicate_failed_receipt_key_is_rejected (test_verify_capture_evidence.BrowserCaptureTests.test_duplicate_failed_receipt_key_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 124, in test_duplicate_failed_receipt_key_is_rejected
+    self.assert_rejected('duplicate JSON key: exit_code')
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 62, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 50, "passing_receipts_checked": 2, "claims_checked": 4}
+{"status": "PASS", "browser_reports_checked": 4, "screenshot_hashes_checked": 28, "promoted_claims": 4, "counts_are_not_additive": true}
+
+
+======================================================================
+FAIL: test_duplicate_report_key_is_rejected (test_verify_capture_evidence.BrowserCaptureTests.test_duplicate_report_key_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 90, in test_duplicate_report_key_is_rejected
+    self.assert_rejected('duplicate JSON key: source_commit')
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 62, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 50, "passing_receipts_checked": 2, "claims_checked": 4}
+{"status": "PASS", "browser_reports_checked": 4, "screenshot_hashes_checked": 28, "promoted_claims": 4, "counts_are_not_additive": true}
+
+
+======================================================================
+FAIL: test_duplicate_upstream_module_is_rejected (test_verify_capture_evidence.BrowserCaptureTests.test_duplicate_upstream_module_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 95, in test_duplicate_upstream_module_is_rejected
+    self.assert_rejected('module set')
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 62, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 50, "passing_receipts_checked": 2, "claims_checked": 4}
+{"status": "PASS", "browser_reports_checked": 4, "screenshot_hashes_checked": 28, "promoted_claims": 4, "counts_are_not_additive": true}
+
+
+======================================================================
+FAIL: test_failed_observer_receipt_must_be_hashed (test_verify_capture_evidence.BrowserCaptureTests.test_failed_observer_receipt_must_be_hashed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 118, in test_failed_observer_receipt_must_be_hashed
+    self.assert_rejected('unhashed evidence reference: ' + name)
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 62, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 49, "passing_receipts_checked": 2, "claims_checked": 4}
+{"status": "PASS", "browser_reports_checked": 4, "screenshot_hashes_checked": 28, "promoted_claims": 4, "counts_are_not_additive": true}
+
+
+======================================================================
+FAIL: test_historical_runner_digest_is_checked_when_present (test_verify_capture_evidence.BrowserCaptureTests.test_historical_runner_digest_is_checked_when_present)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 137, in test_historical_runner_digest_is_checked_when_present
+    self.assert_rejected('executed runner differs from snapshot')
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 62, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 50, "passing_receipts_checked": 2, "claims_checked": 4}
+{"status": "PASS", "browser_reports_checked": 4, "screenshot_hashes_checked": 28, "promoted_claims": 4, "counts_are_not_additive": true}
+
+
+======================================================================
+FAIL: test_historical_runner_snapshot_must_be_hashed (test_verify_capture_evidence.BrowserCaptureTests.test_historical_runner_snapshot_must_be_hashed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 129, in test_historical_runner_snapshot_must_be_hashed
+    self.assert_rejected('unhashed evidence reference: ' + name)
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 62, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 49, "passing_receipts_checked": 2, "claims_checked": 4}
+{"status": "PASS", "browser_reports_checked": 4, "screenshot_hashes_checked": 28, "promoted_claims": 4, "counts_are_not_additive": true}
+
+
+======================================================================
+FAIL: test_report_must_belong_to_hash_manifest (test_verify_capture_evidence.BrowserCaptureTests.test_report_must_belong_to_hash_manifest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 76, in test_report_must_belong_to_hash_manifest
+    self.assert_rejected('unhashed evidence reference: ' + self.report_name)
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 62, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 49, "passing_receipts_checked": 2, "claims_checked": 4}
+{"status": "PASS", "browser_reports_checked": 4, "screenshot_hashes_checked": 28, "promoted_claims": 4, "counts_are_not_additive": true}
+
+
+======================================================================
+FAIL: test_runner_must_belong_to_artifact_manifest (test_verify_capture_evidence.BrowserCaptureTests.test_runner_must_belong_to_artifact_manifest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 85, in test_runner_must_belong_to_artifact_manifest
+    self.assert_rejected('unhashed repository artifact reference: ' + self.runner_name)
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 62, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 50, "passing_receipts_checked": 2, "claims_checked": 4}
+{"status": "PASS", "browser_reports_checked": 4, "screenshot_hashes_checked": 28, "promoted_claims": 4, "counts_are_not_additive": true}
+
+
+======================================================================
+FAIL: test_screenshot_must_belong_to_hash_manifest (test_verify_capture_evidence.BrowserCaptureTests.test_screenshot_must_belong_to_hash_manifest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 81, in test_screenshot_must_belong_to_hash_manifest
+    self.assert_rejected('unhashed evidence reference: ' + name)
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 62, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 49, "passing_receipts_checked": 2, "claims_checked": 4}
+{"status": "PASS", "browser_reports_checked": 4, "screenshot_hashes_checked": 28, "promoted_claims": 4, "counts_are_not_additive": true}
+
+
+======================================================================
+FAIL: test_unhashed_external_screenshot_symlink_is_rejected (test_verify_capture_evidence.BrowserCaptureTests.test_unhashed_external_screenshot_symlink_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 105, in test_unhashed_external_screenshot_symlink_is_rejected
+    self.assert_rejected('evidence path escapes root')
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 62, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 49, "passing_receipts_checked": 2, "claims_checked": 4}
+{"status": "PASS", "browser_reports_checked": 4, "screenshot_hashes_checked": 28, "promoted_claims": 4, "counts_are_not_additive": true}
+
+
+======================================================================
+FAIL: test_download_must_belong_to_hash_manifest (test_verify_capture_evidence.ProjectsCaptureTests.test_download_must_belong_to_hash_manifest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 150, in test_download_must_belong_to_hash_manifest
+    self.assert_rejected('unhashed evidence reference: ' + name)
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 62, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 18, "passing_receipts_checked": 2, "claims_checked": 4}
+{"status": "PASS", "browser_groups": 4, "native_domain_tests": 14, "screenshots_checked": 5, "downloaded_backups_checked": 3, "raw_committed_backup_equal": true, "counts_are_not_additive": true}
+
+
+======================================================================
+FAIL: test_duplicate_backup_key_is_rejected (test_verify_capture_evidence.ProjectsCaptureTests.test_duplicate_backup_key_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 166, in test_duplicate_backup_key_is_rejected
+    self.assert_rejected('duplicate JSON key: revision')
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 62, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 19, "passing_receipts_checked": 2, "claims_checked": 4}
+{"status": "PASS", "browser_groups": 4, "native_domain_tests": 14, "screenshots_checked": 5, "downloaded_backups_checked": 3, "raw_committed_backup_equal": true, "counts_are_not_additive": true}
+
+
+======================================================================
+FAIL: test_duplicate_report_key_is_rejected (test_verify_capture_evidence.ProjectsCaptureTests.test_duplicate_report_key_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 90, in test_duplicate_report_key_is_rejected
+    self.assert_rejected('duplicate JSON key: source_commit')
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 62, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 19, "passing_receipts_checked": 2, "claims_checked": 4}
+{"status": "PASS", "browser_groups": 4, "native_domain_tests": 14, "screenshots_checked": 5, "downloaded_backups_checked": 3, "raw_committed_backup_equal": true, "counts_are_not_additive": true}
+
+
+======================================================================
+FAIL: test_duplicate_upstream_module_is_rejected (test_verify_capture_evidence.ProjectsCaptureTests.test_duplicate_upstream_module_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 95, in test_duplicate_upstream_module_is_rejected
+    self.assert_rejected('module set')
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 62, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 19, "passing_receipts_checked": 2, "claims_checked": 4}
+{"status": "PASS", "browser_groups": 4, "native_domain_tests": 14, "screenshots_checked": 5, "downloaded_backups_checked": 3, "raw_committed_backup_equal": true, "counts_are_not_additive": true}
+
+
+======================================================================
+FAIL: test_raw_database_observation_must_be_hashed (test_verify_capture_evidence.ProjectsCaptureTests.test_raw_database_observation_must_be_hashed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 155, in test_raw_database_observation_must_be_hashed
+    self.assert_rejected('unhashed evidence reference: ' + name)
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 62, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 18, "passing_receipts_checked": 2, "claims_checked": 4}
+{"status": "PASS", "browser_groups": 4, "native_domain_tests": 14, "screenshots_checked": 5, "downloaded_backups_checked": 3, "raw_committed_backup_equal": true, "counts_are_not_additive": true}
+
+
+======================================================================
+FAIL: test_report_must_belong_to_hash_manifest (test_verify_capture_evidence.ProjectsCaptureTests.test_report_must_belong_to_hash_manifest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 76, in test_report_must_belong_to_hash_manifest
+    self.assert_rejected('unhashed evidence reference: ' + self.report_name)
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 62, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 18, "passing_receipts_checked": 2, "claims_checked": 4}
+{"status": "PASS", "browser_groups": 4, "native_domain_tests": 14, "screenshots_checked": 5, "downloaded_backups_checked": 3, "raw_committed_backup_equal": true, "counts_are_not_additive": true}
+
+
+======================================================================
+FAIL: test_runner_must_belong_to_artifact_manifest (test_verify_capture_evidence.ProjectsCaptureTests.test_runner_must_belong_to_artifact_manifest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 85, in test_runner_must_belong_to_artifact_manifest
+    self.assert_rejected('unhashed repository artifact reference: ' + self.runner_name)
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 62, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 19, "passing_receipts_checked": 2, "claims_checked": 4}
+{"status": "PASS", "browser_groups": 4, "native_domain_tests": 14, "screenshots_checked": 5, "downloaded_backups_checked": 3, "raw_committed_backup_equal": true, "counts_are_not_additive": true}
+
+
+======================================================================
+FAIL: test_screenshot_must_belong_to_hash_manifest (test_verify_capture_evidence.ProjectsCaptureTests.test_screenshot_must_belong_to_hash_manifest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 81, in test_screenshot_must_belong_to_hash_manifest
+    self.assert_rejected('unhashed evidence reference: ' + name)
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 62, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 18, "passing_receipts_checked": 2, "claims_checked": 4}
+{"status": "PASS", "browser_groups": 4, "native_domain_tests": 14, "screenshots_checked": 5, "downloaded_backups_checked": 3, "raw_committed_backup_equal": true, "counts_are_not_additive": true}
+
+
+======================================================================
+FAIL: test_unhashed_external_download_symlink_is_rejected (test_verify_capture_evidence.ProjectsCaptureTests.test_unhashed_external_download_symlink_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 176, in test_unhashed_external_download_symlink_is_rejected
+    self.assert_rejected('evidence path escapes root')
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 62, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 18, "passing_receipts_checked": 2, "claims_checked": 4}
+{"status": "PASS", "browser_groups": 4, "native_domain_tests": 14, "screenshots_checked": 5, "downloaded_backups_checked": 3, "raw_committed_backup_equal": true, "counts_are_not_additive": true}
+
+
+======================================================================
+FAIL: test_unhashed_external_screenshot_symlink_is_rejected (test_verify_capture_evidence.ProjectsCaptureTests.test_unhashed_external_screenshot_symlink_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 105, in test_unhashed_external_screenshot_symlink_is_rejected
+    self.assert_rejected('evidence path escapes root')
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/tests/test_verify_capture_evidence.py", line 62, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 18, "passing_receipts_checked": 2, "claims_checked": 4}
+{"status": "PASS", "browser_groups": 4, "native_domain_tests": 14, "screenshots_checked": 5, "downloaded_backups_checked": 3, "raw_committed_backup_equal": true, "counts_are_not_additive": true}
+
+
+----------------------------------------------------------------------
+Ran 22 tests in 1.856s
+
+FAILED (failures=20)

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/scripts/verify_evidence.py", line 145, in <module>
+    main()
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/scripts/verify_evidence.py", line 141, in main
+    print(json.dumps(verify(args.bundle)))
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/scripts/verify_evidence.py", line 134, in verify
+    return verify_bundle(bundle).summary
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/scripts/verify_evidence.py", line 72, in verify_bundle
+    require(hashlib.sha256(data).hexdigest() == digest,
+  File "/workspace/scratch/b7be2cb09c6c/accomplishments/scripts/verify_evidence.py", line 15, in require
+    raise ValueError(message)
+ValueError: repository artifact mismatch: evidence/2026-10-12-foundations-92286f/manifest.json

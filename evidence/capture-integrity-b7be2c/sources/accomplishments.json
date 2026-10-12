@@ -1,0 +1,53 @@
+{
+  "files": {
+    "evidence/2026-10-12-browser-workflow-92286f/manifest.json": {
+      "bytes": 8795,
+      "git_blob_sha": "b0e0575b86576a7a933ed8f0fb4cdfa05b17a830",
+      "sha256": "bb25847512cd7a8eba52864d15759f2fccc354380aaddf2aecfdcd7b122833ef"
+    },
+    "evidence/2026-10-12-foundations-92286f/manifest.json": {
+      "bytes": 10520,
+      "git_blob_sha": "962098e235010dc0b392284af2fa771fcdfbc5ec",
+      "sha256": "df462814d17fecf75b9a42e57556a8411e38ea50dc2c3b40700f6d0de0f5c2e0"
+    },
+    "evidence/2026-10-12-projects-workflow-92286f/manifest.json": {
+      "bytes": 3584,
+      "git_blob_sha": "a570b4d0d30b2214ec9b516c8de367ab8050b2a4",
+      "sha256": "a9cc2faf79ac77489dacdc5431531182eb5921a43a8d70d124a172d391dc1ac9"
+    },
+    "evidence/checker-integrity-08f294/manifest.json": {
+      "bytes": 2200,
+      "git_blob_sha": "b17dae7d297faaef4cde35d46f5d583d9bd5b924",
+      "sha256": "326554aa0717e9ae5e37e3919ea2792cfffad660ec7e15649939c716db32c49d"
+    },
+    "scripts/verify_browser_evidence.py": {
+      "bytes": 5065,
+      "git_blob_sha": "22d2069ac6b33b6c07601ae8fc7b732bf02847ee",
+      "sha256": "cb53b1132045d2f2a597aa06cc29102413519236ea08615a1e167d133bcf9812"
+    },
+    "scripts/verify_evidence.py": {
+      "bytes": 6161,
+      "git_blob_sha": "03c26ac29b8b46b8f0dde413a8942fbf0266c557",
+      "sha256": "f3828fb0bfb002cd60e38174aa79ae4a85da39a9e9b3669241b97a12a3f10d54"
+    },
+    "scripts/verify_projects_evidence.py": {
+      "bytes": 5206,
+      "git_blob_sha": "e6a22161b4083d9ad2cf8b0d8682fee05b9db3cd",
+      "sha256": "cafa91ec13403dc85ddff1f2298a3c9c3c36f3953dca6bb55c0982a3f758975d"
+    },
+    "tests/test_verify_capture_evidence.py": {
+      "bytes": 8046,
+      "git_blob_sha": "343342180169b3cd467118125cf2d6942bd44edd",
+      "sha256": "b02bdbab5256039395fdd17588250df8407d6775568c85a298dc49b631d90430"
+    },
+    "tests/test_verify_evidence.py": {
+      "bytes": 10261,
+      "git_blob_sha": "92aa5cffcf4dcf855a33f49b0e0605097deb701b",
+      "sha256": "cea6b574b9827468ef2b946e585643d0a3fd9b0e527685f06fbe5cb73fe6e736"
+    }
+  },
+  "remote_git_blob_readback": "all nine file hashes matched the published source tree",
+  "repository": "blackboxprogramming/accomplishments",
+  "repository_tree_sha": "76da00c1345970e72337cdd79361b700196c3812",
+  "source_commit": "e2b8ec311ed644036f0ada9758061bd500deff10"
+}

@@ -1,0 +1,47 @@
+{
+  "command": [
+    "node",
+    "impl/core/tests/ext-wire.test.js"
+  ],
+  "elapsed_seconds": 15.014782,
+  "environment": {
+    "node": "v24.19.0",
+    "node_binary": "node",
+    "os": "Linux",
+    "packages_installed_by_this_run": false,
+    "python": "3.12.14"
+  },
+  "error": "command timeout",
+  "exit_code": 124,
+  "exported_files": 212,
+  "finished_at_utc": "2026-10-12T03:51:56.274848+00:00",
+  "logs": {
+    "wire-missing-dependency.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "wire-missing-dependency.stdout.log": {
+      "bytes": 572,
+      "sha256": "b9be0cbfc7f9c4041de03c9694d4be9dd85deee32b56cc9bc3fb90bd339c9056"
+    }
+  },
+  "name": "wire-missing-dependency",
+  "reported_counts": {
+    "node": {},
+    "pytest": {},
+    "unittest_per_stage": []
+  },
+  "repository": "blackboxprogramming/road-os",
+  "repository_tree_sha": "e5f6de9ad987a8f9bbb9c23cd55fab49a22788a9",
+  "schema": "blackroad-accomplishment-verification/1",
+  "scope": "Only the recorded command at the pinned source; no hosted CI, deployment or comparative claim.",
+  "source_commit": "26c6a5913de61cad4556f04a96d017c7f7b112b5",
+  "source_export_manifest": "sources/road-os-baseline.json",
+  "source_integrity": {
+    "after": [],
+    "before": []
+  },
+  "started_at_utc": "2026-10-12T03:51:41.260073+00:00",
+  "status": "FAIL",
+  "working_directory": "/workspace/scratch/92286f010d1b/verification-next/road-os"
+}

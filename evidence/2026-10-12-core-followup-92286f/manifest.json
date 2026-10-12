@@ -1,0 +1,150 @@
+{
+  "failed_receipts": [
+    "core-bounded-baseline.json",
+    "wire-missing-dependency.json",
+    "dependency-probe-missing.json"
+  ],
+  "files": {
+    "README.md": {
+      "bytes": 936,
+      "sha256": "b95096df762d9681c5c7a87be07d317810f6ee246cacd5b76c33fb484e301e1c"
+    },
+    "attempts.json": {
+      "bytes": 884,
+      "sha256": "288af75c50bc10ec2325027b2c3f22c02ca0ecc8404a4847877eb8a19ca28b66"
+    },
+    "claims.json": {
+      "bytes": 1730,
+      "sha256": "f28fd0b33eef62878090bc49f6927f77f42323772e7c092a27649d6f00a9c567"
+    },
+    "core-bounded-baseline.json": {
+      "bytes": 4167,
+      "sha256": "bab491a9b2f6a6cdd34d83d3197032fbb0b8a83f6f90fe14e9122c8017a92954"
+    },
+    "core-bounded-baseline.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "core-bounded-baseline.stdout.log": {
+      "bytes": 30202,
+      "sha256": "35674a07c35874dcfc1927ca76139ae05587c0319282c18f7dad322135a84403"
+    },
+    "core-node24-complete.json": {
+      "bytes": 4291,
+      "sha256": "7fc9835c3171efa551fecb152c2543a4362c9505629318296c292724c59f39ee"
+    },
+    "core-node24-complete.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "core-node24-complete.stdout.log": {
+      "bytes": 52720,
+      "sha256": "11a0643e55f1a2a8d360a95e714ecf23af0b20d2493c16d28879bcba531cce6c"
+    },
+    "core-node26-current.json": {
+      "bytes": 4443,
+      "sha256": "a64392fb9fe8f468a7709df2ea07fad04d2603466acb2fc02c6e639fa37a97fe"
+    },
+    "core-node26-current.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "core-node26-current.stdout.log": {
+      "bytes": 52716,
+      "sha256": "c7ff51213870d4fae21544fb068e775a203de7abaa0f441ad26c2be3da60974a"
+    },
+    "core-node26-original.json": {
+      "bytes": 4408,
+      "sha256": "12ca062db95d1932cf34c2682f3f5cb3c7e41c7b4535088c7469690c43540d3d"
+    },
+    "core-node26-original.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "core-node26-original.stdout.log": {
+      "bytes": 51972,
+      "sha256": "f95c688878f1823f9fcc41f654ae27a99c72c2ebaf900e80ddb8dcf30537b7d4"
+    },
+    "dependency-probe-complete.json": {
+      "bytes": 1714,
+      "sha256": "df271569cc99b99ff81b5feaadae1f93aba837f4d002d4289a0054d08ba9ef98"
+    },
+    "dependency-probe-complete.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dependency-probe-complete.stdout.log": {
+      "bytes": 60,
+      "sha256": "75ba6e1d452674165c1d65a4b63af899301d0f7da9d876f413f78cd493b34cae"
+    },
+    "dependency-probe-missing.json": {
+      "bytes": 1712,
+      "sha256": "13ec99c91ee8e856e070259bf9dca9ea5b7760c33e591bd58ee571c43fcd6384"
+    },
+    "dependency-probe-missing.stderr.log": {
+      "bytes": 1135,
+      "sha256": "a635c9add46ff10fabb705e6efa040b40bf84dbe5347262458af493420ba8d0d"
+    },
+    "dependency-probe-missing.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "node26-official-checksums.txt": {
+      "bytes": 3171,
+      "sha256": "75ff0c104acddb008964dd5feb88f58844b652820cb1cb01696f95031372b293"
+    },
+    "node26-toolchain.json": {
+      "bytes": 497,
+      "sha256": "499ddb56e4051d604e4e26d56cddec2c048cd7907501f3c250cbbd247ed0adb2"
+    },
+    "sources/road-os-baseline.json": {
+      "bytes": 52458,
+      "sha256": "6ecf9ed1e0c2a8bd346e35b855952cb3c2d1eed0c15ae5d6b6fbcb96e026fa39"
+    },
+    "sources/road-os-c8.json": {
+      "bytes": 58872,
+      "sha256": "270cc3879e03f086e422fb665e9b828c0ba899e32103ad0d9beb662817878ee0"
+    },
+    "sources/road-os.json": {
+      "bytes": 52741,
+      "sha256": "51b1d2d27da697626a7c0e9ef78d5419613465b76638cdb9b18a549351d8ecc9"
+    },
+    "wire-complete-dependency.json": {
+      "bytes": 1576,
+      "sha256": "92b1a0afa72eff8112c5b41c139fba17f1d2f46094d648d14392bb41ac83f7ca"
+    },
+    "wire-complete-dependency.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "wire-complete-dependency.stdout.log": {
+      "bytes": 687,
+      "sha256": "5132c0b21a3f1f27a96c951dcec65ec8018db0f85ebe8859bc620bf7d5291208"
+    },
+    "wire-missing-dependency.json": {
+      "bytes": 1478,
+      "sha256": "f0c4c8de04851e7b6d611fecfc1902748a02576d677d55356564df52b61a836c"
+    },
+    "wire-missing-dependency.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "wire-missing-dependency.stdout.log": {
+      "bytes": 572,
+      "sha256": "b9be0cbfc7f9c4041de03c9694d4be9dd85deee32b56cc9bc3fb90bd339c9056"
+    }
+  },
+  "pass_receipts": [
+    "core-node26-original.json",
+    "core-node26-current.json",
+    "core-node24-complete.json",
+    "wire-complete-dependency.json",
+    "dependency-probe-complete.json"
+  ],
+  "repository_artifacts": {
+    "CORE_QUALIFICATION_2026-10-11.md": "c61e602ab3b5776a7be6cc1296f2de4cc176fc749f6f471b55f6c6712fd7a850",
+    "scripts/core_dependency_probe.mjs": "2aaab7f830a1840195e26a19a0498d92be55cda44486f49ca807a37dd795e0c2"
+  },
+  "schema": "blackroad-evidence-bundle/1",
+  "scope": "Complete tracked core test sets at two pins; dependency-stall reproductions and declared-runtime qualification"
+}

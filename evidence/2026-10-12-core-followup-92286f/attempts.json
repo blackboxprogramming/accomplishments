@@ -1,0 +1,23 @@
+{
+  "schema": "blackroad-verification-attempts/1",
+  "attempts": [
+    {
+      "receipt": "core-bounded-baseline.json",
+      "classification": "INCOMPLETE_DEPENDENCY_EXPORT",
+      "reason": "The committed browser verifier was omitted; the broader incomplete run reached its 180-second recorder limit.",
+      "promotes_claim": false
+    },
+    {
+      "receipt": "wire-missing-dependency.json",
+      "classification": "REPRODUCED_MISSING_DEPENDENCY_STALL",
+      "reason": "Three Wire tests passed, two failed, and an outstanding Host kept the test process alive until the 15-second recorder limit.",
+      "promotes_claim": false
+    },
+    {
+      "receipt": "dependency-probe-missing.json",
+      "classification": "MISSING_COMMITTED_MODULE",
+      "reason": "The independent import probe identifies ERR_MODULE_NOT_FOUND and exits 1.",
+      "promotes_claim": false
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "command": [
+    "node",
+    "impl/core/tests/ext-wire.test.js"
+  ],
+  "elapsed_seconds": 2.187637,
+  "environment": {
+    "node": "v24.19.0",
+    "node_binary": "node",
+    "os": "Linux",
+    "packages_installed_by_this_run": false,
+    "python": "3.12.14"
+  },
+  "error": null,
+  "exit_code": 0,
+  "exported_files": 213,
+  "finished_at_utc": "2026-10-12T03:51:43.453498+00:00",
+  "logs": {
+    "wire-complete-dependency.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "wire-complete-dependency.stdout.log": {
+      "bytes": 687,
+      "sha256": "5132c0b21a3f1f27a96c951dcec65ec8018db0f85ebe8859bc620bf7d5291208"
+    }
+  },
+  "name": "wire-complete-dependency",
+  "reported_counts": {
+    "node": {
+      "cancelled": 0,
+      "fail": 0,
+      "pass": 5,
+      "skipped": 0,
+      "tests": 5,
+      "todo": 0
+    },
+    "pytest": {},
+    "unittest_per_stage": []
+  },
+  "repository": "blackboxprogramming/road-os",
+  "repository_tree_sha": "e5f6de9ad987a8f9bbb9c23cd55fab49a22788a9",
+  "schema": "blackroad-accomplishment-verification/1",
+  "scope": "Only the recorded command at the pinned source; no hosted CI, deployment or comparative claim.",
+  "source_commit": "26c6a5913de61cad4556f04a96d017c7f7b112b5",
+  "source_export_manifest": "sources/road-os.json",
+  "source_integrity": {
+    "after": [],
+    "before": []
+  },
+  "started_at_utc": "2026-10-12T03:51:41.265864+00:00",
+  "status": "PASS",
+  "working_directory": "/workspace/scratch/92286f010d1b/verification-qualified/road-os"
+}

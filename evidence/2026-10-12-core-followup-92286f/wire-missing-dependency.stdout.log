@@ -1,0 +1,5 @@
+✔ wire ext: only letters the session is on, each with every signed message and the core's verdict (441.176808ms)
+✔ wire ext: contacts are Host identities with verification, fingerprints and shared-letter counts (357.386549ms)
+✔ wire ext: previews name what a Road ID is, and never show a thread you are not on (337.837465ms)
+✖ wire ext: a bundle carries the signed objects and verifies in the browser; tampering is caught (364.828782ms)
+✖ wire ext through the Host: paired reads only; a letter sent with wire/send is listed, exported and verified (523.793028ms)

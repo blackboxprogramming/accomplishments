@@ -1,0 +1,40 @@
+{
+  "schema": "blackroad-accomplishments/1",
+  "counts_are_not_additive": true,
+  "claims": [
+    {
+      "id": "BR-A021",
+      "title": "Complete original core on its declared runtime",
+      "claim": "All 532 tracked JavaScript core tests passed at the original pin on Node 26.11.1, with zero failures, cancellations or skips.",
+      "status": "PASS",
+      "receipts": [
+        "core-node26-original.json"
+      ],
+      "source_commit": "c8c436c914314af1a3d4e5fdfd2177a371542749",
+      "limits": "Complete core test set, not all RoadOS applications or deployment."
+    },
+    {
+      "id": "BR-A022",
+      "title": "Complete newer merged core qualification",
+      "claim": "All 539 tracked JavaScript core tests passed at the newer merged pin on Node 26.11.1; the same complete source also passed 539 on Node 24.19.0.",
+      "status": "PASS",
+      "receipts": [
+        "core-node26-current.json",
+        "core-node24-complete.json"
+      ],
+      "source_commit": "26c6a5913de61cad4556f04a96d017c7f7b112b5",
+      "limits": "The two runs and the original-pin run overlap; do not sum them. Node 26 is the declared runtime qualification."
+    },
+    {
+      "id": "BR-A023",
+      "title": "Effects Host status and release boundaries",
+      "claim": "Seven effects-extension checks passed inside the newer full core suite, including issuer-only release, retained refusal records and real HTTP release/replay behavior.",
+      "status": "PASS",
+      "receipts": [
+        "core-node26-current.json"
+      ],
+      "source_commit": "26c6a5913de61cad4556f04a96d017c7f7b112b5",
+      "limits": "Seven tests are inside the 539. Existing merged implementation was verified; no new production code is claimed."
+    }
+  ]
+}

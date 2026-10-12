@@ -4,6 +4,22 @@ Founder and architect: **Alexa Louise Amundson**.
 
 BlackRoad has working, tested foundations for a local-first computing system: a language implementation, scoped local operations, inspectable receipts, a browser workspace and reversible mathematical encodings.
 
+**Why at all?** This repository lets Alexa and anyone evaluating BlackRoad trace a claim to its source and observed result. It makes scattered logs and changing revisions inspectable before someone relies on a capability.
+
+**Why now?** Recent merges and fresh execution changed what can be demonstrated. The new core qualification resolves a recorded timeout and verifies both its original source and the newer merged source.
+
+**Why this?** A GitHub evidence index keeps source ownership and history in their existing repositories while linking claims to pinned revisions, raw logs and reproducible checks. Each result retains its tested scope and trade-offs.
+
+**What next?** Read a result below, inspect its receipt, and rerun its stated checks in a trusted checkout. The evidence checker reads the committed bundle without changing runtime state.
+
+## Complete core qualification — October 11, 2026 CT
+
+- **532 original-pin core tests passed on Node 26.11.1.**
+- **539 newer-pin core tests passed on Node 26.11.1**, including seven effects Host checks.
+- The same newer pin also passed **539 tests on Node 24.19.0** after completing the source dependency set.
+
+All complete runs exited 0 with zero failures, cancellations or skips. These overlapping counts are not additive. The earlier timeout was reproduced with a missing exported browser verifier; its completed dependency set passes. [Full qualification report](CORE_QUALIFICATION_2026-10-11.md) · [Three new records](evidence/2026-10-12-core-followup-92286f/claims.json) · [Receipts](evidence/2026-10-12-core-followup-92286f/README.md).
+
 ## Fresh verification — October 11, 2026 CT
 
 These results were executed in this session against pinned GitHub source. [Full report](FRESH_VERIFICATION_2026-10-11.md) · [20 accomplishment records](evidence/2026-10-12-foundations-92286f/claims.json) · [Raw receipts and logs](evidence/2026-10-12-foundations-92286f/README.md).
@@ -18,7 +34,7 @@ These results were executed in this session against pinned GitHub source. [Full 
 | Road94 independent audit | **282,752 triples recovered**, all **241,536 unused 19-bit ranks rejected**, and the exact **19-bit fixed-width bound** checked. |
 | Connected relation frames | **218 bytes versus 299 bytes** for the selected 100-edge chain: **81 bytes / 27.09% smaller**, with lossless recovery. |
 
-The runner was Linux, Python 3.12.14 and Node 24.19.0. RoadOS core declares Node 26+; the selected results above are observations on Node 24. Its broad suite timed out and is **not qualified** by this update. Browser visual conformance, fleet deployment, cross-platform operation and the complete system verifier remain outside this batch.
+The foundation batch ran on Linux, Python 3.12.14 and Node 24.19.0. Its initial broad-core timeout remains preserved. The follow-up above completes the source dependency set and qualifies both pinned core suites on Node 26.11.1. Browser visual conformance, fleet deployment, cross-platform operation and the complete system verifier remain outside these batches.
 
 Counts across rows, repeated runs, subsets and historical revisions must not be added. The byte-size comparison establishes a result for the stated workload; timing, monetary savings and novelty were not established. No hosted Actions were started.
 

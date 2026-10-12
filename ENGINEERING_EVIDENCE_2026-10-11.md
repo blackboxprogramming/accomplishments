@@ -62,3 +62,13 @@ These are commit-reported verification claims; no tests were independently rerun
 - [System object-read security verification](https://github.com/blackboxprogramming/system/commit/352c2ec11adc3ea775ed01ba28c2ad17e6662c5a): final 92,763 Python and 10 JS results reported with failing reproductions and logs; no deployment claimed.
 
 Do not sum overlapping test suites. These are GitHub commit-derived statements, not independently executed tests.
+
+## Direct inspection of committed machine-readable evidence (2026-10-11)
+
+Unlike the earlier commit-message-only entries, the following JSON evidence files were fetched directly at pinned Git revisions. They are **recorded execution artifacts**, not an independent rerun or cryptographic audit of every referenced log.
+
+1. **RoadC UTF-8 newline regression**: [result.json at 8b766552](https://github.com/blackboxprogramming/roadc/blob/8b76655212a1ace88c428a22a5b681222db727ec/evidence/source-files-10000-48541ab39699/result.json) specifies Python 3.12.14, pytest 9.1.1, Linux x86_64, exit 0, 160,639 collected, 160,639 unique case IDs, 160,639 passed, zero skipped/failed, 155.765 seconds. Three pre-fix regressions failed. Generated families include 34 groups, with 5,000 or 2,500 parameterized cases per group. The test count is **not** 160,639 independently designed test methods.
+2. **RoadOS RECEIPTED Files recovery**: [report.json at 6c33a9c7](https://github.com/blackboxprogramming/road-os/blob/6c33a9c710c5ec3ddeccb744b275257152c938eb/docs/verification/storage-receipted-boundary-20261009/report.json) specifies Node 26.11.1, baseline 5/10 passing and 5 failing, repaired focused 21/21, complete backend 443/443, zero skips. It explicitly says independent human/agent review NOT_PERFORMED, and excludes multi-process locking, power-loss guarantee, authenticated browser adoption and hosted CI.
+3. **System Opportunity updates**: [manifest.json at 16dc03ec](https://github.com/blackboxprogramming/system/blob/16dc03ec0a92e66ac97c23e6001f927853686835/docs/verification/opportunity-updates-20261009/manifest.json) binds source commit 39d0356c, source tree, 1,361-file closure, log SHA-256 and Git blob hashes, Python 3.12.14, Node 24.19.0, exit 0, 92,868 Python and 10 JavaScript checks, with 17 Opportunity, 20 projection and 26 project-task focused checks. It documents a single isolated assistant Linux execution; no owner Mac, GitHub Actions dispatch, provisioning or authenticated browser adapter.
+
+**Evidence grade:** Directly inspected structured reports; test execution not reproduced here. Source manifests and raw logs are available for a subsequent byte/hash audit. Avoid describing self-reported 'independent' reviews as independent human certification.

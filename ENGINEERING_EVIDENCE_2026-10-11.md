@@ -72,3 +72,13 @@ Unlike the earlier commit-message-only entries, the following JSON evidence file
 3. **System Opportunity updates**: [manifest.json at 16dc03ec](https://github.com/blackboxprogramming/system/blob/16dc03ec0a92e66ac97c23e6001f927853686835/docs/verification/opportunity-updates-20261009/manifest.json) binds source commit 39d0356c, source tree, 1,361-file closure, log SHA-256 and Git blob hashes, Python 3.12.14, Node 24.19.0, exit 0, 92,868 Python and 10 JavaScript checks, with 17 Opportunity, 20 projection and 26 project-task focused checks. It documents a single isolated assistant Linux execution; no owner Mac, GitHub Actions dispatch, provisioning or authenticated browser adapter.
 
 **Evidence grade:** Directly inspected structured reports; test execution not reproduced here. Source manifests and raw logs are available for a subsequent byte/hash audit. Avoid describing self-reported 'independent' reviews as independent human certification.
+
+## Raw-log inspection: stronger provenance (2026-10-11)
+
+The following plaintext logs were directly fetched at pinned commits and their ending result lines inspected. **This confirms the committed log contents, not a new test execution.**
+
+- RoadC [pytest.log](https://github.com/blackboxprogramming/roadc/blob/8b76655212a1ace88c428a22a5b681222db727ec/evidence/source-files-10000-48541ab39699/pytest.log): final line `160639 passed in 141.23s (0:02:21)`; Git blob `476fc321e83f005f54b6ac75d0ea8c9f7c17283b`. The separate result.json records command wall time 155.765s; this is not necessarily a contradiction because pytest runtime and whole-command duration differ.
+- RoadOS [full.log](https://github.com/blackboxprogramming/road-os/blob/6c33a9c710c5ec3ddeccb744b275257152c938eb/docs/verification/storage-receipted-boundary-20261009/full.log): TAP 1..443, pass 443, fail 0, skipped 0, cancelled 0, duration 91233.848022 ms; Git blob `728297dab770c3dd9e39743615ebc642dbe6b0f9`.
+- RoadOS [baseline.log](https://github.com/blackboxprogramming/road-os/blob/6c33a9c710c5ec3ddeccb744b275257152c938eb/docs/verification/storage-receipted-boundary-20261009/baseline.log): TAP 1..10, pass 5, fail 5, skipped 0; includes concrete AssertionError with expected 1 and actual 0; Git blob `ebb3564eaca46c5edd9ff216cc556d169e4decc3`.
+
+**Next audit:** byte-compare SHA-256 checksums to manifest, inspect the actual test assertions, and rerun pinned source in an isolated environment. The logged 160,639 cases include generated parameterizations; they are not 160,639 hand-authored independent behaviors.

@@ -1,0 +1,18 @@
+{
+  "claims": [
+    {
+      "claim": "The checker rejects unhashed passing dependencies, path escapes and inconsistent provenance in the specified CLI regression cases, while all four existing pinned evidence bundles and both specialized checkers remain valid.",
+      "id": "BR-EVIDENCE-001",
+      "limits": "26 checker regression methods and six static evidence-validation commands; no new RoadOS runtime, performance, legal protection, deployment, signature or independent review claim.",
+      "receipts": [
+        "regression.json",
+        "bundle-revalidation.json"
+      ],
+      "repository": "blackboxprogramming/accomplishments",
+      "source_commit": "e6960894fcf949d013501291b9a95e04b137ec84",
+      "status": "PASS",
+      "title": "Complete checked evidence chains"
+    }
+  ],
+  "schema": "blackroad-accomplishment-claims/1"
+}

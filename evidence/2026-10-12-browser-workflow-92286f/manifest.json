@@ -212,7 +212,7 @@
   "repository_artifacts": {
     "BROWSER_WORKFLOW_2026-10-12.md": "29543e5706480872762335bf7e2420c2090480f7906096282018a5dbac68ea41",
     "scripts/browser_workflow_runner.cjs": "7e4947baadb2a06405b0b6c4ddc5f0202ddbecfbd432c570b2bed2bb86eda9c7",
-    "scripts/verify_browser_evidence.py": "b0d13a8eb6935aeb4c7f2137fcdddb5e01790557b9f948d383ad9cda5909bc5b"
+    "scripts/verify_browser_evidence.py": "cb53b1132045d2f2a597aa06cc29102413519236ea08615a1e167d133bcf9812"
   },
   "schema": "blackroad-evidence-bundle/1",
   "scope": "Four source-pinned upstream browser modules plus three qualification observations at one Chromium desktop viewport; reproduced fixture failures retained, no production changes."

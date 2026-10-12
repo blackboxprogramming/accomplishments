@@ -278,7 +278,7 @@
   "repository_artifacts": {
     "FRESH_VERIFICATION_2026-10-11.md": "2ca209380140082189cd01004dc6d47c046d7906d11f22bf552c4c20053df437",
     "proofs/road94-exact-bounds.md": "0e934d9416caa60641a8cf9609e9215115a8be01ea61f1fbf1947e5504556ca9",
-    "scripts/verify_evidence.py": "8990f28f35a203120ae8f5faf05496501c18ad98db13ae4cc9840abe29f57d4a",
+    "scripts/verify_evidence.py": "f3828fb0bfb002cd60e38174aa79ae4a85da39a9e9b3669241b97a12a3f10d54",
     "scripts/verify_math.py": "5ab1bbe0472e9a8ceb40c17f8dbd852aa26985db2906579f5c31dde8a7f57dcf"
   },
   "schema": "blackroad-evidence-bundle/1",

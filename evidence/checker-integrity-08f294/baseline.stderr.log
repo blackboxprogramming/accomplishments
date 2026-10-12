@@ -1,0 +1,205 @@
+test_absolute_receipt_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_absolute_receipt_is_rejected) ... FAIL
+test_changed_source_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_changed_source_is_rejected) ... ok
+test_claim_repository_must_match_receipt (test_verify_evidence.EvidenceCheckerTests.test_claim_repository_must_match_receipt) ... FAIL
+test_claim_revision_must_match_receipt (test_verify_evidence.EvidenceCheckerTests.test_claim_revision_must_match_receipt) ... FAIL
+test_claims_must_be_hashed (test_verify_evidence.EvidenceCheckerTests.test_claims_must_be_hashed) ... FAIL
+test_duplicate_claim_ids_are_rejected (test_verify_evidence.EvidenceCheckerTests.test_duplicate_claim_ids_are_rejected) ... ok
+test_duplicate_json_keys_are_rejected (test_verify_evidence.EvidenceCheckerTests.test_duplicate_json_keys_are_rejected) ... FAIL
+test_duplicate_passing_receipts_are_rejected (test_verify_evidence.EvidenceCheckerTests.test_duplicate_passing_receipts_are_rejected) ... FAIL
+test_empty_receipt_logs_are_rejected (test_verify_evidence.EvidenceCheckerTests.test_empty_receipt_logs_are_rejected) ... FAIL
+test_failed_receipt_cannot_support_claim (test_verify_evidence.EvidenceCheckerTests.test_failed_receipt_cannot_support_claim) ... ok
+test_log_size_metadata_must_match (test_verify_evidence.EvidenceCheckerTests.test_log_size_metadata_must_match) ... FAIL
+test_nested_log_traversal_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_nested_log_traversal_is_rejected) ... FAIL
+test_nested_source_traversal_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_nested_source_traversal_is_rejected) ... FAIL
+test_passing_receipt_must_be_hashed (test_verify_evidence.EvidenceCheckerTests.test_passing_receipt_must_be_hashed) ... FAIL
+test_receipt_log_must_be_hashed (test_verify_evidence.EvidenceCheckerTests.test_receipt_log_must_be_hashed) ... FAIL
+test_receipt_source_repository_must_match (test_verify_evidence.EvidenceCheckerTests.test_receipt_source_repository_must_match) ... FAIL
+test_source_count_mismatch_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_source_count_mismatch_is_rejected) ... ok
+test_source_export_must_be_hashed (test_verify_evidence.EvidenceCheckerTests.test_source_export_must_be_hashed) ... FAIL
+test_source_revision_mismatch_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_source_revision_mismatch_is_rejected) ... ok
+test_symlink_cannot_escape_bundle (test_verify_evidence.EvidenceCheckerTests.test_symlink_cannot_escape_bundle) ... FAIL
+test_symlink_cannot_escape_repository_artifact_root (test_verify_evidence.EvidenceCheckerTests.test_symlink_cannot_escape_repository_artifact_root) ... FAIL
+test_tampered_hashed_file_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_tampered_hashed_file_is_rejected) ... ok
+test_unverified_claim_receipt_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_unverified_claim_receipt_is_rejected) ... ok
+test_valid_bundle_is_read_only (test_verify_evidence.EvidenceCheckerTests.test_valid_bundle_is_read_only) ... ok
+test_valid_empty_log_is_supported (test_verify_evidence.EvidenceCheckerTests.test_valid_empty_log_is_supported) ... ok
+test_valid_repository_artifact_is_supported (test_verify_evidence.EvidenceCheckerTests.test_valid_repository_artifact_is_supported) ... ok
+
+======================================================================
+FAIL: test_absolute_receipt_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_absolute_receipt_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 115, in test_absolute_receipt_is_rejected
+    self.assert_rejected('unsafe evidence path')
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 69, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 4, "passing_receipts_checked": 1, "claims_checked": 1}
+
+
+======================================================================
+FAIL: test_claim_repository_must_match_receipt (test_verify_evidence.EvidenceCheckerTests.test_claim_repository_must_match_receipt)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 156, in test_claim_repository_must_match_receipt
+    self.assert_rejected('claim repository mismatch: C1')
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 69, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 4, "passing_receipts_checked": 1, "claims_checked": 1}
+
+
+======================================================================
+FAIL: test_claim_revision_must_match_receipt (test_verify_evidence.EvidenceCheckerTests.test_claim_revision_must_match_receipt)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 151, in test_claim_revision_must_match_receipt
+    self.assert_rejected('claim revision mismatch: C1')
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 69, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 4, "passing_receipts_checked": 1, "claims_checked": 1}
+
+
+======================================================================
+FAIL: test_claims_must_be_hashed (test_verify_evidence.EvidenceCheckerTests.test_claims_must_be_hashed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 85, in test_claims_must_be_hashed
+    self.assert_rejected('unhashed evidence reference: claims.json')
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 69, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 3, "passing_receipts_checked": 1, "claims_checked": 1}
+
+
+======================================================================
+FAIL: test_duplicate_json_keys_are_rejected (test_verify_evidence.EvidenceCheckerTests.test_duplicate_json_keys_are_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 168, in test_duplicate_json_keys_are_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 4, "passing_receipts_checked": 1, "claims_checked": 1}
+
+
+======================================================================
+FAIL: test_duplicate_passing_receipts_are_rejected (test_verify_evidence.EvidenceCheckerTests.test_duplicate_passing_receipts_are_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 141, in test_duplicate_passing_receipts_are_rejected
+    self.assert_rejected('duplicate passing receipt')
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 69, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 4, "passing_receipts_checked": 1, "claims_checked": 1}
+
+
+======================================================================
+FAIL: test_empty_receipt_logs_are_rejected (test_verify_evidence.EvidenceCheckerTests.test_empty_receipt_logs_are_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 146, in test_empty_receipt_logs_are_rejected
+    self.assert_rejected('missing receipt logs')
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 69, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 4, "passing_receipts_checked": 1, "claims_checked": 1}
+
+
+======================================================================
+FAIL: test_log_size_metadata_must_match (test_verify_evidence.EvidenceCheckerTests.test_log_size_metadata_must_match)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 137, in test_log_size_metadata_must_match
+    self.assert_rejected('receipt log size mismatch: stdout.log')
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 69, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 4, "passing_receipts_checked": 1, "claims_checked": 1}
+
+
+======================================================================
+FAIL: test_nested_log_traversal_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_nested_log_traversal_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 109, in test_nested_log_traversal_is_rejected
+    self.assert_rejected('unsafe evidence path')
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 69, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 4, "passing_receipts_checked": 1, "claims_checked": 1}
+
+
+======================================================================
+FAIL: test_nested_source_traversal_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_nested_source_traversal_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 103, in test_nested_source_traversal_is_rejected
+    self.assert_rejected('unsafe evidence path')
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 69, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 4, "passing_receipts_checked": 1, "claims_checked": 1}
+
+
+======================================================================
+FAIL: test_passing_receipt_must_be_hashed (test_verify_evidence.EvidenceCheckerTests.test_passing_receipt_must_be_hashed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 89, in test_passing_receipt_must_be_hashed
+    self.assert_rejected('unhashed evidence reference: receipt.json')
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 69, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 3, "passing_receipts_checked": 1, "claims_checked": 1}
+
+
+======================================================================
+FAIL: test_receipt_log_must_be_hashed (test_verify_evidence.EvidenceCheckerTests.test_receipt_log_must_be_hashed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 97, in test_receipt_log_must_be_hashed
+    self.assert_rejected('unhashed evidence reference: stdout.log')
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 69, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 3, "passing_receipts_checked": 1, "claims_checked": 1}
+
+
+======================================================================
+FAIL: test_receipt_source_repository_must_match (test_verify_evidence.EvidenceCheckerTests.test_receipt_source_repository_must_match)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 161, in test_receipt_source_repository_must_match
+    self.assert_rejected('source repository mismatch: receipt.json')
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 69, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 4, "passing_receipts_checked": 1, "claims_checked": 1}
+
+
+======================================================================
+FAIL: test_source_export_must_be_hashed (test_verify_evidence.EvidenceCheckerTests.test_source_export_must_be_hashed)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 93, in test_source_export_must_be_hashed
+    self.assert_rejected('unhashed evidence reference: sources/source.json')
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 69, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 3, "passing_receipts_checked": 1, "claims_checked": 1}
+
+
+======================================================================
+FAIL: test_symlink_cannot_escape_bundle (test_verify_evidence.EvidenceCheckerTests.test_symlink_cannot_escape_bundle)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 124, in test_symlink_cannot_escape_bundle
+    self.assert_rejected('evidence path escapes root')
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 69, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 4, "passing_receipts_checked": 1, "claims_checked": 1}
+
+
+======================================================================
+FAIL: test_symlink_cannot_escape_repository_artifact_root (test_verify_evidence.EvidenceCheckerTests.test_symlink_cannot_escape_repository_artifact_root)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 132, in test_symlink_cannot_escape_repository_artifact_root
+    self.assert_rejected('repository artifact path escapes root')
+  File "/workspace/scratch/08f294297f96/accomplishments/tests/test_verify_evidence.py", line 69, in assert_rejected
+    self.assertNotEqual(result.returncode, 0, result.stdout)
+AssertionError: 0 == 0 : {"status": "PASS", "files_checked": 4, "passing_receipts_checked": 1, "claims_checked": 1}
+
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.927s
+
+FAILED (failures=16)

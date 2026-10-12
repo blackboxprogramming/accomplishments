@@ -1,0 +1,31 @@
+test_absolute_receipt_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_absolute_receipt_is_rejected) ... ok
+test_changed_source_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_changed_source_is_rejected) ... ok
+test_claim_repository_must_match_receipt (test_verify_evidence.EvidenceCheckerTests.test_claim_repository_must_match_receipt) ... ok
+test_claim_revision_must_match_receipt (test_verify_evidence.EvidenceCheckerTests.test_claim_revision_must_match_receipt) ... ok
+test_claims_must_be_hashed (test_verify_evidence.EvidenceCheckerTests.test_claims_must_be_hashed) ... ok
+test_duplicate_claim_ids_are_rejected (test_verify_evidence.EvidenceCheckerTests.test_duplicate_claim_ids_are_rejected) ... ok
+test_duplicate_json_keys_are_rejected (test_verify_evidence.EvidenceCheckerTests.test_duplicate_json_keys_are_rejected) ... ok
+test_duplicate_passing_receipts_are_rejected (test_verify_evidence.EvidenceCheckerTests.test_duplicate_passing_receipts_are_rejected) ... ok
+test_empty_receipt_logs_are_rejected (test_verify_evidence.EvidenceCheckerTests.test_empty_receipt_logs_are_rejected) ... ok
+test_failed_receipt_cannot_support_claim (test_verify_evidence.EvidenceCheckerTests.test_failed_receipt_cannot_support_claim) ... ok
+test_log_size_metadata_must_match (test_verify_evidence.EvidenceCheckerTests.test_log_size_metadata_must_match) ... ok
+test_nested_log_traversal_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_nested_log_traversal_is_rejected) ... ok
+test_nested_source_traversal_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_nested_source_traversal_is_rejected) ... ok
+test_passing_receipt_must_be_hashed (test_verify_evidence.EvidenceCheckerTests.test_passing_receipt_must_be_hashed) ... ok
+test_receipt_log_must_be_hashed (test_verify_evidence.EvidenceCheckerTests.test_receipt_log_must_be_hashed) ... ok
+test_receipt_source_repository_must_match (test_verify_evidence.EvidenceCheckerTests.test_receipt_source_repository_must_match) ... ok
+test_source_count_mismatch_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_source_count_mismatch_is_rejected) ... ok
+test_source_export_must_be_hashed (test_verify_evidence.EvidenceCheckerTests.test_source_export_must_be_hashed) ... ok
+test_source_revision_mismatch_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_source_revision_mismatch_is_rejected) ... ok
+test_symlink_cannot_escape_bundle (test_verify_evidence.EvidenceCheckerTests.test_symlink_cannot_escape_bundle) ... ok
+test_symlink_cannot_escape_repository_artifact_root (test_verify_evidence.EvidenceCheckerTests.test_symlink_cannot_escape_repository_artifact_root) ... ok
+test_tampered_hashed_file_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_tampered_hashed_file_is_rejected) ... ok
+test_unverified_claim_receipt_is_rejected (test_verify_evidence.EvidenceCheckerTests.test_unverified_claim_receipt_is_rejected) ... ok
+test_valid_bundle_is_read_only (test_verify_evidence.EvidenceCheckerTests.test_valid_bundle_is_read_only) ... ok
+test_valid_empty_log_is_supported (test_verify_evidence.EvidenceCheckerTests.test_valid_empty_log_is_supported) ... ok
+test_valid_repository_artifact_is_supported (test_verify_evidence.EvidenceCheckerTests.test_valid_repository_artifact_is_supported) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 1.099s
+
+OK

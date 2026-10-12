@@ -1,0 +1,94 @@
+{
+  "command": "seven commands recorded individually in verification-runs.json",
+  "environment": {
+    "machine": "x86_64",
+    "python": "3.12.14",
+    "system": "Linux"
+  },
+  "exit_code": 0,
+  "exported_files": 9,
+  "logs": {
+    "verification-2026-10-12-browser-workflow-92286f.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification-2026-10-12-browser-workflow-92286f.stdout.log": {
+      "bytes": 92,
+      "sha256": "c1d5782135355efcbe54a7a0f425c869b9b1cbcaf908863ddaf85be0689ed89a"
+    },
+    "verification-2026-10-12-core-followup-92286f.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification-2026-10-12-core-followup-92286f.stdout.log": {
+      "bytes": 92,
+      "sha256": "a29b42d399caf7657e75319d2d29e245c5c1d1768ebae540c0350ed63281febe"
+    },
+    "verification-2026-10-12-foundations-92286f.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification-2026-10-12-foundations-92286f.stdout.log": {
+      "bytes": 94,
+      "sha256": "710dafa430f496931818924e77d38a5011a7f254f7ac832afe2a37a96d983b93"
+    },
+    "verification-2026-10-12-projects-workflow-92286f.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification-2026-10-12-projects-workflow-92286f.stdout.log": {
+      "bytes": 92,
+      "sha256": "e3aea9f69cd2be518ebed7f6d137e1b7ea4765a3cddbfa054a34407e8f02d9e0"
+    },
+    "verification-browser.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification-browser.stdout.log": {
+      "bytes": 137,
+      "sha256": "358beab63b625647701ef17dfa8762528bf0eeb9eee83e044282093b10475554"
+    },
+    "verification-checker-integrity-08f294.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification-checker-integrity-08f294.stdout.log": {
+      "bytes": 92,
+      "sha256": "e1ae2026a00e3caae53d411555610646908b377e55a0f55ef882a6abae2e6f44"
+    },
+    "verification-projects.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification-projects.stdout.log": {
+      "bytes": 195,
+      "sha256": "ff67ab63410c3af64191e25e47b675a20da4e201710f8d18f99bfa63eee90853"
+    },
+    "verification-readonly.json": {
+      "bytes": 56479,
+      "sha256": "63f8c9eb1449763fe17fd8c0491a6b873c76bd4f1f9dfbd8e94aa7a0d07e77aa"
+    },
+    "verification-runs.json": {
+      "bytes": 5826,
+      "sha256": "7a139a4f9adbeacf6175b40b370d927b27c23b9959b528b0be4653192cc9d0b9"
+    }
+  },
+  "name": "existing-bundle-revalidation",
+  "reported_counts": {
+    "commands": 7,
+    "existing_bundles": 5,
+    "files_observed_read_only": 197,
+    "passing": 7,
+    "specialized_checkers": 2
+  },
+  "repository": "blackboxprogramming/accomplishments",
+  "schema": "blackroad.accomplishment-receipt.v1",
+  "scope": "checker integrity and internal artifact consistency only",
+  "source_commit": "e2b8ec311ed644036f0ada9758061bd500deff10",
+  "source_export_manifest": "sources/accomplishments.json",
+  "source_integrity": {
+    "after": [],
+    "before": []
+  },
+  "status": "PASS"
+}

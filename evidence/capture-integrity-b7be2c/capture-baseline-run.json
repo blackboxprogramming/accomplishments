@@ -1,0 +1,30 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_verify_capture_evidence.py",
+    "-v"
+  ],
+  "environment_override": {
+    "CAPTURE_CHECKER_SCRIPTS": "/workspace/scratch/b7be2cb09c6c/baseline/scripts"
+  },
+  "started_utc": "2026-10-12T14:11:47.470594+00:00",
+  "duration_seconds": 1.915859,
+  "exit_code": 1,
+  "logs": {
+    "capture-baseline.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "capture-baseline.stderr.log": {
+      "bytes": 23621,
+      "sha256": "af16cd9c062822c06ae57a4621c7b52416b4f9887ab2c910d011bbb97a52efa1"
+    }
+  }
+}

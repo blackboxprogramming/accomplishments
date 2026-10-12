@@ -12,6 +12,12 @@ BlackRoad has working, tested foundations for a local-first computing system: a 
 
 **What next?** Read a result below, inspect its receipt, and rerun its stated checks in a trusted checkout. The evidence checker reads the committed bundle without changing runtime state.
 
+## Capture evidence integrity — October 12, 2026
+
+**48/48 checker regression tests passed.** The browser and Projects checkers now reject 20 additional invalid evidence fixtures accepted by the prior version, including unhashed captures and backups, duplicate JSON keys and repeated upstream modules. All five existing evidence bundles and both specialized checkers pass static revalidation.
+
+[Repair report, failed controls and passing logs](evidence/capture-integrity-b7be2c/README.md) · [One scoped accomplishment record](evidence/capture-integrity-b7be2c/claims.json). These are checker regressions and artifact checks; historical RoadOS runtime counts retain their original scope.
+
 ## Native Projects and Pipeline — October 12, 2026
 
 **14 native domain/home tests and 4 Chromium check groups passed.** Real Projects, linked tasks, decisions and Pipeline follow-up history survive reload. Two-window stale edits are refused; an injected failed write rolls back without partial state. Backups read committed IndexedDB, preserve unsaved drafts and reject malformed or missing saved data.
@@ -60,3 +66,4 @@ Counts across rows, repeated runs, subsets and historical revisions must not be 
 
 [Exact mathematical bounds and frame-size derivation](proofs/road94-exact-bounds.md) · [Reproduce the independent audit](scripts/verify_math.py) · [Verify the committed evidence files](scripts/verify_evidence.py).
 
+[Evidence checker repair and four-bundle revalidation](evidence/checker-integrity-08f294/README.md): 26 checker regressions pass after reproducing 16 false-PASS cases. This verifies the evidence chain; it adds no RoadOS runtime test count.

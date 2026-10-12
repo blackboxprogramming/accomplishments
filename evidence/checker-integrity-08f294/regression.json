@@ -1,0 +1,49 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_verify_evidence.py",
+    "-v"
+  ],
+  "environment": {
+    "os": "Linux",
+    "python": "3.12.14"
+  },
+  "exit_code": 0,
+  "exported_files": 3,
+  "logs": {
+    "repaired.stderr.log": {
+      "bytes": 3395,
+      "sha256": "723d3e80389ed35a05e1b7caeb141ee79f4bfcf2055914ddaf0bd4f76493a2c3"
+    },
+    "repaired.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "reported_counts": {
+    "unittest": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 26
+    }
+  },
+  "repository": "blackboxprogramming/accomplishments",
+  "repository_tree_sha": "dcdc0ae612445ac9ec4003fc65e405996a179d3e",
+  "schema": "blackroad-accomplishment-verification/1",
+  "scope": "Evidence-checker behavior and static committed-bundle consistency only; no original runtime suites rerun, Actions, deployment or signature claim.",
+  "source_commit": "e6960894fcf949d013501291b9a95e04b137ec84",
+  "source_export_manifest": "sources/accomplishments.json",
+  "source_integrity": {
+    "after": [],
+    "before": []
+  },
+  "status": "PASS"
+}

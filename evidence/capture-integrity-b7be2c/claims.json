@@ -1,0 +1,20 @@
+{
+  "claims": [
+    {
+      "claim": "Browser and Projects evidence checkers reject 20 additional false-PASS fixtures; all 48 checker regression methods and seven existing-artifact revalidation commands pass.",
+      "id": "C-CAPTURE-INTEGRITY-B7BE2C",
+      "limits": [
+        "These are checker regressions and artifact revalidations, not new RoadOS runtime executions.",
+        "The supplied hashes establish internal consistency, not independent authentication.",
+        "Earlier browser reports lack runner digests; their archived runner files are required to be hashed, but execution identity is only compared where a digest was recorded."
+      ],
+      "receipts": [
+        "regression.json",
+        "revalidation.json"
+      ],
+      "repository": "blackboxprogramming/accomplishments",
+      "source_commit": "e2b8ec311ed644036f0ada9758061bd500deff10",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "scripts/verify_browser_evidence.py": {
+      "bytes": 4897,
+      "sha256": "b0d13a8eb6935aeb4c7f2137fcdddb5e01790557b9f948d383ad9cda5909bc5b"
+    },
+    "scripts/verify_evidence.py": {
+      "bytes": 5232,
+      "sha256": "ffb7320160719ef6197d84d736a9f53b3de869c680b698cc3d7d6d494cbcf19d"
+    },
+    "scripts/verify_projects_evidence.py": {
+      "bytes": 5311,
+      "sha256": "3c0bf32dbac816376baaa0de37a48997544d64447cac3c80ff2615a6a1dd9d01"
+    }
+  },
+  "repository": "blackboxprogramming/accomplishments",
+  "source_commit": "1761ed4287cbc827d9fe388edc8cee08317d2c84",
+  "test_harness_source_commit": "e2b8ec311ed644036f0ada9758061bd500deff10"
+}

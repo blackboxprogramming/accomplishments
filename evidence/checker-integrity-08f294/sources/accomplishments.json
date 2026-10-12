@@ -1,0 +1,23 @@
+{
+  "export_scope": "Three changed implementation/regression/compatibility artifacts; historical runtime evidence is unchanged.",
+  "files": {
+    "evidence/2026-10-12-foundations-92286f/manifest.json": {
+      "bytes": 10520,
+      "git_blob_sha": "368c5c0fb87e3ed21d2de0990d274916ba8878cd",
+      "sha256": "e0df73e5642d83e8910207d816fbefbcb2c0f4ad2d09b5fe22e10104166a2475"
+    },
+    "scripts/verify_evidence.py": {
+      "bytes": 5232,
+      "git_blob_sha": "271d512800f745389a7476cdc9213b78163c0af1",
+      "sha256": "ffb7320160719ef6197d84d736a9f53b3de869c680b698cc3d7d6d494cbcf19d"
+    },
+    "tests/test_verify_evidence.py": {
+      "bytes": 10261,
+      "git_blob_sha": "92aa5cffcf4dcf855a33f49b0e0605097deb701b",
+      "sha256": "cea6b574b9827468ef2b946e585643d0a3fd9b0e527685f06fbe5cb73fe6e736"
+    }
+  },
+  "repository": "blackboxprogramming/accomplishments",
+  "repository_tree_sha": "dcdc0ae612445ac9ec4003fc65e405996a179d3e",
+  "source_commit": "e6960894fcf949d013501291b9a95e04b137ec84"
+}

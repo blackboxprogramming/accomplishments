@@ -1,0 +1,79 @@
+STARTUP_NAVIGATION_BOOT=PASS
+STARTUP_NAVIGATION_COMMAND=PASS
+STARTUP_NAVIGATION_NEWER-PARENT=PASS
+✔ startup-navigation-browser.cjs (2607.110122ms)
+STARTUP_INPUT=PASS: dock/editor identity, Chat reload, menu, keyboard, close and newer-parent ordering
+✔ startup-input-browser.cjs (2264.324672ms)
+DOCUMENT_LIFECYCLE=PASS (duplicate boot, frame reload, retired boot/report/command, pin, draft)
+✔ document-lifecycle-browser.cjs (955.569972ms)
+LOCAL_COMPUTERS=PASS (four IDs, scoped Code/Chat, retired editor, pin, reload, competing save)
+LOCAL_COMPUTERS_INVALID_RECORD=PASS
+✔ local-computers-browser.cjs (3703.084715ms)
+✖ independent resource and network observation (1.811408ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 4
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9563.583942
+
+✖ failing tests:
+
+test at ../../../scripts/browser_workflow_runner.cjs:78:11
+✖ independent resource and network observation (1.811408ms)
+  AssertionError [ERR_ASSERTION]: JavaScript errors across all created pages
+  + actual - expected
+  
+  + [
+  +   {
+  +     message: "SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.",
+  +     module: 'startup-navigation-browser.cjs',
+  +     page_url: 'about:blank',
+  +     stack: "SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.\n" +
+  +       '    at <anonymous>:15:9\n' +
+  +       '    at <anonymous>:16:7'
+  +   },
+  +   {
+  +     message: "SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.",
+  +     module: 'startup-navigation-browser.cjs',
+  +     page_url: 'about:blank',
+  +     stack: "SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.\n" +
+  +       '    at <anonymous>:15:9\n' +
+  +       '    at <anonymous>:16:7'
+  +   },
+  +   {
+  +     message: "SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.",
+  +     module: 'startup-navigation-browser.cjs',
+  +     page_url: 'about:blank',
+  +     stack: "SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.\n" +
+  +       '    at <anonymous>:15:9\n' +
+  +       '    at <anonymous>:16:7'
+  +   },
+  +   {
+  +     message: "SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.",
+  +     module: 'local-computers-browser.cjs',
+  +     page_url: 'about:blank',
+  +     stack: "SecurityError: Failed to read the 'localStorage' property from 'Window': Access is denied for this document.\n" +
+  +       '    at <anonymous>:2:284\n' +
+  +       '    at <anonymous>:3:7'
+  +   }
+  + ]
+  - []
+  
+      at TestContext.<anonymous> (/workspace/scratch/92286f010d1b/accomplishments/scripts/browser_workflow_runner.cjs:79:14)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)
+      at run (node:internal/test_runner/harness:398:12)
+      at test (node:internal/test_runner/harness:407:12)
+      at main (/workspace/scratch/92286f010d1b/accomplishments/scripts/browser_workflow_runner.cjs:78:11) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [Array],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,542 @@
+{
+  "export_scope": "Pinned local browser shell, four existing browser modules, registry manifests, dynamic shell dependencies, original image assets and relevant instructions; not the complete repository.",
+  "files": {
+    "AGENTS.md": {
+      "git_blob_sha": "5ef8fc9a115a803a85cd65a96327ea92edcf2563",
+      "mode": "100644",
+      "sha256": "65269055677bb235f5c912bcc6b37d36190237934a729f2f3368d811ce47a501",
+      "size": 5051
+    },
+    "GOAL/02-four-computers-with-backgrounds.jpeg": {
+      "git_blob_sha": "58b52f4e906eb11f8c654eae5b09c768cccdb166",
+      "mode": "100644",
+      "sha256": "1a447517f6f511acf94cd985ceefaa25e5c537c33d4e92cbbe182e25db6b9eee",
+      "size": 550561
+    },
+    "GOAL/04-symmetric-workspace.jpeg": {
+      "git_blob_sha": "cf9cbcbe4513934b716870c4226b9e0e382fc251",
+      "mode": "100644",
+      "sha256": "ecf8a5314244c707a7abb74fd19df9d11f00f1579596d9f35759e910a80b2f9c",
+      "size": 434282
+    },
+    "GOAL/10-workspace-home-product.jpeg": {
+      "git_blob_sha": "935f999633ad740c52f558da1a307e02d4e1307e",
+      "mode": "100644",
+      "sha256": "432132b413ac7ec6dc1eee42171c3ff218dfba6974930553d4370499317905f7",
+      "size": 481646
+    },
+    "GOAL/README.md": {
+      "git_blob_sha": "50f419727fe806728ca99533b9d517f5fd35a7c5",
+      "mode": "100644",
+      "sha256": "e1e16812271c0d53ae23790e0d9c3503a2fd881da289e6a573d6acbf8adc935d",
+      "size": 3697
+    },
+    "GOAL/manifest.json": {
+      "git_blob_sha": "89d1035e77c57e9c556f2e0770dc32a2be5ebe56",
+      "mode": "100644",
+      "sha256": "405f9360fc5cab5d64f3bde23d5afd169da5c489a9f52f43b3619bc2594fecb9",
+      "size": 5171
+    },
+    "README.md": {
+      "git_blob_sha": "2a82060804b3b96b861735fbb9a2185b993a3787",
+      "mode": "100644",
+      "sha256": "7748c322f5eef1ab750f139c0008f88bcab013b0528872a3a239fdbc1fb2c66d",
+      "size": 11107
+    },
+    "design/global.css": {
+      "git_blob_sha": "413623eee3ee1992ec6c6e8581318e11806f7f91",
+      "mode": "100644",
+      "sha256": "05c35650bb47e5db0a357d80becbd9278fb07eb25c4f03c8515c8824615d38e6",
+      "size": 267
+    },
+    "design/imports/roados-home-2026-10-08/styles.css": {
+      "git_blob_sha": "3ec9ee783909211e2e53d0feb7531f0b0a4fc4ea",
+      "mode": "100644",
+      "sha256": "6a2b0c33d3ef007871bd945a3d6d3a4a514e6e915842c2abe975190008e66ed0",
+      "size": 24845
+    },
+    "desktop/apps/effects.js": {
+      "git_blob_sha": "4b21664c1b1a0fe00efe8ab4d8bb874e908321d6",
+      "mode": "100644",
+      "sha256": "dd7595155ab691b7f4cc3cff7bb5de02cf15a0e1ed0d99dc4f0b4874f22e1d2d",
+      "size": 15031
+    },
+    "desktop/apps/grants.js": {
+      "git_blob_sha": "c343e0aa9cc07ee033c444cc09068f332be55276",
+      "mode": "100644",
+      "sha256": "bdb01c823341df12dee8ff02bc09515e701e4316514e9f8207061b9baf10f1d3",
+      "size": 14921
+    },
+    "desktop/apps/host-session.js": {
+      "git_blob_sha": "d560fca66c19dd6def364957f30b64e9daa108d9",
+      "mode": "100644",
+      "sha256": "332c0ea62a8ea75c8ac3ad9d2e1b22503e88d825f97204a25eb3f0cbe212bdcc",
+      "size": 6967
+    },
+    "desktop/apps/host-write.js": {
+      "git_blob_sha": "273e9167c53d2dcf80fffd5088fa784ec7fa7935",
+      "mode": "100644",
+      "sha256": "d5e8ba0ce874c4e25805997b33a5744c52b428e4906c3d28496de8764cc215d0",
+      "size": 2915
+    },
+    "desktop/apps/roadcode-home.js": {
+      "git_blob_sha": "d0ac136950c825a8bd27baa7f3a82eb6e9e41d90",
+      "mode": "100644",
+      "sha256": "c4e705ae49503ff134d5c93c10801454ee98e0e84d42cb09fdf0eeddbadb3611",
+      "size": 7328
+    },
+    "desktop/apps/roadcode-review.js": {
+      "git_blob_sha": "d147e37dda9fc859b6b5777062ca33fe71605fe3",
+      "mode": "100644",
+      "sha256": "6f45ef07b6694d75a605a30b1dbe86aeeff9cbb1749d6dd36493e427086b2306",
+      "size": 1176
+    },
+    "desktop/apps/roadtrip-home.js": {
+      "git_blob_sha": "f133ab7baa1a8f8f80b3779db5d84633e772c691",
+      "mode": "100644",
+      "sha256": "184028cdd6f278d00f28c3e8b6676996df0131960b7004ef8bccef53a72e07d5",
+      "size": 5977
+    },
+    "desktop/apps/roadview-core.js": {
+      "git_blob_sha": "e77c60be0cf00aef64071de0d15fc5e9033abfd2",
+      "mode": "100644",
+      "sha256": "6807cf90d393f18541556b1a6d0a3605975a625ff4a084d3d30879c0d381a65c",
+      "size": 4956
+    },
+    "desktop/apps/roadview-home.js": {
+      "git_blob_sha": "893d4568810e5d6b60e67c0a1b354f8b8d87c3a8",
+      "mode": "100644",
+      "sha256": "0d450266ed38e671c20ebedc84b5dd0ce9d4ffdbcf6068cca1c0a716b17be3a4",
+      "size": 4346
+    },
+    "desktop/apps/roadview-store.js": {
+      "git_blob_sha": "10264d8a670941b367b5a7298b62c44a08453951",
+      "mode": "100644",
+      "sha256": "ed66fffe7a6d36b3fed359c954201ff48a0045cd8405912efed93588d6c488bb",
+      "size": 13094
+    },
+    "desktop/apps/roadview.css": {
+      "git_blob_sha": "d7a98bdf48f692683e8833b34b6924b6091eddcb",
+      "mode": "100644",
+      "sha256": "c9370900ecb97458d68ff05e839f787aecda3285d46e044648d226fe94c69eb9",
+      "size": 4088
+    },
+    "desktop/apps/roadview.js": {
+      "git_blob_sha": "2dd891aadc57e785022f38a47491eda261ab992e",
+      "mode": "100644",
+      "sha256": "309fc45afe9c6c88c6d6b551e70fc7ba78cb6d42cfe7987cb7e46ae82634673e",
+      "size": 14806
+    },
+    "desktop/apps/roadwork-core.js": {
+      "git_blob_sha": "f390d366bcf4e144ba03e06eab9dbeef6506a85f",
+      "mode": "100644",
+      "sha256": "4eaa45108502d6294f69908a5544241e27ae4f57ccc36d45aacd0e2e54513705",
+      "size": 16465
+    },
+    "desktop/apps/roadwork-home.js": {
+      "git_blob_sha": "fe9dfbc69fcfb94b7f9f9317b8c54fd73da05fa3",
+      "mode": "100644",
+      "sha256": "4ff622f9450fe67b3c01c2cf744fc628efe5e29f4c6d7b857baec5d655f508d2",
+      "size": 1591
+    },
+    "desktop/apps/roadwork-runtime-client.js": {
+      "git_blob_sha": "446478d81f2a1d54626294d63387c22b2d6fdf1d",
+      "mode": "100644",
+      "sha256": "54e33c2b70439257fab9c5008f98dd90b60ac4d29e5fcd1bd2e1b09af9b4cbd5",
+      "size": 12342
+    },
+    "desktop/apps/roadwork-runtime-request.js": {
+      "git_blob_sha": "7b36757a1c6d07d64d7d005eb1f002e074bd0394",
+      "mode": "100644",
+      "sha256": "735ca3a55c7a7a81842d50c38d4016f1a3a1eedd75d01b01557adf860195c2fe",
+      "size": 14385
+    },
+    "desktop/apps/roadwork-runtime-ui.js": {
+      "git_blob_sha": "991a3b5a94cc055330973a77b9d3f38e70bb0144",
+      "mode": "100644",
+      "sha256": "9002b213f0491875bc84f1d2f3aec0a10e91554bde42273dd5c629fc34e4a3de",
+      "size": 16561
+    },
+    "desktop/apps/roadwork-store.js": {
+      "git_blob_sha": "587c49e1d4ac143861a30fea43de68076c8fc5b9",
+      "mode": "100644",
+      "sha256": "d2dd46f2a05b19657cfdbe61ece548ba1345020a35ce44489b8a0f0a50c6a044",
+      "size": 4760
+    },
+    "desktop/apps/roadwork.css": {
+      "git_blob_sha": "57631502a9dfbb18938189327ce20b27a00b6cb6",
+      "mode": "100644",
+      "sha256": "be422bb162a45adecd569ce85c7acd87e1f12fe5e27b0854d7849dbc0c2fd636",
+      "size": 10163
+    },
+    "desktop/apps/roadwork.html": {
+      "git_blob_sha": "1ac7516c121f98331da35afe770ec9c9d68dce8e",
+      "mode": "100644",
+      "sha256": "c7dea79f89aaa3f69f3b04d0c68c13a8e35d524714ebc6d66104010af45e98c9",
+      "size": 3184
+    },
+    "desktop/apps/roadwork.js": {
+      "git_blob_sha": "d461388a4597defb574ae32924d889f0a8b8ac7c",
+      "mode": "100644",
+      "sha256": "452e1ec484fcb8d175a7765c467e04e65d8ba376777b80869e56a17d4986e473",
+      "size": 30342
+    },
+    "desktop/assets/blackroad-lobby.jpeg": {
+      "git_blob_sha": "0914d4c8ce1168e4ec24277bfc3fd7feb0331a71",
+      "mode": "100644",
+      "sha256": "d39a386583a14310ef71c5d74f280f1a98be280e7c2d44205092ad6218666874",
+      "size": 823093
+    },
+    "desktop/assets/forest-road.jpeg": {
+      "git_blob_sha": "b2b594f3ae5236257f294048cab2968f859d163d",
+      "mode": "100644",
+      "sha256": "72f4185963c2fd5ce32b9dd77edcb833b98924e7332574f019513691f80b6875",
+      "size": 789338
+    },
+    "desktop/desktop.css": {
+      "git_blob_sha": "675bcffa5e378f4b3b4e13f35f27d38e7b4337cf",
+      "mode": "100644",
+      "sha256": "f9528db084003f10f756d4fb307018c24a1149398fb0a2146216fc75ed82ee07",
+      "size": 11730
+    },
+    "desktop/desktop.js": {
+      "git_blob_sha": "190234aab2df870136b03b97c40c050533dc3b2d",
+      "mode": "100644",
+      "sha256": "3aa96a71fff0d78be43688a99b2c138b63e8bac8f420e4a34df82577926c171a",
+      "size": 30527
+    },
+    "desktop/index.html": {
+      "git_blob_sha": "afde05d8a95375c81ba3f773a48f6654347e2044",
+      "mode": "100644",
+      "sha256": "2289af73b7868a03a0eddf37413bb4d3092606768d7e104bf4b1ed97298d16cb",
+      "size": 2354
+    },
+    "desktop/local-computers.js": {
+      "git_blob_sha": "83528fe12300fdcfc2b7c0a9a48e7d50cf882f4c",
+      "mode": "100644",
+      "sha256": "df91b0dc4cd0cb17510a51d8357a99c0f1a330c648c3d24cc2a13872afc24d7f",
+      "size": 3382
+    },
+    "home/roados-bridge.js": {
+      "git_blob_sha": "77044b661bb3bfeef962a6e168e29fe612f2a28c",
+      "mode": "100644",
+      "sha256": "9f612b6e405530a37a129b309a91eda4d5a7ff68795de4d68528a80ca7e70b0a",
+      "size": 5512
+    },
+    "impl/dist/apps/backroad/road.app.json": {
+      "git_blob_sha": "ebea3c353b30a6ba37e1bb294db2940dbd8b3489",
+      "mode": "100644",
+      "sha256": "d22586b2ea1de770b1785d5a4bc930d47515a337e4205f93098b85bf15d3ae40",
+      "size": 2750
+    },
+    "impl/dist/apps/blackboard/road.app.json": {
+      "git_blob_sha": "76a9f506d0cb46a1a4ee96fb0cc796430cf64f18",
+      "mode": "100644",
+      "sha256": "355a3d8791e8ddcd34041940ee66ace0c8874c815fb1478fdc5b5b3905038b8a",
+      "size": 2243
+    },
+    "impl/dist/apps/carpool/road.app.json": {
+      "git_blob_sha": "924b4ccb2653aed4d3812b23cb1326b2b42b3459",
+      "mode": "100644",
+      "sha256": "8164c2107304582a64d0595e6d021c6a0095cae554aac6162fe4d43a0a4fbf4b",
+      "size": 3434
+    },
+    "impl/dist/apps/chain/road.app.json": {
+      "git_blob_sha": "f4a933a0c6527690f70484c8eac797a4ce987a5b",
+      "mode": "100644",
+      "sha256": "73b933bb09efaf00d094585a842a41d2e07ecd03f2037dd5e7be378f81ba9104",
+      "size": 1309
+    },
+    "impl/dist/apps/detour/road.app.json": {
+      "git_blob_sha": "d1400e4e2c46ad515290cecba26dfa9b6ba55e10",
+      "mode": "100644",
+      "sha256": "136aeec92bf2950a57a185daafb90c55ebf8dac46a4a963eeaa291c7537c1c8c",
+      "size": 3133
+    },
+    "impl/dist/apps/devices/road.app.json": {
+      "git_blob_sha": "5ced63167b0acac90fffdca989a6eaf25a7fc1cf",
+      "mode": "100644",
+      "sha256": "918a4667f5d1e1f3a96e1f2382c27fa9450a7e02adb75522320a43029dfb196d",
+      "size": 637
+    },
+    "impl/dist/apps/files/road.app.json": {
+      "git_blob_sha": "eea47e4fde1a65de7bf5607189c9ef5fb278bf7c",
+      "mode": "100644",
+      "sha256": "17dbae3ad1aee9b4de43fe58eaed5b4332f3daca90ebbe6062a476cb82c2db37",
+      "size": 988
+    },
+    "impl/dist/apps/glovebox/road.app.json": {
+      "git_blob_sha": "2062b4944d13fe67d5d678f885f001bd0f7fc4e9",
+      "mode": "100644",
+      "sha256": "58e2e4705b7806eeb1c23436f8d6bbe3ef5d2283053b9c720139fffbbf0fe65f",
+      "size": 2067
+    },
+    "impl/dist/apps/highway/road.app.json": {
+      "git_blob_sha": "b48c3995f46077fb5d2dc8f35fa801113895567a",
+      "mode": "100644",
+      "sha256": "e1f2d1ddf236d75297827d7d8c632de8f72cbdade62f2daa1d11bf9443d3e447",
+      "size": 5552
+    },
+    "impl/dist/apps/index.json": {
+      "git_blob_sha": "3ebcaa72d3f9d2792cfb7297c760b20b09f8c526",
+      "mode": "100644",
+      "sha256": "bb3bffd1c283ed519adefb443d2a0ee916a8e1951d17c0c7ffdcaafb43663c23",
+      "size": 651
+    },
+    "impl/dist/apps/keys/road.app.json": {
+      "git_blob_sha": "8a677810aef264989ae016e5ab8297b2315ddda4",
+      "mode": "100644",
+      "sha256": "9195372201f3216cb678bf19853750c15dbc79796e0ad57b62f21da3e30912ea",
+      "size": 2734
+    },
+    "impl/dist/apps/map/road.app.json": {
+      "git_blob_sha": "7f8bebcf4997119a614eaae2941be0a44439ae2a",
+      "mode": "100644",
+      "sha256": "ab89d6fe83f2d3ea39d538f4074f09dfd287700c267ec4cc4c262a87520960a0",
+      "size": 3954
+    },
+    "impl/dist/apps/notes/road.app.json": {
+      "git_blob_sha": "351f4fba96290c192ce4b7f74a9771c814e2504f",
+      "mode": "100644",
+      "sha256": "2cb7025c498db664b8bace18d678b9d7fa02f2366df766fc3f1bdadd3fbf1737",
+      "size": 1300
+    },
+    "impl/dist/apps/officeroad/road.app.json": {
+      "git_blob_sha": "c2a468e387fe7d69306b9a1fe3ae623e8b504c54",
+      "mode": "100644",
+      "sha256": "8fc3ffbfd0ba50767fff628359f6b3e4b5ed07dbb9b1ea84601fe765eb719237",
+      "size": 2813
+    },
+    "impl/dist/apps/oneway/road.app.json": {
+      "git_blob_sha": "a963059df566b1b8d1eae7aefbc986b4fad2f72e",
+      "mode": "100644",
+      "sha256": "0754853f42dfaedabe0adda1b2303a5fc98d17310e69062b5202cb81a0ac844e",
+      "size": 937
+    },
+    "impl/dist/apps/pitstop/road.app.json": {
+      "git_blob_sha": "c052f271f98ca1f3acb536b5455200aad36cac68",
+      "mode": "100644",
+      "sha256": "05aa8cd2f73c2fa2ff381231593677a4b6d2a45deca11c89479257b28399f8c4",
+      "size": 3661
+    },
+    "impl/dist/apps/receipts/road.app.json": {
+      "git_blob_sha": "7964b556ed19feca9aa596724c9c77ce2cf9bd11",
+      "mode": "100644",
+      "sha256": "3047f69c99c30624f0924b94818c51b135058a124f71ab840f26e15eb491c1a0",
+      "size": 738
+    },
+    "impl/dist/apps/roadband/road.app.json": {
+      "git_blob_sha": "eacce2698fe264623303be37b1d048524aff9fc2",
+      "mode": "100644",
+      "sha256": "e1de197bbe22bf878594250f5d4ce2a2bcc45c59590ec759ccfb469bcfa5b838",
+      "size": 1198
+    },
+    "impl/dist/apps/roadbook/road.app.json": {
+      "git_blob_sha": "5b915d7afd878d557e271dcb766d3ffa41352791",
+      "mode": "100644",
+      "sha256": "cd843645363fb5e504abb00914cb4eb6040f03098e444b01d57bdeb6b8f9069e",
+      "size": 1308
+    },
+    "impl/dist/apps/roadcode/road.app.json": {
+      "git_blob_sha": "99b5b407c4c94a2068f7bb772aed910aa028d172",
+      "mode": "100644",
+      "sha256": "04b08c5122d194dd9fa57ffba63763664e1aee13f9d6d795adf47a8157edde0b",
+      "size": 2992
+    },
+    "impl/dist/apps/roadcoin/road.app.json": {
+      "git_blob_sha": "c11fbede32dd15ae59af0446fcda170f4075eb96",
+      "mode": "100644",
+      "sha256": "cb0e37dc2aa660e1d1c0183c88d386aa5f87772df39eaca738dc124fa9f9c5d5",
+      "size": 3377
+    },
+    "impl/dist/apps/roadie/road.app.json": {
+      "git_blob_sha": "9ed58d509c020cca760d1f80c4e66f78358b97e4",
+      "mode": "100644",
+      "sha256": "3e0c7560685e35bd5a09f4465cfbb826de970acdb288e1e4aae40c733ec4f1a7",
+      "size": 558
+    },
+    "impl/dist/apps/roadshow/road.app.json": {
+      "git_blob_sha": "03ee1382fe08b079aa982ed36a605e8e4f484677",
+      "mode": "100644",
+      "sha256": "f8307fea4e51e27386da9e3f070bce19f968154ca91c73f72c7e77ccad0286e2",
+      "size": 959
+    },
+    "impl/dist/apps/roadside/road.app.json": {
+      "git_blob_sha": "c323395ce8f1290ebfcb0953c75cbc8aeaeaa929",
+      "mode": "100644",
+      "sha256": "6c7e4b54daa4569396beb6ee3f3cda8257b3022cbbfcfbc822e16ca4b4a7f786",
+      "size": 3493
+    },
+    "impl/dist/apps/roadsport/road.app.json": {
+      "git_blob_sha": "e7fecbe0636ecc6059d2f204a0ace1ab18d2bd54",
+      "mode": "100644",
+      "sha256": "77f1cab889b511a83e3eb8085000683996bfdc8e211b58e124caffa6f51a0521",
+      "size": 785
+    },
+    "impl/dist/apps/roadstream/road.app.json": {
+      "git_blob_sha": "5e00ba7409177ceb5fc51b7e0ce397c8ee54a203",
+      "mode": "100644",
+      "sha256": "0dda62539f3e8ec3894fb98e06679d0514674f36c21392d4f318b3ee9761a704",
+      "size": 854
+    },
+    "impl/dist/apps/roadtrip/road.app.json": {
+      "git_blob_sha": "efa4ffcf68603dc5995cd82b470e46447d0b719a",
+      "mode": "100644",
+      "sha256": "9ec529b4925aaefe0d9ae655ab76619f42aaa97b49b74ef13b6ee7acf176b1fe",
+      "size": 2675
+    },
+    "impl/dist/apps/roadview/road.app.json": {
+      "git_blob_sha": "6c4348241dbd5a265e84a562220b38a12ee05bf8",
+      "mode": "100644",
+      "sha256": "67b7d3629ece041ac4c0409de810f078dcb5da22430df0f1820c07f8342db244",
+      "size": 618
+    },
+    "impl/dist/apps/roadwork/road.app.json": {
+      "git_blob_sha": "e17367ca9f8ee973c46b7beb9626090691ef7651",
+      "mode": "100644",
+      "sha256": "6e4e218f4cfb56a8c2b78ca55284b067c95e3c7fdd5b589ad8e4958333e764e1",
+      "size": 5261
+    },
+    "impl/dist/apps/roadworld/road.app.json": {
+      "git_blob_sha": "8535db35d60e2eff2430ab11417149cca12b6af9",
+      "mode": "100644",
+      "sha256": "9ac7d02db8e34f2492e502f27999dbb65f05f99b5d2f360bfac9ce527641fc3d",
+      "size": 1038
+    },
+    "impl/dist/apps/roundabout/road.app.json": {
+      "git_blob_sha": "62c017e999676178cb4188b0e53459eb66fa0a75",
+      "mode": "100644",
+      "sha256": "e451c4504e3e1361724fb954cb4b303cc6fff3b28977b4365a434490f740cd23",
+      "size": 1058
+    },
+    "impl/dist/apps/settings/road.app.json": {
+      "git_blob_sha": "ee19fbbb1a47fe58dd752635ed35b4d4e9d1c7ee",
+      "mode": "100644",
+      "sha256": "8a7a85b6b5010bf1554422db7bc7f8cc71a499372f3133103029304a35994b84",
+      "size": 1924
+    },
+    "impl/dist/apps/tasks/road.app.json": {
+      "git_blob_sha": "ca6d26062eae98f456a3ee5e34dacc7fe5766114",
+      "mode": "100644",
+      "sha256": "fc9587c884d0ffc315dcd412f8a2923e5469daa381d8fff06e6bdd10505647b6",
+      "size": 1147
+    },
+    "impl/dist/apps/terminal/road.app.json": {
+      "git_blob_sha": "11b5b262b404e9513ac39164987213a175b13a61",
+      "mode": "100644",
+      "sha256": "daa78cba5405ab186685fa033a32a81ffd0ddd2d5f2f5f20d952fe252e3d602b",
+      "size": 571
+    },
+    "impl/dist/apps/wire/road.app.json": {
+      "git_blob_sha": "8290aed903f4ce74289b30cf055f72ac2bb764b6",
+      "mode": "100644",
+      "sha256": "29b173b0acddf6334c4178cee4e55b43345f6cf3afbf40a79960c70b54876334",
+      "size": 2980
+    },
+    "impl/dist/hostclient.js": {
+      "git_blob_sha": "9b33230bd2f3654ba4b9fce35b0d5b4b808d0a70",
+      "mode": "100644",
+      "sha256": "3fccff3bc085aa99fb89987e00601f6b5e24c2587281343a6a405ba5ca5f675d",
+      "size": 2236
+    },
+    "impl/dist/products/roadcode.js": {
+      "git_blob_sha": "f8db4dda3915a40d6300f0df3e4935bb1f6c88f9",
+      "mode": "100644",
+      "sha256": "2fcf0f099080b946733e3a4ec1922742ca5ddcd4eb6c5552f7c816f80b2d83fe",
+      "size": 119535
+    },
+    "impl/dist/registry.js": {
+      "git_blob_sha": "cdac5fc12965bcad585bc926253630d44f016a7c",
+      "mode": "100644",
+      "sha256": "22c92d2658c75cc27f5be9d39fd9683fae35e64d13ea7e12f3ecd8db980a5895",
+      "size": 5453
+    },
+    "impl/road.app.schema.json": {
+      "git_blob_sha": "5b4507da658b9efc06e73e0d9450412d42db174e",
+      "mode": "100644",
+      "sha256": "baf819251e55fc5666a3ff5958afc58aebe0c6019eb76b610d212776876b2395",
+      "size": 5151
+    },
+    "workspace/COLLABORATION.md": {
+      "git_blob_sha": "9b942276a8780ddcfa22530676d3a31e590a46fd",
+      "mode": "100644",
+      "sha256": "f0c7cb7cf2a3a823aca1289c6e77da815941e2017e58aa067c929fac9cedc8eb",
+      "size": 6206
+    },
+    "workspace/GRID.md": {
+      "git_blob_sha": "cbf0628480e5cb6bd38e6a2a3498e50ac33cb695",
+      "mode": "100644",
+      "sha256": "7339deefc55f202abb0a677a4c21207ac6bff2ee94e393db85133e644f900cf1",
+      "size": 472
+    },
+    "workspace/README.md": {
+      "git_blob_sha": "a6a103941b979d51f173f5b913ea56c2a338337a",
+      "mode": "100644",
+      "sha256": "4a297c6fb4cbfea0521d433e8b16995e2cbb1ae1829522d02dce946dbbfa86ec",
+      "size": 12739
+    },
+    "workspace/REFERENCE.md": {
+      "git_blob_sha": "fa37b911d7d71f79983921d567360d0c69fc5962",
+      "mode": "100644",
+      "sha256": "7d1ee4cc4e08d45d9bbc1f1551178a15db5199f974c29c6f63d49524d9b2b4ff",
+      "size": 727
+    },
+    "workspace/collaboration-ui.js": {
+      "git_blob_sha": "1c8b98fa3a88dc9059fcd33a19916c0913e66f35",
+      "mode": "100644",
+      "sha256": "622a725450225e22ae47bacc6c7414c31abb3f7fb74383fa81073d12486924bb",
+      "size": 19047
+    },
+    "workspace/collaboration.js": {
+      "git_blob_sha": "c6c3fe253b62c6b7af84bd60852f3235fff084bd",
+      "mode": "100644",
+      "sha256": "66f836d2876e89f46540a822c36a65da33e79a9353754df5fd4952741d70b1d6",
+      "size": 10415
+    },
+    "workspace/index.html": {
+      "git_blob_sha": "2b9bbb7f0f223244d446b66ad43e383f37f6a9c0",
+      "mode": "100644",
+      "sha256": "04de395757f6a4a915dd53ebe49ea41920b52ad878d9fa47025f15f60a04ec47",
+      "size": 5987
+    },
+    "workspace/tests/document-lifecycle-browser.cjs": {
+      "git_blob_sha": "54b64b6b445ab6c1d6801340c53d61740bdc5827",
+      "mode": "100644",
+      "sha256": "061c09808ea0afd83c7e46551b562ef1b5cf47aa6f36844bddc17740429171fd",
+      "size": 4638
+    },
+    "workspace/tests/local-computers-browser.cjs": {
+      "git_blob_sha": "b5e56bb3701277dcde2b21d42b425cb1991e4903",
+      "mode": "100644",
+      "sha256": "decc2fdfae3ad7d0e91ca19d1c1726d0364e46ab64e2a90591fc53fd92d00c57",
+      "size": 6517
+    },
+    "workspace/tests/startup-input-browser.cjs": {
+      "git_blob_sha": "fa05a1df0fafed32ab4e9b335f161b41a13919f8",
+      "mode": "100644",
+      "sha256": "7e9399b946a42b2395d1045ddf57a32d49054a1a504b9a2e9d2bddba1e37d6a9",
+      "size": 5795
+    },
+    "workspace/tests/startup-navigation-browser.cjs": {
+      "git_blob_sha": "136444c6044e887df0d3dea59ff6349fd2050ffe",
+      "mode": "100644",
+      "sha256": "19da4ce2d7763f5093b3ef578af6fbe90ed808c27378903d46d8fd5669b29f89",
+      "size": 3921
+    },
+    "workspace/workspace.css": {
+      "git_blob_sha": "7259dfdf8e7863767e524cc81f709edd15021901",
+      "mode": "100644",
+      "sha256": "9de4c4b4018709b0c3454c5d16ba1682ae063e35c3f0429428a1580e67ea53d3",
+      "size": 13343
+    },
+    "workspace/workspace.js": {
+      "git_blob_sha": "6a5a59ab461a74e8181201514fdac9bda0aa9262",
+      "mode": "100644",
+      "sha256": "e27acd0e445ca5b94b86aef9f62128d336cc9bb2d04cecea394a525fafd837cb",
+      "size": 27001
+    }
+  },
+  "repository": "blackboxprogramming/road-os",
+  "repository_tree_sha": "616d61c6a84eb39366e8ce851a09d43b4909fb23",
+  "source_commit": "1e135f954800bad136d33bdd81a03ebb66229a96"
+}

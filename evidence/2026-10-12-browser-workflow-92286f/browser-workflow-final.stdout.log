@@ -1,0 +1,22 @@
+✔ negative control: fixture storage read on a blank document (43.174888ms)
+STARTUP_NAVIGATION_BOOT=PASS
+STARTUP_NAVIGATION_COMMAND=PASS
+STARTUP_NAVIGATION_NEWER-PARENT=PASS
+✔ startup-navigation-browser.cjs (2782.612283ms)
+STARTUP_INPUT=PASS: dock/editor identity, Chat reload, menu, keyboard, close and newer-parent ordering
+✔ startup-input-browser.cjs (2252.764987ms)
+DOCUMENT_LIFECYCLE=PASS (duplicate boot, frame reload, retired boot/report/command, pin, draft)
+✔ document-lifecycle-browser.cjs (1015.915049ms)
+LOCAL_COMPUTERS=PASS (four IDs, scoped Code/Chat, retired editor, pin, reload, competing save)
+LOCAL_COMPUTERS_INVALID_RECORD=PASS
+✔ local-computers-browser.cjs (4031.903761ms)
+✔ independent GOAL-aligned desktop geometry (857.132299ms)
+✔ independent resource and network observation (0.777264ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 11141.263686

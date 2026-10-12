@@ -6,11 +6,19 @@ BlackRoad has working, tested foundations for a local-first computing system: a 
 
 **Why at all?** This repository lets Alexa and anyone evaluating BlackRoad trace a claim to its source and observed result. It makes scattered logs and changing revisions inspectable before someone relies on a capability.
 
-**Why now?** Recent merges and fresh execution changed what can be demonstrated. The new core qualification resolves a recorded timeout and verifies both its original source and the newer merged source.
+**Why now?** Recent merges and fresh execution changed what can be demonstrated. Core qualification resolves a recorded timeout; the browser follow-up adds real Chromium interaction and layout evidence that the backend checks did not establish.
 
 **Why this?** A GitHub evidence index keeps source ownership and history in their existing repositories while linking claims to pinned revisions, raw logs and reproducible checks. Each result retains its tested scope and trade-offs.
 
 **What next?** Read a result below, inspect its receipt, and rerun its stated checks in a trusted checkout. The evidence checker reads the committed bundle without changing runtime state.
+
+## Real browser workflow — October 12, 2026 UTC
+
+**7/7 scoped Chromium check groups passed:** four unchanged upstream modules plus a negative control, desktop geometry and resource/network observation. Four local Computer IDs persist; separate Code/Chat drafts, pinning, reload, stale-message rejection and early-input ordering are exercised. Outer panes measured 704 pixels each, and all four tiles measured 335 × 214.5 pixels in a two-by-two forest-background grid.
+
+[Browser report and inspected screenshots](BROWSER_WORKFLOW_2026-10-12.md) · [Four new records](evidence/2026-10-12-browser-workflow-92286f/claims.json) · [Receipts, including initial failed observer runs](evidence/2026-10-12-browser-workflow-92286f/README.md).
+
+These are browser-local workspaces, not four deployed machines. Four blank-document test-fixture errors remain recorded and are explained by a control without RoadOS code. No production source or upstream test assertions changed; this is not full visual, security, fleet or platform certification.
 
 ## Complete core qualification — October 11, 2026 CT
 

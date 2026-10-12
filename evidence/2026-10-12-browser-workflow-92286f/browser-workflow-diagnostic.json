@@ -1,0 +1,55 @@
+{
+  "command": [
+    "/workspace/scratch/92286f010d1b/toolchains/node26/node-v26.11.1-linux-x64/bin/node",
+    "/workspace/scratch/92286f010d1b/accomplishments/scripts/browser_workflow_runner.cjs",
+    "/workspace/scratch/92286f010d1b/verification-browser/road-os"
+  ],
+  "elapsed_seconds": 10.264482,
+  "environment": {
+    "node": "v26.11.1",
+    "node_binary": "/workspace/scratch/92286f010d1b/toolchains/node26/node-v26.11.1-linux-x64/bin/node",
+    "os": "Linux",
+    "packages_installed_by_this_run": false,
+    "python": "3.12.14"
+  },
+  "error": null,
+  "exit_code": 1,
+  "exported_files": 89,
+  "finished_at_utc": "2026-10-12T04:52:45.603903+00:00",
+  "logs": {
+    "browser-workflow-diagnostic.stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "browser-workflow-diagnostic.stdout.log": {
+      "bytes": 3555,
+      "sha256": "41299b8ef90d252f3cf271f274a7a47f0740738e8eccaf85e6f99081808f6b3e"
+    }
+  },
+  "name": "browser-workflow-diagnostic",
+  "reported_counts": {
+    "node": {
+      "cancelled": 0,
+      "fail": 1,
+      "pass": 4,
+      "skipped": 0,
+      "tests": 5,
+      "todo": 0
+    },
+    "pytest": {},
+    "unittest_per_stage": []
+  },
+  "repository": "blackboxprogramming/road-os",
+  "repository_tree_sha": "616d61c6a84eb39366e8ce851a09d43b4909fb23",
+  "schema": "blackroad-accomplishment-verification/1",
+  "scope": "Only the recorded command at the pinned source; no hosted CI, deployment or comparative claim.",
+  "source_commit": "1e135f954800bad136d33bdd81a03ebb66229a96",
+  "source_export_manifest": "sources/road-os.json",
+  "source_integrity": {
+    "after": [],
+    "before": []
+  },
+  "started_at_utc": "2026-10-12T04:52:35.339426+00:00",
+  "status": "FAIL",
+  "working_directory": "/workspace/scratch/92286f010d1b/verification-browser/road-os"
+}

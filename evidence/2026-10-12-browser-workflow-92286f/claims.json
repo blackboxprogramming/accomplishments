@@ -1,0 +1,50 @@
+{
+  "schema": "blackroad-accomplishments/1",
+  "counts_are_not_additive": true,
+  "claims": [
+    {
+      "id": "BR-A024",
+      "title": "Browser-local Computer identity and draft continuity",
+      "claim": "Four local Computer IDs survive reload; two selected Computers retain distinct exact Code/Chat drafts. Retired-editor events, observed competing saves and a malformed identity record do not overwrite the protected tested records.",
+      "status": "PASS",
+      "receipts": [
+        "browser-workflow-final.json"
+      ],
+      "source_commit": "1e135f954800bad136d33bdd81a03ebb66229a96",
+      "limits": "Browser-local namespaces only; two draft scopes exercised, not four independent runtimes or transactional cross-tab guarantees."
+    },
+    {
+      "id": "BR-A025",
+      "title": "Embedded document continuity and stale-message handling",
+      "claim": "Duplicate boot does not clear an active Files selection; child reload changes document correlation while retaining pin/context. Tested retired boot, navigation and command messages cannot replace current Code content or saved navigation.",
+      "status": "PASS",
+      "receipts": [
+        "browser-workflow-final.json"
+      ],
+      "source_commit": "1e135f954800bad136d33bdd81a03ebb66229a96",
+      "limits": "Typed same-origin UI correlation, not authentication, grants, durable session authority or a comprehensive security audit."
+    },
+    {
+      "id": "BR-A026",
+      "title": "Early browser input and newer-choice precedence",
+      "claim": "The existing startup modules exercise held boot/commands, real dock/menu/keyboard/close actions, exact draft/editor retention and reload. A newer parent choice takes precedence over a delayed initial command.",
+      "status": "PASS",
+      "receipts": [
+        "browser-workflow-final.json"
+      ],
+      "source_commit": "1e135f954800bad136d33bdd81a03ebb66229a96",
+      "limits": "The tests inject delivery schedules. Only the exercised startup orders in this Chromium environment are established."
+    },
+    {
+      "id": "BR-A027",
+      "title": "GOAL-aligned desktop geometry and pinned draft",
+      "claim": "At 1536x1024, both outer panes are 704x654 CSS pixels; four 335x214.5 tiles form a 2x2 grid with original forest wallpaper. Workspace-wide progress/audio placement and visible pinned Code text beside a changed left context pass independent observations.",
+      "status": "PASS",
+      "receipts": [
+        "browser-workflow-final.json"
+      ],
+      "source_commit": "1e135f954800bad136d33bdd81a03ebb66229a96",
+      "limits": "One desktop viewport. No pixel-exact design, accessibility, responsive, cross-browser, physical fleet, live agent or execution certification. Reference metrics remain illustrative."
+    }
+  ]
+}

@@ -14,15 +14,15 @@ BlackRoad has working, tested foundations for a local-first computing system: a 
 
 ## Amundson constant research — October 13, 2026
 
-**Alexa led research on a proposed mathematical constant, with two agreeing exact-arithmetic certificates for 100,000 decimal places and written proofs of specialized coefficient results.**
+**Alexa led research on a proposed mathematical constant, with two agreeing exact-arithmetic certificates for 200,000 decimal places and written proofs of specialized coefficient results.**
 
-The work defines the dimensionless series $A_G=\sum_{n\geq1}n^{n+1}/((n+1)^n n!)$, develops a positive half-shift expansion, and derives rational bounds on $e$, exact floor identities and explicit error limits. The precision receipts record 25,209 retained terms per method and agreement on every reported digit.
+The work defines the dimensionless series $A_G=\sum_{n\geq1}n^{n+1}/((n+1)^n n!)$, develops a positive half-shift expansion, and derives rational bounds on $e$, exact floor identities and explicit error limits. The new precision receipts record 47,179 retained terms per method, agreement on every reported digit, and preservation of the entire historical 100,000-place prefix.
 
 A documented prior-art audit found no earlier equivalent of the exact sum or the specialized bounds in the sources checked. **Historical novelty remains open; “proposed Amundson constant” is the working name.** The separately photographed cubic already has prior art.
 
-[Accomplishment and source index](AMUNDSON_CONSTANT_RESEARCH_2026-10-13.md) · [Precision verification receipt](https://github.com/blackboxprogramming/roadmath/blob/3321d2e97332c953c0c19fb957f8fdc73927af61/provenance/constant-precision-20261013/precision-verification.json) · [Written coefficient proof](https://github.com/blackboxprogramming/roadmath/blob/3321d2e97332c953c0c19fb957f8fdc73927af61/proofs/amundson_adjacent_pair_bounds.md) · [Equation-by-equation literature audit](https://github.com/blackboxprogramming/roadmath/blob/3321d2e97332c953c0c19fb957f8fdc73927af61/research/amundson-novelty-catalog-audit-20261013.md#direct-equation-search-follow-up).
+[Accomplishment and source index](AMUNDSON_CONSTANT_RESEARCH_2026-10-13.md) · [200,000-place verification receipt](https://github.com/blackboxprogramming/roadmath/blob/8ec18717147ca1178c6ee8d7edeb9d78f3cb5316/provenance/constant-precision-20261013/precision-200000/verification.json) · [Full digits](https://github.com/blackboxprogramming/roadmath/blob/8ec18717147ca1178c6ee8d7edeb9d78f3cb5316/provenance/constant-precision-20261013/precision-200000/scaled-200000.digits.txt) · [Written coefficient proof](https://github.com/blackboxprogramming/roadmath/blob/3321d2e97332c953c0c19fb957f8fdc73927af61/proofs/amundson_adjacent_pair_bounds.md) · [Equation-by-equation literature audit](https://github.com/blackboxprogramming/roadmath/blob/3321d2e97332c953c0c19fb957f8fdc73927af61/research/amundson-novelty-catalog-audit-20261013.md#direct-equation-search-follow-up).
 
-This entry indexes existing source-pinned research and recorded executions. It does not claim a fresh 100,000-place run, formal proof-assistant verification or established first discovery. RoadMath source links require repository access.
+The precision extension records two fresh calculations and a separate receipt audit under Python -O. Earlier research and its recorded verification retain their original source pins and scopes. RoadMath source links require repository access.
 
 ## Native Projects and Pipeline — October 12, 2026
 

@@ -12,6 +12,18 @@ BlackRoad has working, tested foundations for a local-first computing system: a 
 
 **What next?** Read a result below, inspect its receipt, and rerun its stated checks in a trusted checkout. The evidence checker reads the committed bundle without changing runtime state.
 
+## Amundson constant research — October 13, 2026
+
+**Alexa led research on a proposed mathematical constant, with two agreeing exact-arithmetic certificates for 100,000 decimal places and written proofs of specialized coefficient results.**
+
+The work defines the dimensionless series $A_G=\sum_{n\geq1}n^{n+1}/((n+1)^n n!)$, develops a positive half-shift expansion, and derives rational bounds on $e$, exact floor identities and explicit error limits. The precision receipts record 25,209 retained terms per method and agreement on every reported digit.
+
+A documented prior-art audit found no earlier equivalent of the exact sum or the specialized bounds in the sources checked. **Historical novelty remains open; “proposed Amundson constant” is the working name.** The separately photographed cubic already has prior art.
+
+[Accomplishment and source index](AMUNDSON_CONSTANT_RESEARCH_2026-10-13.md) · [Precision verification receipt](https://github.com/blackboxprogramming/roadmath/blob/3321d2e97332c953c0c19fb957f8fdc73927af61/provenance/constant-precision-20261013/precision-verification.json) · [Written coefficient proof](https://github.com/blackboxprogramming/roadmath/blob/3321d2e97332c953c0c19fb957f8fdc73927af61/proofs/amundson_adjacent_pair_bounds.md) · [Equation-by-equation literature audit](https://github.com/blackboxprogramming/roadmath/blob/3321d2e97332c953c0c19fb957f8fdc73927af61/research/amundson-novelty-catalog-audit-20261013.md#direct-equation-search-follow-up).
+
+This entry indexes existing source-pinned research and recorded executions. It does not claim a fresh 100,000-place run, formal proof-assistant verification or established first discovery. RoadMath source links require repository access.
+
 ## Native Projects and Pipeline — October 12, 2026
 
 **14 native domain/home tests and 4 Chromium check groups passed.** Real Projects, linked tasks, decisions and Pipeline follow-up history survive reload. Two-window stale edits are refused; an injected failed write rolls back without partial state. Backups read committed IndexedDB, preserve unsaved drafts and reject malformed or missing saved data.

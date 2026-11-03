@@ -1,8 +1,10 @@
-# BlackRoad accomplishments
+# BlackRoad engineering accomplishments
 
 Founder and architect: **Alexa Louise Amundson**.
 
-BlackRoad has working, tested foundations for a local-first computing system: a language implementation, scoped local operations, inspectable receipts, a browser workspace and reversible mathematical encodings.
+This evidence index documents tested foundations for BlackRoad’s local-first computing system. It covers the Road language, the RoadOS browser workspace, scoped local operations, inspectable receipts, and reversible mathematical encodings.
+
+Start with the [RoadOS browser workflow report](BROWSER_WORKFLOW_2026-10-12.md) or the [Amundson constant research and verification](AMUNDSON_CONSTANT_RESEARCH_2026-10-13.md).
 
 **Why at all?** This repository lets Alexa and anyone evaluating BlackRoad trace a claim to its source and observed result. It makes scattered logs and changing revisions inspectable before someone relies on a capability.
 
